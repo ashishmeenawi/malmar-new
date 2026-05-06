@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -16,9 +15,18 @@ if (typeof window !== "undefined") {
 const footerFontStyle = {
   fontFamily:
     '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", sans-serif',
-  letterSpacing: "0.2px",
-  lineHeight: "1.2",
+  letterSpacing: "0.12em",
+  lineHeight: "1.7",
   color: "rgba(67, 67, 67, 0.6)",
+};
+
+/* ✅ Shared Mobile Top Typography */
+const mobileTopStyle = {
+  fontFamily: "SageNav, sans-serif",
+  fontSize: "16.5px",
+  lineHeight: "1",
+  letterSpacing: "0.02em",
+  fontWeight: 500,
 };
 
 const Navbar = () => {
@@ -38,7 +46,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOverArc, setIsOverArc] = useState(false);
 
-  /* ✅ Arc Section Detection */
+  /* ✅ Arc Detection */
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -57,7 +65,7 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
-  /* ✅ Navbar Hide / Show Animation */
+  /* ✅ Navbar Animation */
   useGSAP(
     () => {
       const showAnim = gsap
@@ -145,7 +153,7 @@ const Navbar = () => {
     }
   }, [isMenuOpen]);
 
-  /* ✅ Detect Scroll */
+  /* ✅ Scroll Detection */
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(
@@ -162,7 +170,7 @@ const Navbar = () => {
       );
   }, []);
 
-  /* ✅ Close Menu on Route Change */
+  /* ✅ Close Menu On Route Change */
   useEffect(() => {
     setIsMenuOpen(false);
   }, [pathname]);
@@ -203,7 +211,9 @@ const Navbar = () => {
       >
         {/* LEFT NAV */}
         <div className="flex items-center">
-          <div className="hidden md:flex space-x-8 uppercase nav-font text-[14px] tracking-[2.1px]">
+
+          {/* DESKTOP NAV */}
+          <div className="hidden md:flex space-x-8 uppercase nav-font text-[14px] md:text-[16px] tracking-[2.1px]">
             <Link
               href="/projects"
               className="hover:opacity-70 transition-all duration-300"
@@ -226,37 +236,34 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* MOBILE MENU BUTTON */}
+          {/* MOBILE MENU / CLOSE */}
           <button
             onClick={toggleMenu}
-            className="md:hidden uppercase nav-font text-[16px] tracking-[0.6px]"
+            className="md:hidden uppercase"
+            style={mobileTopStyle}
           >
             {isMenuOpen ? "CLOSE" : "MENU"}
           </button>
         </div>
 
-        {/* LOGO */}
+        {/* CENTER LOGO */}
         <div className="flex justify-center">
           <Link href="/">
-            <Image
-              src="/logo.png"
-              alt="MALMAR"
-              width={200}
-              height={50}
-              priority
-              className="h-6 md:h-10 w-auto"
-            />
+            <div
+              className="uppercase"
+              style={mobileTopStyle}
+            >
+              MALMAR
+            </div>
           </Link>
         </div>
 
-        {/* RIGHT NAV */}
- <div
-  className="flex justify-end uppercase nav-font text-[16px] tracking-[.2px]"
-  style={{ fontWeight: 500 }}
->
+        {/* RIGHT CONTACT */}
+        <div className="flex justify-end">
           <Link
             href="/contact"
-            className="hover:opacity-70 transition-all duration-300"
+            className="uppercase hover:opacity-70 transition-all duration-300"
+            style={mobileTopStyle}
           >
             Contact
           </Link>
@@ -303,13 +310,17 @@ const Navbar = () => {
                   setIsMenuOpen(false)
                 }
                 className="
-                  menu-item
-                  uppercase
-                  nav-font
-                  text-[32px]
-                  md:text-[64px]
-                  leading-[1]
-                "
+  menu-item
+  uppercase
+  nav-font
+  text-[34px]
+  md:text-[64px]
+  leading-[0.95]
+  tracking-[0.02em]
+"
+                style={{
+                  fontWeight: 500,
+                }}
               >
                 {item}
               </a>
