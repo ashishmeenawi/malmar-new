@@ -101,6 +101,7 @@ export default function ServicesPage() {
 
   const recognitionData = [
     "Upper Cheney Row - London",
+    "Can Crimar Guest House - Ibiza",
     "Las boas - Ibiza",
     "Bespoke Health Quarters - Ibiza",
     "Penthouse Marina Botafoch - Ibiza",
