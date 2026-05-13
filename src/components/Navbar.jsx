@@ -1,15 +1,11 @@
 "use client";
+
 import React, { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
 
 /* ✅ Footer Typography + Color */
 const footerFontStyle = {
@@ -65,30 +61,56 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
-  /* ✅ Navbar Animation */
+  /* ✅ FIXED NAVBAR BEHAVIOR */
   useGSAP(
     () => {
-      const showAnim = gsap
-        .from(navbarRef.current, {
-          yPercent: -100,
-          paused: true,
-          duration: 0.3,
-          ease: "power2.out",
-        })
-        .progress(1);
+      if (!navbarRef.current) return;
 
-      ScrollTrigger.create({
-        start: "top top",
-        end: "max",
-
-        onUpdate: (self) => {
-          if (!isMenuOpen) {
-            self.direction === -1
-              ? showAnim.play()
-              : showAnim.reverse();
-          }
-        },
+      gsap.set(navbarRef.current, {
+        y: 0,
       });
+
+      const handleScroll = () => {
+        const currentScroll = window.scrollY;
+
+        // ALWAYS SHOW WHEN MENU OPEN
+        if (isMenuOpen) {
+          gsap.to(navbarRef.current, {
+            y: 0,
+            duration: 0.3,
+            ease: "power2.out",
+          });
+
+          return;
+        }
+
+        // HIDE AFTER SCROLL
+        if (currentScroll > 100) {
+          gsap.to(navbarRef.current, {
+            y: "-100%",
+            duration: 0.3,
+            ease: "power2.out",
+          });
+        }
+
+        // SHOW ONLY AT TOP
+        else {
+          gsap.to(navbarRef.current, {
+            y: 0,
+            duration: 0.3,
+            ease: "power2.out",
+          });
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener(
+          "scroll",
+          handleScroll
+        );
+      };
     },
     {
       scope: navbarRef,
@@ -197,7 +219,7 @@ const Navbar = () => {
       {/* ================= NAVBAR ================= */}
       <nav
         ref={navbarRef}
-        className={`fixed top-0 left-0 w-full z-[100] grid grid-cols-3 items-center px-6 md:px-12 py-8 transition-colors duration-500 ${
+        className={`fixed top-0 left-0 w-full z-[9999] grid grid-cols-3 items-center px-6 md:px-12 py-8 transition-colors duration-500 ${
           isOverArc
             ? "text-white"
             : isScrolled || isLightPage
@@ -214,6 +236,7 @@ const Navbar = () => {
 
           {/* DESKTOP NAV */}
           <div className="hidden md:flex space-x-8 uppercase nav-font text-[14px] md:text-[16px] tracking-[2.1px]">
+
             <Link
               href="/projects"
               className="hover:opacity-70 transition-all duration-300"
@@ -234,9 +257,10 @@ const Navbar = () => {
             >
               About
             </Link>
+
           </div>
 
-          {/* MOBILE MENU / CLOSE */}
+          {/* MOBILE MENU */}
           <button
             onClick={toggleMenu}
             className="md:hidden uppercase"
@@ -244,10 +268,12 @@ const Navbar = () => {
           >
             {isMenuOpen ? "CLOSE" : "MENU"}
           </button>
+
         </div>
 
         {/* CENTER LOGO */}
         <div className="flex justify-center">
+
           <Link href="/">
             <div
               className="uppercase"
@@ -256,10 +282,12 @@ const Navbar = () => {
               MALMAR
             </div>
           </Link>
+
         </div>
 
         {/* RIGHT CONTACT */}
         <div className="flex justify-end">
+
           <Link
             href="/contact"
             className="uppercase hover:opacity-70 transition-all duration-300"
@@ -267,6 +295,7 @@ const Navbar = () => {
           >
             Contact
           </Link>
+
         </div>
       </nav>
 
@@ -301,6 +330,7 @@ const Navbar = () => {
       >
         {/* MENU ITEMS */}
         <div className="flex-1 flex flex-col items-center justify-center space-y-6 md:space-y-8">
+
           {["Projects", "Services", "About"].map(
             (item) => (
               <a
@@ -310,14 +340,14 @@ const Navbar = () => {
                   setIsMenuOpen(false)
                 }
                 className="
-  menu-item
-  uppercase
-  nav-font
-  text-[34px]
-  md:text-[64px]
-  leading-[0.95]
-  tracking-[0.02em]
-"
+                  menu-item
+                  uppercase
+                  nav-font
+                  text-[34px]
+                  md:text-[64px]
+                  leading-[0.95]
+                  tracking-[0.02em]
+                "
                 style={{
                   fontWeight: 500,
                 }}
@@ -326,6 +356,7 @@ const Navbar = () => {
               </a>
             )
           )}
+
         </div>
 
         {/* MENU FOOTER */}
@@ -335,6 +366,7 @@ const Navbar = () => {
 
             {/* LEFT SOCIAL */}
             <div className="flex flex-col space-y-2">
+
               {[
                 "INSTAGRAM",
                 "PINTEREST",
@@ -350,10 +382,12 @@ const Navbar = () => {
                   {social}
                 </a>
               ))}
+
             </div>
 
             {/* RIGHT LINKS */}
             <div className="flex flex-col space-y-2 text-right">
+
               {[
                 "TERMS OF SERVICE",
                 "PRIVACY POLICY",
@@ -368,7 +402,9 @@ const Navbar = () => {
                   {link}
                 </a>
               ))}
+
             </div>
+
           </div>
 
           {/* COPYRIGHT */}
@@ -378,6 +414,7 @@ const Navbar = () => {
           >
             COPYRIGHT MALMAR STUDIO 2026
           </div>
+
         </div>
       </div>
     </>
