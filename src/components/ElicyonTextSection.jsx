@@ -36,8 +36,8 @@ const ElicyonTextSection = () => {
 
         mainTl.to(".word-spaces", { opacity: 0, y: -30, scale: 0.95, duration: 1.5 }, 1.5);
 
-        mainTl.to(".row-2", { x: -300, y: 1, duration: 3, ease: "power2.inOut" }, 3.5);
-        mainTl.to(".row-3", { x: 170, y: -48, duration: 3, ease: "power2.inOut" }, 3.5);
+        mainTl.to(".row-2", { x: -205, y: 1, duration: 3, ease: "power2.inOut" }, 3.5);
+        mainTl.to(".row-3", { x: 155, y: -48, duration: 3, ease: "power2.inOut" }, 3.5);
 
         mainTl.to(textWrapper.current, { y: "25vh", duration: 8, ease: "power1.inOut" }, 6.5);
 

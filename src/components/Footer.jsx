@@ -22,57 +22,128 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#fdf0d5] text-[#1a1a1a] pt-20 md:pt-32 pb-16 md:pb-24 px-6 md:px-16 overflow-hidden flex flex-col">
-      {/*pt-6 md:pt-10   */}
+
       <div className="max-w-[1400px] mx-auto w-full z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
 
           {/* LEFT: NEWSLETTER FORM */}
           <div className="flex flex-col">
+
             <style>{`
-              .footer-mobile-title { font-size: 5.5vw; line-height: 1; }
-              @media (min-width: 400px) { .footer-mobile-title { font-size: 20px; line-height: 1; } }
-              @media (min-width: 768px) { .footer-mobile-title { font-size: 24px; line-height: 0.9; } }
+              .footer-mobile-title {
+                font-size: 5.5vw;
+                line-height: 1;
+              }
+
+              @media (min-width: 400px) {
+                .footer-mobile-title {
+                  font-size: 20px;
+                  line-height: 1;
+                }
+              }
+
+              @media (min-width: 768px) {
+                .footer-mobile-title {
+                  font-size: 24px;
+                  line-height: 0.9;
+                }
+              }
             `}</style>
-            <h2 className="mb-6 uppercase footer-mobile-title" style={{
-              fontFamily: "'SageNav', sans-serif",
-              fontWeight: 400,
-              color: "rgb(0, 0, 0)"
-            }}>
-              {/* Desktop View */}
+
+            <h2
+              className="mb-6 uppercase footer-mobile-title"
+              style={{
+                fontFamily: "'SageNav', sans-serif",
+                fontWeight: 400,
+                color: "rgb(0, 0, 0)"
+              }}
+            >
+
+              {/* DESKTOP */}
               <div className="hidden md:block">
-                <div>JOIN <span className="italic lowercase" style={{ textTransform: "none" }}>the</span></div>
+                <div>
+                  JOIN{" "}
+                  <span
+                    className="italic lowercase"
+                    style={{ textTransform: "none" }}
+                  >
+                    the
+                  </span>
+                </div>
+
                 <div>WORLD</div>
-                <div><span className="italic lowercase mr-2" style={{ textTransform: "none" }}>of</span> MALMAR</div>
+
+                <div>
+                  <span
+                    className="italic lowercase mr-2"
+                    style={{ textTransform: "none" }}
+                  >
+                    of
+                  </span>{" "}
+                  MALMAR
+                </div>
               </div>
 
-              {/* Mobile View */}
-              <div className="block md:hidden" style={{ lineHeight: "1.2" }}>
-                <div className="whitespace-nowrap">JOIN <span className="italic lowercase mx-1" style={{ textTransform: "none" }}>the</span> WORLD</div>
-                <div className="whitespace-nowrap"><span className="italic lowercase mr-2" style={{ textTransform: "none" }}>of</span> MALMAR</div>
+              {/* MOBILE */}
+              <div
+                className="block md:hidden"
+                style={{ lineHeight: "1.2" }}
+              >
+                <div className="whitespace-nowrap">
+                  JOIN{" "}
+                  <span
+                    className="italic lowercase mx-1"
+                    style={{ textTransform: "none" }}
+                  >
+                    the
+                  </span>{" "}
+                  WORLD
+                </div>
+
+                <div className="whitespace-nowrap">
+                  <span
+                    className="italic lowercase mr-2"
+                    style={{ textTransform: "none" }}
+                  >
+                    of
+                  </span>{" "}
+                  MALMAR
+                </div>
               </div>
             </h2>
 
-            <p className="text-[9px] md:text-[17px] leading-relaxed mb-5 max-w-sm" style={{
-              fontFamily: "'Elicyon', serif",
-              fontWeight: 400,
-              color: "rgb(0, 0, 0)"
-            }}>
+            <p
+              className="text-[9px] md:text-[17px] leading-relaxed mb-5 max-w-sm"
+              style={{
+                fontFamily: "'Elicyon', serif",
+                fontWeight: 400,
+                color: "rgb(0, 0, 0)"
+              }}
+            >
               Subscribe to join our community and stay up to date with the studio.
             </p>
 
             <form className="space-y-5 w-full max-w-md">
+
               <div className="flex flex-row gap-3 md:gap-5">
                 <input
                   type="text"
                   placeholder="FIRST NAME *"
                   className="bg-transparent border-b border-black/30 w-full py-1 placeholder-black/60 focus:outline-none focus:border-black transition-colors"
-                  style={{ ...antiqueStyle, fontSize: "8.5px" }}
+                  style={{
+                    ...antiqueStyle,
+                    fontSize: "8.5px"
+                  }}
                 />
+
                 <input
                   type="text"
                   placeholder="LAST NAME *"
                   className="bg-transparent border-b border-black/30 w-full py-1 placeholder-black/60 focus:outline-none focus:border-black transition-colors"
-                  style={{ ...antiqueStyle, fontSize: "8.5px" }}
+                  style={{
+                    ...antiqueStyle,
+                    fontSize: "8.5px"
+                  }}
                 />
               </div>
 
@@ -80,34 +151,51 @@ export default function Footer() {
                 type="email"
                 placeholder="EMAIL *"
                 className="bg-transparent border-b border-black/30 w-full py-1 placeholder-black/60 focus:outline-none focus:border-black transition-colors"
-                style={{ ...antiqueStyle, fontSize: "8.5px" }}
+                style={{
+                  ...antiqueStyle,
+                  fontSize: "8.5px"
+                }}
               />
 
               <label className="flex items-start gap-3 cursor-pointer mt-3">
+
                 <div className="relative">
-                  <input type="checkbox" className="peer appearance-none w-3 h-3 border border-black/40 rounded-none checked:bg-black/80 mt-1 cursor-pointer" />
+                  <input
+                    type="checkbox"
+                    className="peer appearance-none w-3 h-3 border border-black/40 rounded-none checked:bg-black/80 mt-1 cursor-pointer"
+                  />
                 </div>
-                <p className="text-[8px] md:text-[14px] leading-relaxed opacity-70" style={{
-                  fontFamily: "'Elicyon', serif",
-                  fontWeight: 400,
-                  color: "rgb(0, 0, 0)"
-                }}>
+
+                <p
+                  className="text-[8px] md:text-[14px] leading-relaxed opacity-70"
+                  style={{
+                    fontFamily: "'Elicyon', serif",
+                    fontWeight: 400,
+                    color: "rgb(0, 0, 0)"
+                  }}
+                >
                   I consent to my information being collected in accordance with the Malmar privacy policy
                 </p>
+
               </label>
 
               <button
                 type="button"
                 className="border-b border-black pb-0.5 hover:opacity-50 transition-opacity mt-1.5 text-[9px] md:text-[10px]"
-                style={{ ...antiqueStyle, fontWeight: 600 }}
+                style={{
+                  ...antiqueStyle,
+                  fontWeight: 600
+                }}
               >
                 SUBMIT FORM
               </button>
+
             </form>
           </div>
 
-          {/* RIGHT: LINKS */}
+          {/* RIGHT LINKS */}
           <div className="grid grid-cols-2 gap-4 md:gap-10 pt-1 lg:pt-0">
+
             <div className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link
@@ -120,25 +208,35 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
+
             <div className="flex flex-col space-y-2">
               {["INSTAGRAM", "PINTEREST", "LINKEDIN", "FACEBOOK"].map((link) => (
-                <span key={link} className="cursor-pointer hover:opacity-50 transition-opacity text-[9px] md:text-[11px]" style={antiqueStyle}>
+                <span
+                  key={link}
+                  className="cursor-pointer hover:opacity-50 transition-opacity text-[9px] md:text-[11px]"
+                  style={antiqueStyle}
+                >
                   {link}
                 </span>
               ))}
             </div>
+
           </div>
         </div>
       </div>
 
-      {/* --- BIG LOGO TEXT WITH SHUTTER EFFECT --- */}
+      {/* DESKTOP BIG LOGO */}
       <motion.div
         className="hidden md:flex w-full mt-8 mb-6 z-10 overflow-hidden justify-center"
         initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
         whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
         viewport={{ once: true }}
-        transition={{ duration: 1.5, ease: [0.77, 0, 0.175, 1] }}
+        transition={{
+          duration: 1.5,
+          ease: [0.77, 0, 0.175, 1]
+        }}
       >
+
         <div className="flex select-none">
           {letters.map((char, i) => (
             <motion.span
@@ -164,39 +262,69 @@ export default function Footer() {
             </motion.span>
           ))}
         </div>
+
       </motion.div>
 
+      {/* DESKTOP LEGAL */}
       <div className="hidden md:block w-full py-2 z-10 bg-[#fdf0d5]">
-        <div className="max-w-[1400px] mx-auto flex flex-row justify-between items-center gap-4 text-[9px] opacity-60" style={antiqueStyle}>
+        <div
+          className="max-w-[1400px] mx-auto flex flex-row justify-between items-center gap-4 text-[9px] opacity-60"
+          style={antiqueStyle}
+        >
+
           <div className="flex gap-4 hover:opacity-100 transition-opacity">
-            <Link href="/privacy" className="cursor-pointer font-bold">Privacy Policy</Link>
-            <Link href="/terms" className="cursor-pointer font-bold">Terms & Conditions</Link>
+            <Link href="/privacy" className="cursor-pointer font-bold">
+              Privacy Policy
+            </Link>
+
+            <Link href="/terms" className="cursor-pointer font-bold">
+              Terms & Conditions
+            </Link>
           </div>
+
           <div className="text-right">
             <span>REGISTERED TRADE MARK OF MALMAR STUDIO © 2026</span>
           </div>
+
         </div>
       </div>
 
-      {/* --- MOBILE BOTTOM LAYER --- */}
-      <div className="flex flex-col md:hidden w-full mt-8 mb-3 z-10">
-        {/* Logo Replacement */}
-        <div className="w-full flex justify-center mb-5">
-          <Link href="/">
-            <img src="/logo.png" alt="Malmar Logo" className="h-[22px] sm:h-[30px] w-auto object-contain object-center opacity-90" />
-          </Link>
-        </div>
+      {/* MOBILE BOTTOM LAYER */}
+      <div className="relative flex flex-col md:hidden w-full mt-10 pb-6 z-10">
 
-        {/* Legal Text */}
-        <div className="w-full flex flex-col text-[7.5px] min-[390px]:text-[8.5px] uppercase opacity-70 tracking-widest font-medium" style={antiqueStyle}>
+        {/* MOBILE LEGAL TEXT */}
+        <div
+          className="w-full flex flex-col text-[7.5px] uppercase opacity-70 tracking-widest font-medium pr-[95px]"
+          style={antiqueStyle}
+        >
+
           <div className="flex justify-start gap-[10%] w-full mb-2">
-            <Link href="/terms" className="cursor-pointer">TERMS OF SERVICE</Link>
-            <Link href="/privacy" className="cursor-pointer">PRIVACY POLICY</Link>
+            <Link href="/terms" className="cursor-pointer">
+              TERMS OF SERVICE
+            </Link>
+
+            <Link href="/privacy" className="cursor-pointer">
+              PRIVACY POLICY
+            </Link>
           </div>
+
           <div className="text-left w-full">
             <span>REGISTERED TRADE MARK OF MALMAR 2026</span>
           </div>
+
         </div>
+
+        {/* MOBILE LOGO */}
+        <div className="absolute right-0 bottom-[20px] z-20">
+          <Link href="/">
+            <img
+              src="/logo.png"
+              alt="Malmar Logo"
+              className="w-[120px] h-auto object-contain opacity-90"
+            />
+          </Link>
+        </div>
+
       </div>
 
     </footer>
