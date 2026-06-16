@@ -77,25 +77,25 @@ export default function InsightsSection() {
             </span>
           </h2>
           <p
-            className="mt-8 md:uppercase tracking-widest md:tracking-widest max-w-lg text-[16px] md:text-[14px] leading-[22px] md:leading-[17px]"
+            className="mt-8 w-full max-w-lg text-left"
             style={{
               fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+              fontSize: "14px",
+              lineHeight: "22px",
               fontWeight: 400,
               fontStyle: "normal",
               color: "rgb(0, 0, 0)",
             }}
-          >
-            Go beyond the finished space. Explore the insights, inspiration, collaborations, and ideas that quietly shape our world.
-          </p>
+          >Go beyond the finished space. Explore the insights, inspiration, <br />collaborations, and ideas that quietly shape our world.</p>
         </div>
         <button
           className="relative group pb-[6px] uppercase tracking-[0.3em]"
           style={{
-            fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
-            fontSize: "14px",
+            fontFamily: "'Elicyon-Regular', 'Elicyon-Regular.Woff2', sans-serif",
+            fontSize: "10px",
             fontWeight: 400,
             fontStyle: "normal",
-            lineHeight: "14px",
+            lineHeight: "10px",
             color: "rgb(0, 0, 0)",
             marginTop: "32px",
             background: "none",

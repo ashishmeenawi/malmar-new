@@ -190,7 +190,7 @@ export default function VisionSection() {
           ref={descRef}
           className="vision-desc"
           style={{
-            maxWidth: "480px",
+            maxWidth: "420px",
             marginTop: "52px",
             textAlign: "center",
           }}
@@ -206,15 +206,7 @@ export default function VisionSection() {
               marginBottom: "36px",
               letterSpacing: "0.02em",
             }}
-          >
-            Elicyon was founded to redefine luxury design through a
-            seamless integration of architecture, interiors, and project
-            delivery within one cohesive studio. At the heart of our
-            vision is the studio itself: a team of specialists,
-            collaborators and craftspeople who bring each project to
-            life. Meet the Directors leading the vision, explore career
-            opportunities and discover our philosophy.
-          </p>
+          >Elicyon was founded to redefine luxury design through a seamless integration of architecture, interiors, and project delivery within one cohesive studio. At the heart of our vision is the studio itself: a team of specialists, collaborators and craftspeople who bring each project to life. Meet the Directors leading the vision, explore career opportunities and discover our philosophy.</p>
 
           <button
             style={{

@@ -33,18 +33,13 @@ export default function ServicesSection() {
   </div>
 </h2>
             <p
-              className="text-[14px] leading-[1.4] mt-6 md:mt-5 max-w-[320px] text-left"
+              className="w-full max-w-lg text-left text-[14px] leading-[22px] mt-6 md:mt-5 pl-10 md:pl-20"
               style={{
                 fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
                 fontWeight: 400,
                 color: "rgb(0, 0, 0)",
               }}
-            >
-              We craft only the most thoughtful and visionary interiors, spanning
-              residential, commercial, and landmark developments across the globe.
-              Each space is defined not by trend, but by intent, shaped with
-              precision, narrative and considered vision.
-            </p>
+            >We craft only the most thoughtful and visionary interiors, spanning residential, commercial, and landmark developments across the globe. <br />Each space is defined not by trend, but by intent, shaped with precision, narrative and considered vision.</p>
           </div>
 
           {/* Staggered Image Cards */}
@@ -126,17 +121,16 @@ export default function ServicesSection() {
           <div className="flex justify-start md:justify-end mt-12 md:mt-24">
             <div className="max-w-full md:max-w-[400px] text-left md:text-right">
               <p
-                className="text-[14px] leading-[1.6] mb-8"
+                className="w-full mb-8"
                 style={{
                   fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+                  fontSize: "14px",
+                  lineHeight: "22px",
                   fontWeight: 400,
+                  fontStyle: "normal",
                   color: "rgb(0, 0, 0)",
                 }}
-              >
-                At Elicyon, we take pride in offering a comprehensive suite of
-                services that infuse every space with curated luxury, thoughtful
-                consideration, and a deeply personal touch.
-              </p>
+              >At Elicyon, we take pride in offering a comprehensive suite of <br />services that infuse every space with curated luxury, thoughtful <br />consideration, and a deeply personal touch.</p>
 
               <Link
                 href="/services"

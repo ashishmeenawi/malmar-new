@@ -161,7 +161,7 @@ export default function ProjectSection() {
         </h2>
 
         <p
-          className="max-w-fit text-right font-normal mt-2 pr-0 md:pr-10"
+          className="w-full text-right font-normal mt-2 pr-0 md:pr-10"
           style={{
             color: "rgb(0,0,0)",
             fontSize: "14px",
@@ -169,10 +169,7 @@ export default function ProjectSection() {
             fontFamily:
               "'__antiqueLegacy_623eb9', '__antiqueLegacy_Fallback_623eb9', sans-serif",
           }}
-        >
-          Designing commercial and residential <br />
-          environments.
-        </p>
+        >Designing commercial and <br />residential environments.</p>
 
         <Link
           href="/projects"
