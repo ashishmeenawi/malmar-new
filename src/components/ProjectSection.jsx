@@ -180,7 +180,10 @@ export default function ProjectSection() {
               "'__antiqueLegacy_623eb9', '__antiqueLegacy_Fallback_623eb9', sans-serif",
           }}
         >
-          <span className="uppercase tracking-[0.4em] text-[10px] font-medium mb-1 hover:opacity-50 transition-opacity pr-0 md:pr-10">
+          <span
+            className="uppercase text-[10px] font-medium mb-1 hover:opacity-50 transition-opacity pr-0 md:pr-10"
+            style={{ letterSpacing: "2.2px" }}
+          >
             <span className="border-b border-black pb-0.5">
               Discover our work
             </span>
