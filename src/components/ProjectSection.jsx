@@ -169,7 +169,7 @@ export default function ProjectSection() {
             fontFamily:
               "'__antiqueLegacy_623eb9', '__antiqueLegacy_Fallback_623eb9', sans-serif",
           }}
-        >Designing commercial and <br />residential environments.</p>
+        >commercial and <br />residential</p>
 
         <Link
           href="/projects"
