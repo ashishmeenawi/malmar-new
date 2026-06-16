@@ -176,8 +176,7 @@ export default function ProjectSection() {
           className="group relative mt-10 flex flex-col items-end px-0"
           style={{
             color: "rgb(0,0,0)",
-            fontFamily:
-              "'__antiqueLegacy_623eb9', '__antiqueLegacy_Fallback_623eb9', sans-serif",
+            fontFamily: "'Elicyon-Regular', serif",
           }}
         >
           <span
@@ -265,8 +264,7 @@ export default function ProjectSection() {
                 href="/projects"
                 className="uppercase tracking-[0.2em] text-[10px] md:text-[11px] hover:opacity-50 transition-opacity"
                 style={{
-                  fontFamily:
-                    '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", sans-serif',
+                  fontFamily: "'Elicyon-Regular', serif",
                   fontWeight: 400,
                 }}
               >

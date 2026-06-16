@@ -136,7 +136,7 @@ export default function ServicesSection() {
                 href="/services"
                 className="group relative mt-10 flex flex-col items-start md:items-end px-0"
                 style={{
-                  fontFamily: "'Elicyon-Regular.Woff2', sans-serif",
+                  fontFamily: "'Elicyon-Regular', serif",
                   fontWeight: 400,
                   color: "rgb(0, 0, 0)",
                 }}
