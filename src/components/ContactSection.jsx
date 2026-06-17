@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,7 +71,7 @@ export default function ContactSection() {
             Get in touch to start <br />
             <span
               style={{
-                fontFamily: "'Elicyon', serif",
+                fontFamily: "'SageNav', sans-serif",
                 fontStyle: "italic",
                 letterSpacing: "0.05em",
                 textTransform: "none",
@@ -82,9 +83,10 @@ export default function ContactSection() {
             </span>
           </h2>
 
-          <button
+          <Link
+            href="/contact"
             style={{
-              fontFamily: "var(--font-antique), 'EB Garamond', Georgia, serif",
+              fontFamily: "'SageNav', sans-serif",
               fontSize: "10px",
               letterSpacing: "0.4em",
               fontWeight: 400,
@@ -97,11 +99,12 @@ export default function ContactSection() {
               cursor: "pointer",
               color: "#1a1a1a",
               transition: "opacity 300ms",
+              display: "inline-block",
             }}
             className="hover:opacity-50"
           >
             Let's Begin
-          </button>
+          </Link>
         </div>
 
         {/* Bottom Tagline */}

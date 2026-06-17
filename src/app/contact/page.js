@@ -19,7 +19,24 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowErrors(true);
-    // Add submission logic here later
+    
+    // Validate required fields
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.nature || !formData.message || !formData.consent) {
+      return;
+    }
+
+    const subject = `Enquiry from ${formData.firstName} ${formData.lastName} - ${formData.nature}`;
+    const body = `Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Telephone: ${formData.telephone || 'N/A'}
+Nature of Enquiry: ${formData.nature}
+
+Message:
+${formData.message}
+
+Consent to Privacy Policy: Yes`;
+
+    window.location.href = `mailto:ashishwebintegrators@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const textStyle = {
@@ -29,7 +46,7 @@ const ContactPage = () => {
   };
 
   const subtextStyle = {
-    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+    fontFamily: "'Elicyon', serif",
     fontWeight: 400,
     color: "rgb(0, 0, 0)"
   };
@@ -43,15 +60,15 @@ const ContactPage = () => {
         <div className="max-w-4xl mx-auto text-center px-6 md:px-12">
           {/* Main Title */}
           <div className="flex flex-col items-center gap-2 mb-10">
-            <h1 className="text-[18px] md:text-[60px] leading-tight uppercase tracking-tight relative"
+            <h1 className="text-[18px] md:text-[60px] leading-tight tracking-tight relative"
               style={textStyle}>
-              The WORLD <br className="md:hidden" /> of <br /> MALMAR
+              <span className="italic font-light"> THE WORLD</span> <br className="md:hidden" /> <span className="italic font-light">OF</span> <br /> MALMAR
             </h1>
           </div>
 
           {/* Subtext Paragraphs */}
           <div className="max-w-xl mx-auto space-y-8">
-            <p 
+            <p
               className="text-[16px] md:text-[18px] leading-[1.8] text-stone-600 font-light"
               style={subtextStyle}
             >
@@ -249,7 +266,7 @@ const ContactPage = () => {
       {/* Professional Enquiries Section */}
       <section className="relative w-full flex flex-col lg:flex-row items-stretch">
         {/* Left: General Enquiries */}
-        <div className="w-full lg:w-1/2 bg-[#6d88c7] py-24 px-8 md:px-12 flex flex-col items-center text-center text-[#111] min-h-[600px] lg:min-h-[800px] justify-between">
+        <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-24 px-8 md:px-12 flex flex-col items-center text-center text-[#111] min-h-[600px] lg:min-h-[800px] justify-between">
           <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight leading-tight" style={textStyle}>
             GENERAL <br /> ENQUIRIES
           </h2>
@@ -257,18 +274,18 @@ const ContactPage = () => {
           <div className="space-y-12">
             <div className="space-y-2">
               <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">London Studio</p>
-              <a href="mailto:studio@elicyon.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio@elicyon.com</a>
+              <a href="mailto:studio@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio@Malmar.com</a>
               <p className="text-[14px] md:text-[16px]">+44 (0) 203 772 0011</p>
             </div>
 
             <div className="space-y-2">
               <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Singapore Studio</p>
-              <a href="mailto:studio.sg@elicyon.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio.sg@elicyon.com</a>
+              <a href="mailto:studio.sg@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio.sg@Malmar.com</a>
             </div>
 
             <div className="space-y-2">
               <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Library</p>
-              <a href="mailto:librarian@elicyon.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">librarian@elicyon.com</a>
+              <a href="mailto:librarian@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">librarian@Malmar.com</a>
             </div>
 
             <div className="space-y-4 pt-4">
@@ -290,7 +307,7 @@ const ContactPage = () => {
           <div className="space-y-12 flex flex-col items-center">
             <div className="space-y-2">
               <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Press</p>
-              <a href="mailto:marketing@elicyon.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@elicyon.com</a>
+              <a href="mailto:marketing@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@Malmar.com</a>
             </div>
 
             <div className="max-w-[400px] aspect-[1/1.2] overflow-hidden shadow-2xl bg-stone-100">
@@ -312,15 +329,20 @@ const ContactPage = () => {
           <div className="space-y-12">
             <h2 className="text-[36px] md:text-[56px] leading-[1.1] uppercase tracking-tight text-[#111]"
               style={textStyle}>
-              OUR <br /> LOCATION
+              <div className="block">OUR</div>
+              <div
+                className="block -mt-2 md:-mt-3"
+                style={{ fontStyle: "italic" }}
+              >
+                LOCATION
+              </div>
             </h2>
 
             <div className="space-y-6">
               <div className="text-[14px] md:text-[16px] leading-relaxed text-stone-800 font-light" style={subtextStyle}>
-                <p>First Floor, Avon House</p>
-                <p>Avonmore Road</p>
-                <p>Kensington Village</p>
-                <p>London, W14 8TS</p>
+                <p>Malmar Studio</p>
+                <p>66 Glebe place</p>
+                <p>Sw35jb, london</p>
               </div>
 
               <p className="text-[14px] md:text-[16px] italic text-stone-600 font-light" style={subtextStyle}>

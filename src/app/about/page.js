@@ -200,106 +200,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      {/* Video & Stats Section */}
-      <section className="relative w-full overflow-hidden">
-        {/* Background Video Content */}
-        <div className="relative h-[60vh] md:h-[75vh] w-full flex flex-col items-center justify-center text-white text-center">
-          {/* Video Background */}
-          <div className="absolute inset-0 z-0">
-            <video
-              ref={videoRef}
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-              poster="/services-hero.png"
-            >
-              <source src="/malmar.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-            <div className={`absolute inset-0 bg-black/40 transition-opacity duration-700 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}></div>
-          </div>
-
-          {/* Centered Content */}
-          <div className={`relative z-10 flex flex-col items-center transition-all duration-700 ${isPlaying ? 'opacity-0 cursor-default pointer-events-none' : 'opacity-100'}`}>
-            {/* Play Button - exact same as image */}
-            <div
-              onClick={togglePlay}
-              className="w-20 h-20 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm border-2 border-white flex items-center justify-center mb-8 cursor-pointer group hover:bg-white transition-all duration-500"
-            >
-              <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-white border-b-[10px] border-b-transparent group-hover:border-l-black ml-1"></div>
-            </div>
-            <h2
-              className="text-[28px] leading-[28px] md:text-[64px] uppercase tracking-[2px] md:leading-tight"
-              style={headingStyle}
-            >
-              Take A Tour Of Luxury
-            </h2>
-          </div>
-
-          {/* Invisible Overlay to allow pausing when video is playing */}
-          {isPlaying && (
-            <div
-              onClick={togglePlay}
-              className="absolute inset-0 z-20 cursor-pointer"
-              title="Click to Pause"
-            ></div>
-          )}
-        </div>
-
-        {/* Stats Bar - Centered Container Style */}
-        <div className="bg-[#ede8df] relative z-30 pt-1">
-          <div className="relative -mt-12 md:-mt-16 px-6 md:px-12 pb-12">
-            <div className="bg-[#111111] max-w-[1200px] mx-auto py-10 md:py-14 px-8 md:px-16 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left items-center shadow-2xl">
-
-              {/* Stat Item 1 */}
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-                <div className="flex text-[#c5a059] text-[48px] md:text-[72px] font-bold leading-none">
-                  <span>15</span>
-                  <span className="stat-number" data-target="47">00</span>
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-white text-[16px] md:text-[18px] font-bold leading-tight">Project<br />Completed</span>
-                </div>
-              </div>
-
-              {/* Stat Item 2 */}
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-                <div className="flex text-[#c5a059] text-[48px] md:text-[72px] font-bold leading-none">
-                  <span>25</span>
-                  <span className="stat-number" data-target="87">00</span>
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-white text-[16px] md:text-[18px] font-bold leading-tight">Our Happy<br />Clients</span>
-                </div>
-              </div>
-
-              {/* Stat Item 3 */}
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-                <div className="flex text-[#c5a059] text-[48px] md:text-[72px] font-bold leading-none">
-                  <span>18</span>
-                  <span className="stat-number" data-target="79">00</span>
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-white text-[16px] md:text-[18px] font-bold leading-tight">Cup<br />Of Coffee</span>
-                </div>
-              </div>
-
-              {/* Stat Item 4 */}
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
-                <div className="flex text-[#c5a059] text-[48px] md:text-[72px] font-bold leading-none">
-                  <span>25</span>
-                  <span className="stat-number" data-target="47">00</span>
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-white text-[16px] md:text-[18px] font-bold leading-tight">Win<br />Awards</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Video & Stats Section removed as requested */}
       {/* Happy Client Testimonials Section */}
       <section className="bg-[#ede8df] py-24 px-6 md:px-12 overflow-hidden">
         <div className="max-w-[1400px] mx-auto">
@@ -366,13 +267,13 @@ export default function AboutPage() {
                       className="text-[20px] text-white uppercase tracking-wide"
                       style={headingStyle}
                     >
-                      Idea
+                      Discovery
                     </h3>
                     <p
                       className="text-white/70 text-[14px] leading-[22px] max-w-sm"
                       style={bodyStyleWhite}
                     >
-                      Phasellus non libero non nisi fermentum sodales non non neque nulla quis tortor orci.
+                      Every project begins with understanding. We listen deeply, uncovering your aspirations and lifestyle requirements to build a foundation of purpose.
                     </p>
                   </div>
                 </div>
@@ -387,13 +288,13 @@ export default function AboutPage() {
                       className="text-[20px] text-white uppercase tracking-wide"
                       style={headingStyle}
                     >
-                      Design
+                      Development
                     </h3>
                     <p
                       className="text-white/70 text-[14px] leading-[22px] max-w-sm"
                       style={bodyStyleWhite}
                     >
-                      Phasellus non libero non nisi fermentum sodales non non neque nulla quis tortor orci.
+                      We translate ideas into atmosphere and narrative, layering concept, mood, and materiality to shape a vision that is both unique and timeless.
                     </p>
                   </div>
                 </div>
@@ -408,13 +309,34 @@ export default function AboutPage() {
                       className="text-[20px] text-white uppercase tracking-wide"
                       style={headingStyle}
                     >
-                      Execution
+                      Detailing
                     </h3>
                     <p
                       className="text-white/70 text-[14px] leading-[22px] max-w-sm"
                       style={bodyStyleWhite}
                     >
-                      Phasellus non libero non nisi fermentum sodales non non neque nulla quis tortor orci.
+                      The vision becomes tangible. We refine every element, from architectural detailing and bespoke joinery to finishes, ensuring precision and artistry.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="flex gap-6 group">
+                  <div className="flex-shrink-0 w-16 h-16 border border-[#c5a059]/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-[#c5a059] transition-all duration-500">
+                    4.
+                  </div>
+                  <div className="space-y-1">
+                    <h3
+                      className="text-[20px] text-white uppercase tracking-wide"
+                      style={headingStyle}
+                    >
+                      Delivery
+                    </h3>
+                    <p
+                      className="text-white/70 text-[14px] leading-[22px] max-w-sm"
+                      style={bodyStyleWhite}
+                    >
+                      We seamlessly orchestrate installation and handover, managing every detail to ensure the final result is a space ready to be admired and enjoyed.
                     </p>
                   </div>
                 </div>
