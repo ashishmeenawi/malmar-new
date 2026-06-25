@@ -33,7 +33,7 @@ const Navbar = () => {
   const isAboutPage = pathname === "/about";
 
   const isLightPage =
-    isProjectsPage || isContactPage || isAboutPage;
+    isProjectsPage || isContactPage;
 
   const navbarRef = useRef(null);
   const menuRef = useRef(null);

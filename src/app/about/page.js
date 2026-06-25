@@ -104,11 +104,11 @@ export default function AboutPage() {
     <main className="min-h-screen bg-[#f0ede6] selection:bg-stone-200">
       <Navbar />
 
-      {/* Hero Section - Banner Style */}
-      <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: "url('/services-hero.png')" }}>
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
+      {/* Hero Section - Banner Style     screen max- md:*/}
+      <section className="relative w-full h-[85vh] md:h-[100vh] flex items-center justify-center bg-cover bg-center overflow-hidden"
+        style={{ backgroundImage: "url('/project33.png')" }}>
+        {/* Dark Overlay (Removed to show actual colors) */}
+        {/* <div className="absolute inset-0 bg-black/50"></div> */}
 
         <div className="relative z-10 text-center flex flex-col items-center">
           <h1
@@ -137,14 +137,14 @@ export default function AboutPage() {
           <div className="flex gap-4 md:gap-8 h-[500px] md:h-[650px]">
             <div className="flex-1 overflow-hidden">
               <img
-                src="/arc1.jpg"
+                src="/elylast.png"
                 alt="Architecture Interior 1"
                 className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
               />
             </div>
             <div className="flex-1 overflow-hidden mt-12 md:mt-20">
               <img
-                src="/arc2.jpg"
+                src="/object8.jpeg"
                 alt="Architecture Interior 2"
                 className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
               />
@@ -192,7 +192,7 @@ export default function AboutPage() {
 
               {/* Signature */}
               <div className="w-40 opacity-80">
-                <img src="/signature.png" alt="Signature" className="w-full h-auto"
+                <img src="/sign.png" alt="Signature" className="w-full h-auto"
                   onError={(e) => e.target.style.display = 'none'}
                 />
               </div>

@@ -19,7 +19,7 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowErrors(true);
-    
+
     // Validate required fields
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.nature || !formData.message || !formData.consent) {
       return;
@@ -312,7 +312,7 @@ Consent to Privacy Policy: Yes`;
 
             <div className="max-w-[400px] aspect-[1/1.2] overflow-hidden shadow-2xl bg-stone-100">
               <img
-                src="/object5.jpg"
+                src="/elylast.png"
                 alt="Forbes Malmar Feature"
                 className="w-full h-full object-cover"
               />
