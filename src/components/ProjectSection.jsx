@@ -222,7 +222,7 @@ export default function ProjectSection() {
             </div>
 
             {/* TITLE */}
-            <div className="relative z-20 w-full pt-[15vh] md:pt-[25vh] px-[6vw] md:px-[8vw]">
+            <div className="relative z-20 w-full pt-[8vh] md:pt-[25vh] px-[6vw] md:px-[8vw]">
               <h2
                 className="text-white leading-none text-left uppercase"
                 style={{
@@ -238,7 +238,7 @@ export default function ProjectSection() {
             </div>
 
             {/* DETAILS */}
-            <div className="absolute bottom-8 right-6 md:bottom-12 md:right-12 text-right text-white z-30">
+            <div className="absolute bottom-[15vh] right-6 md:bottom-12 md:right-12 text-right text-white z-30">
               <h4
                 className="mb-1 md:mb-2 uppercase flex flex-col items-end"
                 style={{
