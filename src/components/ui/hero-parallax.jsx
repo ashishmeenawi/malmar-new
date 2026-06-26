@@ -63,7 +63,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className={`${isMobile ? 'h-[200vh]' : 'h-[300vh]'} pt-20 pb-40 md:pt-40 md:pb-96 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]`}
+      className={`min-h-[1600px] md:min-h-[2400px] h-[200vh] md:h-[300vh] pt-20 pb-20 md:pt-40 md:pb-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]`}
     >
       <Header />
       <motion.div
@@ -151,7 +151,7 @@ export const ProductCard = ({
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-cover object-center absolute h-full w-full inset-0"
+          className="object-contain object-center absolute h-full w-full inset-0 bg-[#ede8df]"
           alt={product.title}
         />
       </Link>

@@ -11,15 +11,36 @@ export default function Footer() {
     consent: false
   });
 
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.consent) {
       alert("Please fill all fields and consent to the privacy policy.");
       return;
     }
-    const subject = `Newsletter Subscription from ${formData.firstName} ${formData.lastName}`;
-    const body = `First Name: ${formData.firstName}\nLast Name: ${formData.lastName}\nEmail: ${formData.email}\nConsent Given: Yes`;
-    window.location.href = `mailto:ashishwebintegrators@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    setStatus("submitting");
+    const form = e.target;
+    const data = new FormData(form);
+    
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/Info@malmarstudio.com", {
+        method: "POST",
+        body: data,
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ firstName: '', lastName: '', email: '', consent: false });
+        setTimeout(() => setStatus(""), 5000);
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
   };
 
   const letters = "MALMAR".split("");
@@ -144,10 +165,12 @@ export default function Footer() {
             </p>
 
             <form className="space-y-5 w-full max-w-md" onSubmit={handleSubmit}>
+              <input type="hidden" name="_subject" value="New Newsletter Subscription" />
 
               <div className="flex flex-row gap-3 md:gap-5">
                 <input
                   type="text"
+                  name="firstName"
                   placeholder="FIRST NAME *"
                   value={formData.firstName}
                   onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
@@ -160,6 +183,7 @@ export default function Footer() {
 
                 <input
                   type="text"
+                  name="lastName"
                   placeholder="LAST NAME *"
                   value={formData.lastName}
                   onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
@@ -173,6 +197,7 @@ export default function Footer() {
 
               <input
                 type="email"
+                name="email"
                 placeholder="EMAIL *"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -188,6 +213,7 @@ export default function Footer() {
                 <div className="relative flex items-center justify-center w-3 h-3 mt-1 shrink-0">
                   <input
                     type="checkbox"
+                    name="consent"
                     checked={formData.consent}
                     onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
                     className="peer appearance-none w-full h-full border border-black/40 rounded-none checked:bg-black cursor-pointer m-0 transition-colors"
@@ -210,16 +236,25 @@ export default function Footer() {
 
               </label>
 
-              <button
-                type="submit"
-                className="border-b border-black pb-0.5 hover:opacity-50 transition-opacity mt-1.5 text-[9px] md:text-[10px]"
-                style={{
-                  ...antiqueStyle,
-                  fontWeight: 600
-                }}
-              >
-                SUBMIT FORM
-              </button>
+              <div className="flex flex-col items-start">
+                <button
+                  type="submit"
+                  disabled={status === "submitting"}
+                  className="border-b border-black pb-0.5 hover:opacity-50 transition-opacity mt-1.5 text-[9px] md:text-[10px] disabled:opacity-50 disabled:cursor-not-allowed"
+                  style={{
+                    ...antiqueStyle,
+                    fontWeight: 600
+                  }}
+                >
+                  {status === "submitting" ? "SUBMITTING..." : "SUBMIT FORM"}
+                </button>
+                {status === "success" && (
+                  <p className="mt-2 text-green-700 text-[10px] md:text-xs">Successfully subscribed!</p>
+                )}
+                {status === "error" && (
+                  <p className="mt-2 text-red-600 text-[10px] md:text-xs">Oops! Something went wrong.</p>
+                )}
+              </div>
 
             </form>
           </div>

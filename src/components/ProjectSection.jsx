@@ -15,7 +15,7 @@ const projects = [
     id: 1,
     title: "RESIDENTIAL",
     subtitle: "Casa del Maré - Ibiza",
-    image: "/new4.jpeg",
+    image: "/1.jpg",
   },
   {
     id: 2,
