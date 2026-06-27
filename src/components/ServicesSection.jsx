@@ -13,25 +13,25 @@ export default function ServicesSection() {
         <div className="w-full">
 
           <div className="mb-12 md:mb-16 flex flex-col items-start">
-           <h2
-  className="uppercase text-left w-full leading-none"
-  style={{
-    fontFamily: "'SageNav', sans-serif",
-    fontWeight: 400,
-    color: "rgb(0, 0, 0)",
-    fontSize: "40px",
-    letterSpacing: "4px",
-  }}
->
-  <div className="block leading 1.5px">OUR</div>
+            <h2
+              className="uppercase text-left w-full leading-none"
+              style={{
+                fontFamily: "'SageNav', sans-serif",
+                fontWeight: 400,
+                color: "rgb(0, 0, 0)",
+                fontSize: "40px",
+                letterSpacing: "4px",
+              }}
+            >
+              <div className="block leading 1.5px">OUR</div>
 
-  <div
-    className="block pl-10 md:pl-20 leading 1.5px -mt-2 md:-mt-3"
-    style={{ fontStyle: "italic" }}
-  >
-    SERVICES
-  </div>
-</h2>
+              <div
+                className="block pl-10 md:pl-20 leading 1.5px -mt-2 md:-mt-3"
+                style={{ fontStyle: "italic" }}
+              >
+                SERVICES
+              </div>
+            </h2>
             <p
               className="w-full max-w-lg text-left text-[14px] leading-[22px] mt-6 md:mt-5 pl-10 md:pl-20"
               style={{
@@ -49,7 +49,7 @@ export default function ServicesSection() {
               className="relative w-[48%] md:w-[280px] h-[300px] md:h-[400px] self-start md:self-auto cursor-pointer overflow-hidden"
               style={{ marginTop: "0px" }}>
               <img
-                src="/service1.jpg"
+                src="/1.jpeg"
                 alt="Interior Design"
                 className="w-full h-full object-cover"
               />
@@ -63,7 +63,7 @@ export default function ServicesSection() {
                     fontWeight: 400,
                   }}
                 >
-                  INTERIOR<br />DESIGN
+                  <br />DESIGN
                 </span>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function ServicesSection() {
               className="relative w-[48%] md:w-[280px] h-[300px] md:h-[480px] self-end md:self-auto -mt-32 md:mt-24 cursor-pointer overflow-hidden"
             >
               <img
-                src="/service2.jpg"
+                src="/2.jpeg"
                 alt="Architecture"
                 className="w-full h-full object-cover"
               />
@@ -97,7 +97,7 @@ export default function ServicesSection() {
               className="relative w-[48%] md:w-[280px] h-[300px] md:h-[400px] self-start md:self-auto -mt-32 md:mt-0 cursor-pointer overflow-hidden"
             >
               <img
-                src="/service3.png"
+                src="/3.jpeg"
                 alt="Project Management"
                 className="w-full h-full object-cover"
               />
