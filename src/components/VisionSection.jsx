@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef } from "react";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -174,7 +175,7 @@ export default function VisionSection() {
         >
           <img
             ref={imageRef}
-            src="/visionnew.jpg"
+            src="/visionnew.jpeg"
             alt="Leading the Vision"
             style={{
               width: "100%",
@@ -206,9 +207,14 @@ export default function VisionSection() {
               marginBottom: "36px",
               letterSpacing: "0.02em",
             }}
-          >Elicyon was founded to redefine luxury design through a seamless integration of architecture, interiors, and project delivery within one cohesive studio. At the heart of our vision is the studio itself: a team of specialists, collaborators and craftspeople who bring each project to life. Meet the Directors leading the vision, explore career opportunities and discover our philosophy.</p>
+          >Malmar was founded with a singular vision: to create exceptional spaces through the seamless integration of architecture, interior design, and project execution. By bringing every discipline together under one studio, we ensure a cohesive process from concept to completion.
 
-          <button
+            Our greatest strength lies in the people behind each project—a multidisciplinary team of designers, architects, project managers, and skilled craftspeople united by a commitment to excellence.
+
+            Be part of shaping our vision, discover opportunities to join our studio, and explore the philosophy that defines everything we create.</p>
+
+          <Link
+            href="/services"
             style={{
               fontFamily: "'Elicyon', serif",
               fontSize: "13px",
@@ -220,10 +226,12 @@ export default function VisionSection() {
               border: "none",
               paddingBottom: "6px",
               cursor: "pointer",
+              textDecoration: "none",
+              display: "inline-block",
             }}
           >
             View Studio
-          </button>
+          </Link>
         </div>
       </div>
     </section>
