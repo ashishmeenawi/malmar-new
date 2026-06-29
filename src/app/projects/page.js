@@ -158,7 +158,7 @@ export default function ProjectsPage() {
     : PROJECTS.filter(p => {
       if (activeFilter === "RESIDENTIAL") return p.category.includes("INTERIOR DESIGN");
       if (activeFilter === "COMMERCIAL") return p.category.includes("PROJECT MANAGEMENT");
-      if (activeFilter === "DEVELOPMENT") return p.category.includes("ARCHITECTURE");
+      if (activeFilter === "DEVELOPMENT") return p.image === "/dunder.png";
       return true;
     })).slice(0, visibleCount);
 
@@ -261,7 +261,7 @@ export default function ProjectsPage() {
       )}
 
       {/* Project Grid Section */}
-      <section className="pt-2 pb-16 px-6 md:px-12 max-w-[1600px] mx-auto min-h-[600px]">
+      <section className="pt-2 pb-16 px-6 md:px-12 max-w-[1600px] mx-auto">
         <div className={`grid gap-12 md:gap-x-12 md:gap-y-24 transition-all duration-700 ${viewMode === "grid-3"
           ? "grid-cols-1 md:grid-cols-12"
           : "grid-cols-1 max-w-5xl mx-auto"
@@ -369,10 +369,15 @@ export default function ProjectsPage() {
         </div>
 
         {/* Load More Button */}
-        <div className="flex justify-center mt-20 md:mt-32">
+        <div className={`flex justify-center mt-20 md:mt-32 transition-opacity duration-500 ${visibleCount >= (activeFilter === "ALL" ? PROJECTS.length : PROJECTS.filter(p => {
+          if (activeFilter === "RESIDENTIAL") return p.category.includes("INTERIOR DESIGN");
+          if (activeFilter === "COMMERCIAL") return p.category.includes("PROJECT MANAGEMENT");
+          if (activeFilter === "DEVELOPMENT") return p.image === "/dunder.png";
+          return true;
+        }).length) ? 'opacity-0 pointer-events-none hidden' : 'opacity-100'}`}>
           <button
             onClick={() => setVisibleCount(PROJECTS.length)}
-            className={`group relative inline-flex justify-center items-center pb-1 uppercase tracking-wide transition-opacity duration-500 ${visibleCount >= PROJECTS.length ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+            className={`group relative inline-flex justify-center items-center pb-1 uppercase tracking-wide transition-opacity duration-500`}
             style={{
               fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
               fontWeight: 400,

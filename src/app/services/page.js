@@ -105,14 +105,14 @@ export default function ServicesPage() {
     "Las boas - Ibiza",
     "Bespoke Health Quarters - Ibiza",
     "Penthouse Marina Botafoch - Ibiza",
-    ];
+  ];
 
   const awardsData = [
     "Rocca Llisa - Ibiza",
     "Drayton Gardens - London",
     "Glebe Place - London",
     "Casa Angulo - Ibiza",
-    "venue Franklin D Roosevelt - Paris",
+    "Crimar Guest House - Ibiza",
     "Rue la Boetie - Paris ",
   ];
 
@@ -291,10 +291,9 @@ export default function ServicesPage() {
         {/* Background Image Layer */}
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/services-hero1.jpeg')" }}
+          style={{ backgroundImage: "url('/se.jpeg')" }}
         />
-        {/* Subtle Dark Overlay */}
-        <div className="absolute inset-0 bg-black/20 z-10" />
+        {/* No Dark Overlay */}
 
         {/* Centered Heading */}
         <motion.div
@@ -329,15 +328,15 @@ export default function ServicesPage() {
         <div className="hidden md:grid grid-cols-2 gap-12 md:gap-x-16 md:w-1/2 ml-auto">
           <div style={narrativeBodyStyle}>
             <p className="mb-6">
-            Malmar is a design studio renowned for creating spaces defined by individuality, refinement, and enduring quality. From elegant residences to innovative workplaces and landmark developments, we craft environments that seamlessly balance beauty and functionality while reflecting the distinct identity of each client.
-            Our work spans the full spectrum of design and delivery from concept development and spatial planning to architectural detailing, bespoke interiors, and final installation with a meticulous focus on materiality, craftsmanship, and timeless design.
-           </p>
+              Malmar is a design studio renowned for creating spaces defined by individuality, refinement, and enduring quality. From elegant residences to innovative workplaces and landmark developments, we craft environments that seamlessly balance beauty and functionality while reflecting the distinct identity of each client.
+              Our work spans the full spectrum of design and delivery from concept development and spatial planning to architectural detailing, bespoke interiors, and final installation with a meticulous focus on materiality, craftsmanship, and timeless design.
+            </p>
           </div>
           <div style={narrativeBodyStyle}>
             <p className="mb-6">
-             With in-house expertise spanning interior design, architecture, and project management, we provide a fully integrated approach that ensures every project is cohesive, meticulously executed, and thoughtfully tailored to its purpose.
+              With in-house expertise spanning interior design, architecture, and project management, we provide a fully integrated approach that ensures every project is cohesive, meticulously executed, and thoughtfully tailored to its purpose.
 
-We collaborate with an international network of artisans, makers, and suppliers, carefully sourcing materials and crafting bespoke elements that are timeless, distinctive, and enduring in quality. Every decision is made with  balancing aesthetics, functionality, sustainability, and longevity to create spaces with depth, character, and a lasting sense of place.
+              We collaborate with an international network of artisans, makers, and suppliers, carefully sourcing materials and crafting bespoke elements that are timeless, distinctive, and enduring in quality. Every decision is made with  balancing aesthetics, functionality, sustainability, and longevity to create spaces with depth, character, and a lasting sense of place.
             </p>
           </div>
         </div>
@@ -623,18 +622,18 @@ We collaborate with an international network of artisans, makers, and suppliers,
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 max-w-[1600px] mx-auto">
 
           {/* Left Column: Heading */}
-         <div className="lg:col-span-4">
-  <h2
-    className="sticky top-24 text-6xl md:text-7xl max-md:!text-[32px] max-md:!leading-[37px] leaders-heading-fix font-light uppercase tracking-[-0.04em] text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
-    style={headingStyle}
-  >
-    Crafted <br />
+          <div className="lg:col-span-4">
+            <h2
+              className="sticky top-24 text-6xl md:text-7xl max-md:!text-[32px] max-md:!leading-[37px] leaders-heading-fix font-light uppercase tracking-[-0.04em] text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
+              style={headingStyle}
+            >
+              Crafted <br />
 
-    <span className="inline-block -mt-3 ml-10 max-md:ml-16 leading-none">
-      Through <span className="italic leading-none">Design</span>
-    </span>
-  </h2>
-</div>
+              <span className="inline-block -mt-3 ml-10 max-md:ml-16 leading-none">
+                Through <span className="italic leading-none">Design</span>
+              </span>
+            </h2>
+          </div>
 
           {/* Right Column: List */}
           <div className="lg:col-span-8 lg:pt-12">
@@ -650,7 +649,7 @@ We collaborate with an international network of artisans, makers, and suppliers,
                   color: "rgb(0, 0, 0)",
                   textTransform: "uppercase",
                   letterSpacing: "0.25em"
-                  
+
                 }}
               >
                 <b>2026</b>
@@ -748,11 +747,11 @@ We collaborate with an international network of artisans, makers, and suppliers,
                   letterSpacing: "0.2em"
                 }}
               >
-                SUSTAINABILITY ETHOS – WE ARE PRIME
+                This is Malmar world.
               </h3>
 
               {/* Flex Container for Text + Signature Branding */}
-              <div className="flex flex-col md:flex-row justify-between items-end gap-12">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-12">
                 {/* Paragraphs */}
                 <div
                   className="space-y-8 text-black max-w-[480px]"
@@ -764,19 +763,10 @@ We collaborate with an international network of artisans, makers, and suppliers,
                   }}
                 >
                   <p>
-                    At Elicyon, designing with intention means creating spaces that
-                    honour both our clients’ vision and the world we share. We source
-                    responsibly, work with enduring materials, and partner with
-                    craftspeople who share our commitment to quality and sustainability.
+                    Sculpted from translucent alabaster, this lamp emits a soft
                   </p>
                   <p>
-                    To make a tangible difference, we support the PRIME Principles for
-                    sustainable business, guiding our practice through environmental
-                    responsibility, innovation, impact, and accountability. Every decision
-                    is made with purpose, ensuring beauty today and a legacy for tomorrow.
-                  </p>
-                  <p>
-                    Find out more about the PRIME Principles at weareprime.org.
+                    and atmospheric glow, bringing warmth and quiet elegance to any interior.
                   </p>
                 </div>
 

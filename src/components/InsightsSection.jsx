@@ -41,7 +41,8 @@ export default function InsightsSection() {
   const containerRef = useRef(null);
 
   useGSAP(() => {
-    // Reveal animation for the cards as they enter viewport
+    // GSAP animation temporarily removed to prevent cards from being hidden
+    /*
     gsap.from(".insight-card", {
       y: 100,
       opacity: 0,
@@ -53,6 +54,7 @@ export default function InsightsSection() {
         start: "top 80%",
       }
     });
+    */
   }, { scope: containerRef });
 
   return (

@@ -342,16 +342,7 @@ export default function Footer() {
 
         </div>
 
-        {/* MOBILE LOGO */}
-        <div className="absolute right-0 bottom-[20px] z-20">
-          <Link href="/">
-            <img
-              src="/logo.png"
-              alt="Malmar Logo"
-              className="w-[120px] h-auto object-contain opacity-90"
-            />
-          </Link>
-        </div>
+        {/* MOBILE LOGO REMOVED */}
 
       </div>
 

@@ -37,9 +37,9 @@ export default function ContactSection() {
       {/* Parallax Background */}
       <div
         ref={bgRef}
-        className="absolute top-0 left-0 w-full h-[130%] z-0"
+        className="absolute top-0 left-0 w-full h-[120%] z-0"
         style={{
-          backgroundImage: 'url("/981377_5625.jpg")', // Fallback to an existing image
+          backgroundImage: 'url("/gett.png")', // Fallback to an existing image
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 1,

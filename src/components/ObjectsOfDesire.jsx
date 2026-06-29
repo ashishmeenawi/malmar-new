@@ -33,7 +33,7 @@ const objects = [
   {
     id: 4,
     img: "/mm4.jpeg",
-    title: "VINTAGE 1930S CONSOLE",
+    title: "ALABASTER LAMP 2026",
     desc: "A sculptural moment upon arrival that speaks to the heritage and timeless elegance of the space.",
   },
   {
@@ -344,11 +344,10 @@ export default function ObjectsOfDesire() {
             >
               <div
                 className={`group relative aspect-[3/4] transition-all duration-700 mx-auto overflow-hidden
-                ${
-                  isActive
+                ${isActive
                     ? "border-[12px] border-[#8B4513] scale-100"
                     : "border-transparent border-[12px] scale-95"
-                }`}
+                  }`}
               >
                 {/* Image */}
                 <img
@@ -425,11 +424,10 @@ export default function ObjectsOfDesire() {
         {objects.map((item) => (
           <div
             key={item.id}
-            className={`absolute inset-0 transition-all duration-1000 ease-out ${
-              activeId === item.id
+            className={`absolute inset-0 transition-all duration-1000 ease-out ${activeId === item.id
                 ? "opacity-100 translate-y-0 z-10"
                 : "opacity-0 translate-y-4 z-0 pointer-events-none"
-            }`}
+              }`}
           >
             <h3
               style={{
