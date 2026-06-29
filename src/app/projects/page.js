@@ -18,7 +18,7 @@ const PROJECTS = [
     id: 2,
     title: "BELGRAVIA HOUSE",
     category: "ARCHITECTURE",
-    image: "/arc2.jpg",
+    image: "/dunder.png",
     year: "2023"
   },
   {
@@ -172,11 +172,11 @@ export default function ProjectsPage() {
       <section className="pt-40 pb-20 flex items-center justify-center px-6 md:px-12 max-w-[1600px] mx-auto overflow-hidden">
         {/* Mobile View */}
         <h1
-          className="md:hidden text-[28px] leading-[28px] text-center tracking-tight flex flex-col items-center justify-center text-[#111111]"
+          className="md:hidden text-[20px] leading-none text-center tracking-tight flex flex-col items-center justify-center text-[#111111]"
           style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif" }}
         >
           <span className="italic lowercase" style={{ textTransform: "none" }}>MALMAR</span>
-          <span className="uppercase">PROJECT</span>
+          <span className="uppercase -mt-3">PROJECT</span>
         </h1>
         {/* Desktop View */}
         <h1
@@ -241,6 +241,24 @@ export default function ProjectsPage() {
           </button>
         </div>
       </section>
+
+      {/* Development Text Section */}
+      {activeFilter === "DEVELOPMENT" && (
+        <section className="px-6 md:px-12 max-w-[1600px] mx-auto mb-16 transition-all duration-700 animate-in fade-in slide-in-from-bottom-4">
+          <div className="flex flex-col items-start text-left gap-6 max-w-4xl">
+            <h2 className="text-[32px] md:text-[40px] uppercase tracking-wide" style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif" }}>
+
+            </h2>
+            <div className="text-[15px] md:text-[17px] leading-[1.7] opacity-80 flex flex-col gap-5" style={bodyStyle}>
+              <p>At Malmar Studio, we do more than design exceptional spaces—we help shape exceptional developments.</p>
+              <p>Alongside our residential and commercial projects, we collaborate with private investors, developers, family offices, and private equity funds to unlock the full potential of real estate assets. Depending on the opportunity, our involvement ranges from strategic design consultancy and project execution to complete development partnerships.</p>
+              <p>Where we believe in a project’s vision, we often become more than consultants. We regularly invest alongside our partners, aligning our interests and committing ourselves to the long-term success of the development. This shared commitment allows us to approach every decision with an ownership mindset, balancing design excellence with commercial value.</p>
+              <p>Our expertise can cover the entire development process—from concept creation, feasibility, branding, architecture, interiors, procurement, and project management to delivery. Equally, we are frequently engaged for highly specialised scopes such as bespoke joinery, custom kitchens, wellness concepts, FF&E procurement, or high-end interior detailing.</p>
+              <p>Every collaboration is tailored to the ambitions of the project, combining creative vision, technical expertise, and commercial insight to create developments with enduring value.</p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Project Grid Section */}
       <section className="pt-2 pb-16 px-6 md:px-12 max-w-[1600px] mx-auto min-h-[600px]">
@@ -322,7 +340,7 @@ export default function ProjectsPage() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className={`w-full transition-transform duration-700 group-hover:scale-105 ${viewMode === "full" ? "h-auto object-contain" : "h-full object-cover"
+                    className={`w-full transition-transform duration-700 group-hover:scale-105 ${viewMode === "full" ? "h-auto object-contain" : (project.image === "/development.jpeg" ? "h-full object-contain" : "h-full object-cover")
                       }`}
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
