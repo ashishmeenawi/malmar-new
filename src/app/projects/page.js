@@ -17,7 +17,7 @@ const PROJECTS = [
   {
     id: 2,
     title: "BELGRAVIA HOUSE",
-    category: "ARCHITECTURE",
+    category: "DEVELOPMENT",
     image: "/dunder.png",
     year: "2023"
   },
