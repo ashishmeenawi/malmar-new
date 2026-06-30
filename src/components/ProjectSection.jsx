@@ -14,7 +14,7 @@ const projects = [
   {
     id: 1,
     title: "RESIDENTIAL",
-    subtitle: "Casa del Maré - Ibiza",
+    subtitle: "Casa Angulo - Ibiza",
     image: "/new4.jpeg",
   },
   {
@@ -261,7 +261,7 @@ export default function ProjectSection() {
               </h4>
 
               <Link
-                href="/projects"
+                href={`/projects?filter=${project.title}`}
                 className="uppercase tracking-[0.2em] text-[10px] md:text-[11px] hover:opacity-50 transition-opacity"
                 style={{
                   fontFamily: "'Elicyon-Regular', serif",

@@ -120,11 +120,23 @@ const PROJECTS = [
     year: "2024"
   }
 ];
-
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = React.useState("ALL");
   const [viewMode, setViewMode] = React.useState("grid-3"); // grid-3, grid-2, or full
   const [visibleCount, setVisibleCount] = React.useState(13);
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const filterParam = params.get("filter");
+      if (filterParam) {
+        const upperFilter = filterParam.toUpperCase();
+        if (["DEVELOPMENT", "RESIDENTIAL", "COMMERCIAL", "ALL"].includes(upperFilter)) {
+          setActiveFilter(upperFilter);
+        }
+      }
+    }
+  }, []);
 
   const headingStyle = {
     fontFamily: "'Elicyon', serif",
