@@ -763,10 +763,12 @@ export default function ServicesPage() {
                   }}
                 >
                   <p>
-                    Sculpted from translucent alabaster, this lamp emits a soft
+                   At Malmar Studio, sustainability is approached as an integral part of the design process rather than an afterthought. We believe in creating spaces with longevity, purpose and a conscious connection to their environment. Through responsible sourcing, timeless materials and collaboration with skilled artisans and suppliers, we aim to deliver projects that are both refined and enduring.
                   </p>
                   <p>
-                    and atmospheric glow, bringing warmth and quiet elegance to any interior.
+                    Our practice is guided by a commitment to thoughtful innovation, environmental responsibility and lasting impact. We align ourselves with initiatives such as the PRIME Principles and the B Corp Movement Europe, supporting a more responsible and forward-thinking approach to business and design.
+
+Every project is considered holistically balancing aesthetics, functionality and sustainability to create spaces that not only elevate everyday living, but also contribute positively to the future.
                   </p>
                 </div>
 
