@@ -50,13 +50,6 @@ const PROJECTS = [
     year: "2024"
   },
   {
-    id: 7,
-    title: "NORTH LONDON FAMILY HOME",
-    category: "RESIDENTIAL",
-    image: "/arc1.jpg",
-    year: "2024"
-  },
-  {
     id: 8,
     title: "TOWNHOUSE RENOVATION",
     category: "ARCHITECTURE",
@@ -82,20 +75,6 @@ const PROJECTS = [
     title: "URBAN OASIS",
     category: "INTERIOR DESIGN",
     image: "/arc5.jpeg",
-    year: "2024"
-  },
-  {
-    id: 12,
-    title: "KENSINGTON GARDEN VIEW, PIED-A-TERRE",
-    category: "KENSINGTON • RESIDENTIAL",
-    image: "/arc6.jpg",
-    year: "2024"
-  },
-  {
-    id: 13,
-    title: "REGENT'S PARK FAMILY HOUSE",
-    category: "REGENT'S PARK • RESIDENTIAL",
-    image: "/arc1.jpg",
     year: "2024"
   },
   {
