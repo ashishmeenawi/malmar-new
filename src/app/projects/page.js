@@ -269,152 +269,154 @@ export default function ProjectsPage() {
 
             </h2>
             <div className="text-base md:text-lg leading-relaxed flex flex-col gap-4 text-black" style={{ fontFamily: '"__antiqueLegacy_623eb9", serif' }}>
-              <p>At Malmar Studio, we do more than design exceptional spaces—we help shape exceptional developments.</p>
-              <p>Alongside our residential and commercial projects, we collaborate with private investors, developers, family offices, and private equity funds to unlock the full potential of real estate assets. Depending on the opportunity, our involvement ranges from strategic design consultancy and project execution to complete development partnerships.</p>
-              <p>Where we believe in a project’s vision, we often become more than consultants. We regularly invest alongside our partners, aligning our interests and committing ourselves to the long-term success of the development. This shared commitment allows us to approach every decision with an ownership mindset, balancing design excellence with commercial value.</p>
-              <p>Our expertise can cover the entire development process—from concept creation, feasibility, branding, architecture, interiors, procurement, and project management to delivery. Equally, we are frequently engaged for highly specialised scopes such as bespoke joinery, custom kitchens, wellness concepts, FF&E procurement, or high-end interior detailing.</p>
-              <p>Every collaboration is tailored to the ambitions of the project, combining creative vision, technical expertise, and commercial insight to create developments with enduring value.</p>
+              <p>At Malmar Studio, we do more than design exceptional spaces, we help shape exceptional developments.
+                Alongside our residential and commercial projects, we collaborate with private investors, developers, and private equity funds to unlock the full potential of real estate assets. Depending on the opportunity, our involvement ranges from strategic design consultancy and project execution to complete development partnerships.
+              </p>
+              <p>Where we believe in a project’s vision, we often become more than consultants. We regularly invest alongside our partners, aligning our interests and committing ourselves to the longterm success of the development. This shared commitment allows us to approach every decision with an ownership mindset, balancing design excellence with commercial value.
+                Our expertise can cover the entire development process from concept creation, feasibility, branding, architecture, interiors, procurement, and project management to delivery.
+              </p>
+              <p>Equally, we are frequently engaged for highly specialised scopes such as bespoke joinery, custom kitchens, wellness concepts, FF&E procurement, or high-end interior detailing. Every collaboration is tailored to the ambitions of the project, combining creative vision, technical expertise, and commercial insight to create developments with enduring value.Equally, we are frequently engaged for highly specialised scopes such as bespoke joinery, custom kitchens, wellness concepts, FF&E procurement, or high-end interior detailing. Every collaboration is tailored to the ambitions of the project, combining creative vision, technical expertise, and commercial insight to create developments with enduring value.</p>
             </div>
           </div>
         </section>
       )}
 
-      {/* Project Grid Section */}
-      <section className="pt-2 pb-16 px-6 md:px-12 max-w-[1600px] mx-auto">
-        <div className={`grid gap-12 md:gap-x-12 md:gap-y-24 transition-all duration-700 ${viewMode === "grid-3"
-          ? "grid-cols-1 md:grid-cols-12"
-          : "grid-cols-1 max-w-5xl mx-auto"
-          }`}>
-          {filteredProjects.map((project, idx) => {
-            let colSpanClass = "col-span-12";
-            let aspectClass = viewMode === "full" ? "w-full h-auto" : "aspect-video w-full";
-            let wrapperClass = "w-full";
+            {/* Project Grid Section */}
+            <section className="pt-2 pb-16 px-6 md:px-12 max-w-[1600px] mx-auto">
+              <div className={`grid gap-12 md:gap-x-12 md:gap-y-24 transition-all duration-700 ${viewMode === "grid-3"
+                ? "grid-cols-1 md:grid-cols-12"
+                : "grid-cols-1 max-w-5xl mx-auto"
+                }`}>
+                {filteredProjects.map((project, idx) => {
+                  let colSpanClass = "col-span-12";
+                  let aspectClass = viewMode === "full" ? "w-full h-auto" : "aspect-video w-full";
+                  let wrapperClass = "w-full";
 
-            if (viewMode === "grid-3") {
-              if (idx < 3) {
-                // First 3 items: 3-column row
-                colSpanClass = "md:col-span-4";
-                aspectClass = "aspect-[4/5]";
-              } else if (idx === 11 || idx === 12) {
-                // Last Row: Symmetrical Twin Boxes
-                colSpanClass = idx === 11
-                  ? "md:col-start-1 md:col-span-6 lg:col-span-6"
-                  : "md:col-start-7 lg:col-start-7 md:col-span-6 lg:col-span-6";
-                aspectClass = "aspect-[4/5]";
-                wrapperClass = "w-full";
-              } else if (idx >= 13) {
-                // Load More Section Layout
-                if (idx === 13) {
-                  // Small Left 1
-                  colSpanClass = "md:col-span-3 lg:col-span-3";
-                  aspectClass = "aspect-[3/4]";
-                  wrapperClass = "w-full";
-                } else if (idx === 14) {
-                  // Small Left 2
-                  colSpanClass = "md:col-span-3 lg:col-span-3";
-                  aspectClass = "aspect-[3/4]";
-                  wrapperClass = "w-full";
-                } else if (idx === 15) {
-                  // Right Big
-                  colSpanClass = "md:col-span-6 lg:col-span-6";
-                  aspectClass = "aspect-[4/5]";
-                  wrapperClass = "w-full";
-                }
-              } else {
-                // Alternating Pattern for the rest
-                const pattern = (idx - 3) % 4;
-                if (pattern === 0) {
-                  // Small Left (Left Aligned)
-                  colSpanClass = "md:col-start-1 md:col-span-5 lg:col-span-4";
-                  aspectClass = "aspect-[3/4]";
-                  wrapperClass = "w-full";
-                } else if (pattern === 1) {
-                  // Big Right (Right Aligned)
-                  colSpanClass = "md:col-start-6 lg:col-start-6 md:col-span-7 lg:col-span-7";
-                  aspectClass = "aspect-[4/5]";
-                  wrapperClass = "w-[80%] mx-auto lg:ml-26 mr-auto";
-                } else if (pattern === 2) {
-                  // Big Left (Left Aligned)
-                  colSpanClass = "md:col-start-1 md:col-span-7 lg:col-span-7";
-                  aspectClass = "aspect-[3/4]";
-                  wrapperClass = "w-[75%] ml-4 md:ml-10 lg:ml-0 mr-auto";
-                } else if (pattern === 3) {
-                  // Small Right (Right Aligned)
-                  colSpanClass = "md:col-start-8 lg:col-start-8 md:col-span-5 lg:col-span-4";
-                  aspectClass = "aspect-[3/4]";
-                  wrapperClass = "w-full -ml-4 md:-ml-14 lg:-ml-58";
-                }
-              }
-            }
+                  if (viewMode === "grid-3") {
+                    if (idx < 3) {
+                      // First 3 items: 3-column row
+                      colSpanClass = "md:col-span-4";
+                      aspectClass = "aspect-[4/5]";
+                    } else if (idx === 11 || idx === 12) {
+                      // Last Row: Symmetrical Twin Boxes
+                      colSpanClass = idx === 11
+                        ? "md:col-start-1 md:col-span-6 lg:col-span-6"
+                        : "md:col-start-7 lg:col-start-7 md:col-span-6 lg:col-span-6";
+                      aspectClass = "aspect-[4/5]";
+                      wrapperClass = "w-full";
+                    } else if (idx >= 13) {
+                      // Load More Section Layout
+                      if (idx === 13) {
+                        // Small Left 1
+                        colSpanClass = "md:col-span-3 lg:col-span-3";
+                        aspectClass = "aspect-[3/4]";
+                        wrapperClass = "w-full";
+                      } else if (idx === 14) {
+                        // Small Left 2
+                        colSpanClass = "md:col-span-3 lg:col-span-3";
+                        aspectClass = "aspect-[3/4]";
+                        wrapperClass = "w-full";
+                      } else if (idx === 15) {
+                        // Right Big
+                        colSpanClass = "md:col-span-6 lg:col-span-6";
+                        aspectClass = "aspect-[4/5]";
+                        wrapperClass = "w-full";
+                      }
+                    } else {
+                      // Alternating Pattern for the rest
+                      const pattern = (idx - 3) % 4;
+                      if (pattern === 0) {
+                        // Small Left (Left Aligned)
+                        colSpanClass = "md:col-start-1 md:col-span-5 lg:col-span-4";
+                        aspectClass = "aspect-[3/4]";
+                        wrapperClass = "w-full";
+                      } else if (pattern === 1) {
+                        // Big Right (Right Aligned)
+                        colSpanClass = "md:col-start-6 lg:col-start-6 md:col-span-7 lg:col-span-7";
+                        aspectClass = "aspect-[4/5]";
+                        wrapperClass = "w-[80%] mx-auto lg:ml-26 mr-auto";
+                      } else if (pattern === 2) {
+                        // Big Left (Left Aligned)
+                        colSpanClass = "md:col-start-1 md:col-span-7 lg:col-span-7";
+                        aspectClass = "aspect-[3/4]";
+                        wrapperClass = "w-[75%] ml-4 md:ml-10 lg:ml-0 mr-auto";
+                      } else if (pattern === 3) {
+                        // Small Right (Right Aligned)
+                        colSpanClass = "md:col-start-8 lg:col-start-8 md:col-span-5 lg:col-span-4";
+                        aspectClass = "aspect-[3/4]";
+                        wrapperClass = "w-full -ml-4 md:-ml-14 lg:-ml-58";
+                      }
+                    }
+                  }
 
-            const isEven = idx % 2 === 0;
-            const mobileLayoutClass = isEven ? "max-md:items-start max-md:text-left max-md:pr-12" : "max-md:items-end max-md:text-right max-md:pl-12";
+                  const isEven = idx % 2 === 0;
+                  const mobileLayoutClass = isEven ? "max-md:items-start max-md:text-left max-md:pr-12" : "max-md:items-end max-md:text-right max-md:pl-12";
 
-            return (
-              <div
-                key={project.id}
-                className={`group cursor-pointer transition-all duration-700 flex flex-col justify-center ${colSpanClass} ${viewMode === "full" ? 'md:flex-row gap-12 items-center mb-12' : ''} ${viewMode === "grid-3" ? mobileLayoutClass : ''}`}
-              >
-                <div className={`relative overflow-hidden mb-6 shadow-xl transition-all duration-700 ${viewMode === "full" ? "md:w-2/3 w-full" : (viewMode === "grid-3" ? `max-md:w-[85%] ${wrapperClass}` : wrapperClass)} ${aspectClass}`}>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className={`w-full transition-transform duration-700 group-hover:scale-105 ${viewMode === "full" ? "h-auto object-contain" : (project.image === "/development.jpeg" ? "h-full object-contain" : "h-full object-cover")
-                      }`}
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-                </div>
+                  return (
+                    <div
+                      key={project.id}
+                      className={`group cursor-pointer transition-all duration-700 flex flex-col justify-center ${colSpanClass} ${viewMode === "full" ? 'md:flex-row gap-12 items-center mb-12' : ''} ${viewMode === "grid-3" ? mobileLayoutClass : ''}`}
+                    >
+                      <div className={`relative overflow-hidden mb-6 shadow-xl transition-all duration-700 ${viewMode === "full" ? "md:w-2/3 w-full" : (viewMode === "grid-3" ? `max-md:w-[85%] ${wrapperClass}` : wrapperClass)} ${aspectClass}`}>
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className={`w-full transition-transform duration-700 group-hover:scale-105 ${viewMode === "full" ? "h-auto object-contain" : (project.image === "/development.jpeg" ? "h-full object-contain" : "h-full object-cover")
+                            }`}
+                        />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+                      </div>
 
-                <div className={`flex justify-between items-start transition-all duration-700 ${viewMode === "full" ? 'md:w-1/3' : (viewMode === "grid-3" ? `max-md:w-full ${wrapperClass}` : wrapperClass)
-                  }`}>
+                      <div className={`flex justify-between items-start transition-all duration-700 ${viewMode === "full" ? 'md:w-1/3' : (viewMode === "grid-3" ? `max-md:w-full ${wrapperClass}` : wrapperClass)
+                        }`}>
 
-                  <div className={`flex flex-col w-full`}>
-                    <p className="text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-60 mb-2" style={bodyStyle}>
-                      {project.category}
-                    </p>
-                    <h3 className="text-[20px] md:text-[26px] tracking-wide uppercase leading-tight" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
-                      {project.title}
-                    </h3>
-                  </div>
-                  {viewMode === "full" && (
-                    <span className="text-[14px] opacity-40 font-serif ml-4 mt-1" style={bodyStyle}>
-                      {project.year}
-                    </span>
-                  )}
-                </div>
+                        <div className={`flex flex-col w-full`}>
+                          <p className="text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-60 mb-2" style={bodyStyle}>
+                            {project.category}
+                          </p>
+                          <h3 className="text-[20px] md:text-[26px] tracking-wide uppercase leading-tight" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
+                            {project.title}
+                          </h3>
+                        </div>
+                        {viewMode === "full" && (
+                          <span className="text-[14px] opacity-40 font-serif ml-4 mt-1" style={bodyStyle}>
+                            {project.year}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
 
-        {/* Load More Button */}
-        <div className={`flex justify-center mt-20 md:mt-32 transition-opacity duration-500 ${visibleCount >= (activeFilter === "ALL" ? PROJECTS.length : PROJECTS.filter(p => {
-          if (activeFilter === "RESIDENTIAL") return p.category.includes("INTERIOR DESIGN");
-          if (activeFilter === "COMMERCIAL") return p.category.includes("PROJECT MANAGEMENT");
-          if (activeFilter === "DEVELOPMENT") return p.category.includes("DEVELOPMENT");
-          return true;
-        }).length) ? 'opacity-0 pointer-events-none hidden' : 'opacity-100'}`}>
-          <button
-            onClick={() => setVisibleCount(PROJECTS.length)}
-            className={`group relative inline-flex justify-center items-center pb-1 uppercase tracking-wide transition-opacity duration-500`}
-            style={{
-              fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
-              fontWeight: 400,
-              color: "rgb(0, 0, 0)",
-              fontSize: "14px",
-              lineHeight: "14px"
-            }}
-          >
-            LOAD MORE
-            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-black origin-left scale-x-100 transition-transform duration-500 ease-out group-hover:origin-right group-hover:scale-x-0" />
-          </button>
-        </div>
-      </section>
+              {/* Load More Button */}
+              <div className={`flex justify-center mt-20 md:mt-32 transition-opacity duration-500 ${visibleCount >= (activeFilter === "ALL" ? PROJECTS.length : PROJECTS.filter(p => {
+                if (activeFilter === "RESIDENTIAL") return p.category.includes("INTERIOR DESIGN");
+                if (activeFilter === "COMMERCIAL") return p.category.includes("PROJECT MANAGEMENT");
+                if (activeFilter === "DEVELOPMENT") return p.category.includes("DEVELOPMENT");
+                return true;
+              }).length) ? 'opacity-0 pointer-events-none hidden' : 'opacity-100'}`}>
+                <button
+                  onClick={() => setVisibleCount(PROJECTS.length)}
+                  className={`group relative inline-flex justify-center items-center pb-1 uppercase tracking-wide transition-opacity duration-500`}
+                  style={{
+                    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+                    fontWeight: 400,
+                    color: "rgb(0, 0, 0)",
+                    fontSize: "14px",
+                    lineHeight: "14px"
+                  }}
+                >
+                  LOAD MORE
+                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-black origin-left scale-x-100 transition-transform duration-500 ease-out group-hover:origin-right group-hover:scale-x-0" />
+                </button>
+              </div>
+            </section>
 
-      <InsightsSection />
-      <ContactForm />
+            <InsightsSection />
+            <ContactForm />
 
-      <Footer />
-    </main>
-  );
+            <Footer />
+          </main>
+          );
 }
