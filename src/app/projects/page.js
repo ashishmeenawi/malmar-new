@@ -109,9 +109,43 @@ const PROJECTS = [
     id: 18,
     title: "GLEBE PLACE - LONDON",
     category: "RESIDENTIAL",
-    image: "/arc1.jpg", // To be updated later by user
+    image: "/rs5.jpeg", // To be updated later by user
     year: "2025"
-  }
+  },
+
+  {
+    id: 19,
+    title: "Drayton gardens - London",
+    category: "RESIDENTIAL",
+    image: "/rs4.jpeg", // To be updated later by user
+    year: "2025"
+  },
+
+  {
+    id: 20,
+    title: "Las Boas - Ibiza",
+    category: "RESIDENTIAL",
+    image: "/rs3.jpeg", // To be updated later by user
+    year: "2025"
+  },
+
+  {
+    id: 21,
+    title: "Es Cuco - Ibiza",
+    category: "RESIDENTIAL",
+    image: "/rs2.jpeg", // To be updated later by user
+    year: "2025"
+  },
+
+  {
+    id: 22,
+    title: "Rocca Llisa - Ibiza",
+    category: "RESIDENTIAL",
+    image: "/rs1.jpeg", // To be updated later by user
+    year: "2025"
+  },
+
+
 ];
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = React.useState("ALL");
