@@ -118,6 +118,13 @@ const PROJECTS = [
     category: "INTERIOR DESIGN",
     image: "/arc4.jpeg",
     year: "2024"
+  },
+  {
+    id: 17,
+    title: "DEVELOPMENT\nCasa del Maré\nIbiza",
+    category: "DEVELOPMENT",
+    image: "/resnew.jpeg",
+    year: "2024"
   }
 ];
 export default function ProjectsPage() {
@@ -170,7 +177,7 @@ export default function ProjectsPage() {
     : PROJECTS.filter(p => {
       if (activeFilter === "RESIDENTIAL") return p.category.includes("INTERIOR DESIGN");
       if (activeFilter === "COMMERCIAL") return p.category.includes("PROJECT MANAGEMENT");
-      if (activeFilter === "DEVELOPMENT") return p.image === "/dunder.png";
+      if (activeFilter === "DEVELOPMENT") return p.category.includes("DEVELOPMENT");
       return true;
     })).slice(0, visibleCount);
 
@@ -365,7 +372,7 @@ export default function ProjectsPage() {
                     <p className="text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-60 mb-2" style={bodyStyle}>
                       {project.category}
                     </p>
-                    <h3 className="text-[20px] md:text-[26px] tracking-wide uppercase leading-tight" style={headingStyle}>
+                    <h3 className="text-[20px] md:text-[26px] tracking-wide uppercase leading-tight" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
                       {project.title}
                     </h3>
                   </div>
@@ -384,7 +391,7 @@ export default function ProjectsPage() {
         <div className={`flex justify-center mt-20 md:mt-32 transition-opacity duration-500 ${visibleCount >= (activeFilter === "ALL" ? PROJECTS.length : PROJECTS.filter(p => {
           if (activeFilter === "RESIDENTIAL") return p.category.includes("INTERIOR DESIGN");
           if (activeFilter === "COMMERCIAL") return p.category.includes("PROJECT MANAGEMENT");
-          if (activeFilter === "DEVELOPMENT") return p.image === "/dunder.png";
+          if (activeFilter === "DEVELOPMENT") return p.category.includes("DEVELOPMENT");
           return true;
         }).length) ? 'opacity-0 pointer-events-none hidden' : 'opacity-100'}`}>
           <button
