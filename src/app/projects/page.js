@@ -31,7 +31,7 @@ const PROJECTS = [
   {
     id: 4,
     title: "RIVERSIDE APARTMENT",
-    category: "PROJECT MANAGEMENT",
+    category: "COMMERCIAL",
     image: "/arc4.jpeg",
     year: "2023"
   },
@@ -125,6 +125,13 @@ const PROJECTS = [
     category: "DEVELOPMENT",
     image: "/resnew.jpeg",
     year: "2024"
+  },
+  {
+    id: 18,
+    title: "GLEBE PLACE - LONDON",
+    category: "RESIDENTIAL",
+    image: "/arc1.jpg", // To be updated later by user
+    year: "2025"
   }
 ];
 export default function ProjectsPage() {
