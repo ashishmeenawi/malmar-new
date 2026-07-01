@@ -11,7 +11,7 @@ const PROJECTS = [
     id: 1,
     title: "CASA ANGULO",
     category: "RESIDENTIAL",
-    image: "/arc1.jpg",
+    image: "/new4.jpeg",
     year: "2024"
   },
   {
