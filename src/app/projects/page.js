@@ -387,7 +387,7 @@ export default function ProjectsPage() {
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
                 </div>
 
-                <div className={`flex justify-between items-start transition-all duration-700 ${viewMode === "full" ? 'md:w-1/3' : (viewMode === "grid-3" ? `max-md:w-full ${wrapperClass}` : wrapperClass)
+                <div className={`flex justify-between items-start transition-all duration-700 ${viewMode === "full" ? 'md:w-1/3' : (viewMode === "grid-3" ? `max-md:w-[85%] ${wrapperClass}` : wrapperClass)
                   }`}>
 
                   <div className={`flex flex-col w-full`}>
