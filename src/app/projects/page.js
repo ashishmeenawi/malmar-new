@@ -211,11 +211,11 @@ export default function ProjectsPage() {
       <section className="pt-40 pb-20 flex items-center justify-center px-6 md:px-12 max-w-[1600px] mx-auto overflow-hidden">
         {/* Mobile View */}
         <h1
-          className="md:hidden text-[20px] leading-none text-center tracking-tight flex flex-col items-center justify-center text-[#111111]"
-          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif" }}
+          className="md:hidden leading-none text-center tracking-tight flex flex-col items-center justify-center text-[#111111]"
+          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "32px" }}
         >
           <span className="italic lowercase" style={{ textTransform: "none" }}>MALMAR</span>
-          <span className="uppercase -mt-3">PROJECT</span>
+          <span className="uppercase -mt-1">PROJECTS</span>
         </h1>
         {/* Desktop View */}
         <h1
