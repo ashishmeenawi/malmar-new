@@ -49,7 +49,7 @@ export default function ServicesSection() {
               className="relative w-[48%] md:w-[280px] h-[300px] md:h-[400px] self-start md:self-auto cursor-pointer overflow-hidden"
               style={{ marginTop: "0px" }}>
               <img
-                src="/1.jpeg"
+                src="/visionmalmar.jpeg"
                 alt="Interior Design"
                 className="w-full h-full object-cover"
               />

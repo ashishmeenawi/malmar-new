@@ -175,7 +175,7 @@ export default function VisionSection() {
         >
           <img
             ref={imageRef}
-            src="/visionnew.jpeg"
+            src="/visionnewpiano.jpeg"
             alt="Leading the Vision"
             style={{
               width: "100%",
