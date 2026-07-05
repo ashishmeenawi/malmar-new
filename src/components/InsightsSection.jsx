@@ -32,7 +32,7 @@ const insights = [
     category: "EDITORIAL",
     title: "ARCHITECTURAL DIGEST",
     description: "Refined Luxury in the heart of the city.",
-    image: "/insite4.jpeg",
+    image: "/AD-MALMAR.jpeg",
     overlayText: ""
   }
 ];

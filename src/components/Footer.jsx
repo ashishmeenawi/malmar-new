@@ -1,5 +1,5 @@
 "use client";
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -248,9 +248,7 @@ export default function Footer() {
                 >
                   {status === "submitting" ? "SUBMITTING..." : "SUBMIT FORM"}
                 </button>
-                {status === "success" && (
-                  <p className="mt-2 text-green-700 text-[10px] md:text-xs">Successfully subscribed!</p>
-                )}
+                {/* Success popup is displayed globally inside AnimatePresence */}
                 {status === "error" && (
                   <p className="mt-2 text-red-600 text-[10px] md:text-xs">Oops! Something went wrong.</p>
                 )}
@@ -345,6 +343,53 @@ export default function Footer() {
         {/* MOBILE LOGO REMOVED */}
 
       </div>
+
+      <AnimatePresence>
+        {status === "success" && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-[2px]"
+          >
+            <motion.div
+              initial={{ scale: 0.95, y: 15, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.95, y: 15, opacity: 0 }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-[#fdf0d5] text-[#1a1a1a] p-8 md:p-12 max-w-sm mx-4 text-center border border-black/10 shadow-2xl relative"
+            >
+              {/* Close Button */}
+              <button 
+                onClick={() => setStatus("")}
+                className="absolute top-4 right-4 text-[9px] tracking-widest opacity-50 hover:opacity-100 transition-opacity"
+                style={{ fontFamily: "'Elicyon', serif" }}
+              >
+                [CLOSE]
+              </button>
+
+              <h3 
+                className="text-[16px] md:text-[20px] mb-4 tracking-[0.2em] font-light text-black"
+                style={{ fontFamily: "'SageNav', sans-serif" }}
+              >
+                THANK YOU
+              </h3>
+              
+              <div 
+                className="w-12 h-[1px] bg-black/20 mx-auto mb-6"
+              />
+
+              <p 
+                className="text-[10px] md:text-[12px] leading-relaxed tracking-[0.1em] text-black"
+                style={{ fontFamily: "'Elicyon', serif" }}
+              >
+                YOUR MESSAGE HAS BEEN DELIVERED.<br />
+                WE APPRECIATE YOU CONNECTING WITH US.
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </footer>
   );

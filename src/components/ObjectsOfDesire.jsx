@@ -24,35 +24,35 @@ const objects = [
     title: "RECLAIMED OAK SIDEBOARD",
     desc: "Hand-finished to highlight the natural grain, grounding the room with warmth and a deep sense of heritage.",
   },
-  {
-    id: 3,
-    img: "/mm3.jpeg",
-    title: "BESPOKE JOINERY BENCH",
-    desc: "Designed to follow the curvature of the entrance wall, offering an initial moment of grounding upon arrival.",
-  },
-  {
-    id: 4,
-    img: "/mm4.jpeg",
-    title: "ALABASTER LAMP 2026",
-    desc: "A sculptural moment upon arrival that speaks to the heritage and timeless elegance of the space.",
-  },
-  {
-    id: 5,
-    img: "/mm1.jpeg",
-    title: "ALABASTER LAMP 2026",
-    desc: "Sculpted from translucent alabaster, this lamp emits a soft and atmospheric glow, bringing warmth and quiet elegance to any interior.",
-  },
-  {
-    id: 6,
-    img: "/mm2.jpeg",
-    title: "WHITWAY CHANDELIER",
-    desc: "Adapted from an original 1940s design, casting a warm, enveloping glow throughout the room.",
-  },
+  // {
+  //   id: 3,
+  //   img: "/mm3.jpeg",
+  //   title: "BESPOKE JOINERY BENCH",
+  //   desc: "Designed to follow the curvature of the entrance wall, offering an initial moment of grounding upon arrival.",
+  // },
+  // {
+  //   id: 4,
+  //   img: "/mm4.jpeg",
+  //   title: "ALABASTER LAMP 2026",
+  //   desc: "A sculptural moment upon arrival that speaks to the heritage and timeless elegance of the space.",
+  // },
+  // {
+  //   id: 5,
+  //   img: "/mm1.jpeg",
+  //   title: "ALABASTER LAMP 2026",
+  //   desc: "Sculpted from translucent alabaster, this lamp emits a soft and atmospheric glow, bringing warmth and quiet elegance to any interior.",
+  // },
+  // {
+  //   id: 6,
+  //   img: "/mm2.jpeg",
+  //   title: "WHITWAY CHANDELIER",
+  //   desc: "Adapted from an original 1940s design, casting a warm, enveloping glow throughout the room.",
+  // },
   {
     id: 7,
     img: "/mm3.jpeg",
-    title: "MURANO GLASS VASE",
-    desc: "Transparent layers of hand-blown glass capture the shifting light, adding a delicate touch of artisanal craft.",
+    title: "BRONZE FOLD WALL LIGHT",
+    desc: "A sculptural wall light crafted from folded bronze, designed to cast a warm, ambient glow through its layered silhouette. Balancing architectural form with understated elegance, it brings depth, texture, and atmosphere to any interior.",
   },
   {
     id: 8,
@@ -425,8 +425,8 @@ export default function ObjectsOfDesire() {
           <div
             key={item.id}
             className={`absolute inset-0 transition-all duration-1000 ease-out ${activeId === item.id
-                ? "opacity-100 translate-y-0 z-10"
-                : "opacity-0 translate-y-4 z-0 pointer-events-none"
+              ? "opacity-100 translate-y-0 z-10"
+              : "opacity-0 translate-y-4 z-0 pointer-events-none"
               }`}
           >
             <h3
