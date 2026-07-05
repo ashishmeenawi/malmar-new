@@ -23,9 +23,9 @@ const insights = [
   },
   {
     category: "COMMERCIAL",
-    title: "DESIGN ANTHOLOGY UK",
+    title: "Murano x BHQ",
     description: "Commercial Design Reimagined",
-    image: "/insite3.jpg",
+    image: "/BHQXM.jpeg",
     overlayText: ""
   },
   {
