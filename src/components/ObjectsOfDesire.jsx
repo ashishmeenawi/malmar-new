@@ -316,13 +316,12 @@ export default function ObjectsOfDesire() {
             fontFamily: "'SageNav', sans-serif",
             fontSize: "48px",
             fontWeight: 400,
-            lineHeight: "58px",
+            lineHeight: "44px",
             color: "#000",
-            textTransform: "uppercase",
             margin: 0,
           }}
         >
-          OBJECTS of DESIRE
+          OBJECTS of <span className="italic">DESIRE</span>
         </h2>
       </div>
 
