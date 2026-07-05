@@ -207,11 +207,7 @@ export default function VisionSection() {
               marginBottom: "36px",
               letterSpacing: "0.02em",
             }}
-          >Malmar was founded with a singular vision: to create exceptional spaces through the seamless integration of architecture, interior design, and project execution. By bringing every discipline together under one studio, we ensure a cohesive process from concept to completion.
-
-            Our greatest strength lies in the people behind each project—a multidisciplinary team of designers, architects, project managers, and skilled craftspeople united by a commitment to excellence.
-
-            Be part of shaping our vision, discover opportunities to join our studio, and explore the philosophy that defines everything we create.</p>
+          >Malmar was founded with a singular vision: to create exceptional spaces through the seamless integration of architecture, interior design, and project execution. By bringing every discipline together under one studio, we ensure a cohesive process from concept to completion. We are a  multidisciplinary team of designers, architects, project managers, and skilled craftspeople united by a commitment to excellence. Be part of shaping our vision, discover opportunities to join our studio, and explore the philosophy that defines everything we create.</p>
 
           <Link
             href="/services"

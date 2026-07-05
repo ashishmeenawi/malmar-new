@@ -39,7 +39,7 @@ export default function ServicesSection() {
                 fontWeight: 400,
                 color: "rgb(0, 0, 0)",
               }}
-            >We craft only the most thoughtful and visionary interiors, spanning residential, commercial, and landmark developments across the globe. <br />Each space is defined not by trend, but by intent, shaped with precision, narrative and considered vision.</p>
+            >We create timeless interiors with purpose. From private residences to commercial environments, every space is carefully crafted around its architecture, function, and story. It’s defined by precision, materiality, and enduring design rather than passing trends.</p>
           </div>
 
           {/* Staggered Image Cards */}
@@ -49,7 +49,7 @@ export default function ServicesSection() {
               className="relative w-[48%] md:w-[280px] h-[300px] md:h-[400px] self-start md:self-auto cursor-pointer overflow-hidden"
               style={{ marginTop: "0px" }}>
               <img
-                src="/visionmalmar.jpeg"
+                src="/design-home.jpeg"
                 alt="Interior Design"
                 className="w-full h-full object-cover"
               />
@@ -130,7 +130,7 @@ export default function ServicesSection() {
                   fontStyle: "normal",
                   color: "rgb(0, 0, 0)",
                 }}
-              >At Elicyon, we take pride in offering a comprehensive suite of <br />services that infuse every space with curated luxury, thoughtful <br />consideration, and a deeply personal touch.</p>
+              >Every project is carefully curated to reflect the people who inhabit it,<br />resulting in environments that feel both deeply personal and effortlessly refined.</p>
 
               <Link
                 href="/services"
@@ -156,16 +156,16 @@ export default function ServicesSection() {
 }
 
 const IMAGES = [
-  "arc1.jpg",
-  "arc2.jpg",
-  "arc3.jpg",
-  "arc4.jpeg",
+  "981377_5625.jpg",
   "arc5.jpeg",
-  "arc6.jpg",
-  "arc7.jpg",
-  "arc8.jpeg",
   "arc9.jpg",
-  "arc10.jpeg",
+  "hero.jpeg",
+  "object3.jpg",
+  "object8.jpeg",
+  "commnew1.jpeg",
+  "project2.jpeg",
+  "project1.jpeg",
+  "resnew.jpeg",
 ];
 
 const CARD_W = 350;
