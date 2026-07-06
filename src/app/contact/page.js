@@ -321,51 +321,6 @@ Consent to Privacy Policy: Yes`;
         </div>
       </section>
 
-      {/* Location Section */}
-      <section className="bg-[#f4f1ea] py-24 px-6 md:px-12 border-t border-stone-200">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
-
-          {/* Left: Address Info */}
-          <div className="space-y-12">
-            <h2 className="text-[36px] md:text-[56px] leading-[1.1] uppercase tracking-tight text-[#111]"
-              style={textStyle}>
-              <div className="block">OUR</div>
-              <div
-                className="block -mt-2 md:-mt-3"
-                style={{ fontStyle: "italic" }}
-              >
-                LOCATION
-              </div>
-            </h2>
-
-            <div className="space-y-6">
-              <div className="text-[14px] md:text-[16px] leading-relaxed text-stone-800 font-light" style={subtextStyle}>
-                <p>Malmar Studio</p>
-                <p>66 Glebe place</p>
-                <p>Sw35jb, london</p>
-              </div>
-
-              <p className="text-[14px] md:text-[16px] italic text-stone-600 font-light" style={subtextStyle}>
-                Visits by appointment only
-              </p>
-            </div>
-          </div>
-
-          {/* Right: Map Integration */}
-          <div className="w-full aspect-video lg:aspect-square bg-stone-200 shadow-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.740446944645!2d-0.21319202359487774!3d51.490445611634594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fa0db917997%3A0xe54d852a4659f81a!2sAvon%20House!5e0!3m2!1sen!2suk!4v1711974000000!5m2!1sen!2suk"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-
-        </div>
-      </section>
 
       <Footer />
     </main>
