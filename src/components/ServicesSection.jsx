@@ -156,16 +156,20 @@ export default function ServicesSection() {
 }
 
 const IMAGES = [
-  "981377_5625.jpg",
-  "arc5.jpeg",
-  "arc9.jpg",
-  "hero.jpeg",
-  "object3.jpg",
-  "object8.jpeg",
-  "commnew1.jpeg",
-  "project2.jpeg",
-  "project1.jpeg",
-  "resnew.jpeg",
+  "mal1.jpeg",
+  "mal2.jpeg",
+  "mal3.jpeg",
+  "mal4.jpeg",
+  "mal5.jpeg",
+  "mal6.jpeg",
+  "mal7.jpeg",
+  "mal8.jpeg",
+  "mal9.jpeg",
+  "mal10.jpeg",
+  "mal11.jpeg",
+  "mal12.jpeg",
+  "mal13.jpeg",
+  "mal14.jpeg",
 ];
 
 const CARD_W = 350;
