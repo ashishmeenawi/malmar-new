@@ -104,7 +104,7 @@ export default function ServicesPage() {
     "Can Crimar Guest House - Ibiza",
     "Las boas - Ibiza",
     "Bespoke Health Quarters - Ibiza",
-    "Penthouse Marina Botafoch - Ibiza",
+    "Can Kiki - Ibiza",
   ];
 
   const awardsData = [
