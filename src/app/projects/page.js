@@ -151,6 +151,13 @@ const PROJECTS = [
     image: "/upper-cheyne-row.jpg",
     year: "2025"
   },
+  {
+    id: 24,
+    title: "Glebe place kitchen - London",
+    category: "RESIDENTIAL",
+    image: "/glebe-place-kitchen.jpg",
+    year: "2025"
+  },
 ];
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = React.useState("ALL");
