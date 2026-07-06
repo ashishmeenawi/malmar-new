@@ -174,16 +174,16 @@ export default function ServicesPage() {
     },
     {
       title: "ARCHITECTURE",
-      description: "We shape the structural and spatial framework of your vision, ensuring that every project harmonizes with its surroundings while pushing the boundaries of modern design.",
-      image: "/project3.jpeg",
-      rightImage: "/project33.png",
+      description: "We shape architectural and spatial experiences with clarity and intention, creating environments that balance timeless design, functionality, and a strong sense of place.",
+      image: "/archi-interior-img.jpeg",
+      rightImage: "/89899.jpeg",
       label: "LONDON FAMILY HOME"
     },
     {
       title: "PROCUREMENT",
-      description: "We source, curate and deliver every element of your project with an unrivalled attention to detail, ensuring that the final realization is nothing short of extraordinary.",
+      description: "From concept to completion, we carefully source, curate, and deliver every element of your project with attention to detail, creating spaces of beauty and exceptional quality.",
       image: "/arc9.jpg",
-      rightImage: "/contact.jpg",
+      rightImage: "/chnage-mr.jpeg",
       label: "PRIVATE HOME"
     }
   ];
@@ -763,12 +763,12 @@ export default function ServicesPage() {
                   }}
                 >
                   <p>
-                   At Malmar Studio, sustainability is approached as an integral part of the design process rather than an afterthought. We believe in creating spaces with longevity, purpose and a conscious connection to their environment. Through responsible sourcing, timeless materials and collaboration with skilled artisans and suppliers, we aim to deliver projects that are both refined and enduring.
+                    At Malmar Studio, sustainability is approached as an integral part of the design process rather than an afterthought. We believe in creating spaces with longevity, purpose and a conscious connection to their environment. Through responsible sourcing, timeless materials and collaboration with skilled artisans and suppliers, we aim to deliver projects that are both refined and enduring.
                   </p>
                   <p>
                     Our practice is guided by a commitment to thoughtful innovation, environmental responsibility and lasting impact. We align ourselves with initiatives such as the PRIME Principles and the B Corp Movement Europe, supporting a more responsible and forward-thinking approach to business and design.
 
-Every project is considered holistically balancing aesthetics, functionality and sustainability to create spaces that not only elevate everyday living, but also contribute positively to the future.
+                    Every project is considered holistically balancing aesthetics, functionality and sustainability to create spaces that not only elevate everyday living, but also contribute positively to the future.
                   </p>
                 </div>
 
