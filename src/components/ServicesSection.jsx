@@ -156,7 +156,6 @@ export default function ServicesSection() {
 }
 
 const IMAGES = [
-  "mal1.jpeg",
   "mal2.jpeg",
   "mal3.jpeg",
   "mal4.jpeg",
