@@ -58,9 +58,18 @@ Consent to Privacy Policy: Yes`;
       {/* Hero Section */}
       <section className="relative min-h-[90vh] w-full flex items-center justify-center flex-col pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center px-6 md:px-12">
-          {/* Main Title */}
           <div className="flex flex-col items-center gap-2 mb-10">
-            <h1 className="text-[27.825px] md:text-[60px] leading-tight tracking-tight relative text-black"
+            <style>{`
+              .contact-title {
+                font-size: 27.825px;
+              }
+              @media (min-width: 768px) {
+                .contact-title {
+                  font-size: 60px;
+                }
+              }
+            `}</style>
+            <h1 className="contact-title leading-tight tracking-tight relative text-black"
               style={{ ...textStyle, color: "#000" }}>
               <span className="italic font-light"> THE WORLD</span> <br className="md:hidden" /> <span className="italic font-light">OF</span> <br /> MALMAR
             </h1>
