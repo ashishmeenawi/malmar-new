@@ -33,7 +33,8 @@ const insights = [
     title: "ARCHITECTURAL DIGEST",
     description: "Refined Luxury in the heart of the city.",
     image: "/AD-MALMAR.jpeg",
-    overlayText: ""
+    overlayText: "",
+    objectPosition: "top"
   }
 ];
 
@@ -125,6 +126,7 @@ export default function InsightsSection() {
                 src={item.image}
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                style={{ objectPosition: item.objectPosition || 'center' }}
               />
               {/* Overlay Text (if any) */}
               {item.overlayText && (
