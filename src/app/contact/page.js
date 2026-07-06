@@ -60,7 +60,7 @@ Consent to Privacy Policy: Yes`;
         <div className="max-w-4xl mx-auto text-center px-6 md:px-12">
           {/* Main Title */}
           <div className="flex flex-col items-center gap-2 mb-10">
-            <h1 className="text-[13px] md:text-[60px] leading-tight tracking-tight relative text-black"
+            <h1 className="text-[27.825px] md:text-[60px] leading-tight tracking-tight relative text-black"
               style={{ ...textStyle, color: "#000" }}>
               <span className="italic font-light"> THE WORLD</span> <br className="md:hidden" /> <span className="italic font-light">OF</span> <br /> MALMAR
             </h1>
