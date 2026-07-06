@@ -144,8 +144,13 @@ const PROJECTS = [
     image: "/rs1.jpeg", // To be updated later by user
     year: "2025"
   },
-
-
+  {
+    id: 23,
+    title: "Upper Cheyne Row - London",
+    category: "RESIDENTIAL",
+    image: "/upper-cheyne-row.jpg",
+    year: "2025"
+  },
 ];
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = React.useState("ALL");
