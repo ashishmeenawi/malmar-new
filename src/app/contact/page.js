@@ -143,7 +143,18 @@ Consent to Privacy Policy: Yes`;
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
 
           <div className="flex flex-col justify-start">
-            <h2 className="text-[36px] md:text-[52px] leading-[1.1] uppercase tracking-tight text-[#111]"
+            <style>{`
+              .story-title {
+                font-size: 32px;
+                line-height: 1.1;
+              }
+              @media (min-width: 768px) {
+                .story-title {
+                  font-size: 48px;
+                }
+              }
+            `}</style>
+            <h2 className="story-title uppercase tracking-tight text-black"
               style={textStyle}>
               EVERY SPACE STARTS <br /> with a STORY. LET&apos;S <br /> START YOURS
             </h2>
