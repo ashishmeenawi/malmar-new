@@ -106,7 +106,18 @@ Consent to Privacy Policy: Yes`;
         {/* Right Content Pane */}
         <div className="w-full lg:w-1/2 bg-[#d8d3cd] flex flex-col items-center justify-center py-8 px-8 text-center min-h-[400px] lg:min-h-[560px] gap-8">
           <div className="max-w-md mx-auto">
-            <h2 className="text-[32px] md:text-[48px] uppercase" style={textStyle}>
+            <style>{`
+              .dubai-villa-title {
+                font-size: 32px;
+                line-height: 1.2;
+              }
+              @media (min-width: 768px) {
+                .dubai-villa-title {
+                  font-size: 48px;
+                }
+              }
+            `}</style>
+            <h2 className="dubai-villa-title uppercase" style={textStyle}>
               A Dubai Villa of QUIET <br /> GRANDEUR and CRAFTED <br /> DETAIL
             </h2>
           </div>
