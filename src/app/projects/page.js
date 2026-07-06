@@ -201,7 +201,7 @@ export default function ProjectsPage() {
       return true;
     })).slice(0, visibleCount);
 
-  const categories = ["DEVELOPMENT", "RESIDENTIAL", "COMMERCIAL"];
+  const categories = ["RESIDENTIAL", "COMMERCIAL", "DEVELOPMENT"];
 
   return (
     <main className="min-h-screen bg-[#f5f3f0] selection:bg-stone-200">
