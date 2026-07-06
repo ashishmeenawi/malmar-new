@@ -25,7 +25,7 @@ const insights = [
     category: "COMMERCIAL",
     title: "Murano x BHQ",
     description: "Commercial Design Reimagined",
-    image: "/BHQXM.jpeg",
+    image: "/BHQXM1.jpeg",
     overlayText: ""
   },
   {

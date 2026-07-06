@@ -9,7 +9,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const WHATSAPP_NUMBER = "918989944488";
+const WHATSAPP_NUMBER = "33652227780";
 
 const objects = [
   {
@@ -36,18 +36,18 @@ const objects = [
   //   title: "ALABASTER LAMP 2026",
   //   desc: "A sculptural moment upon arrival that speaks to the heritage and timeless elegance of the space.",
   // },
-  // {
-  //   id: 5,
-  //   img: "/mm1.jpeg",
-  //   title: "ALABASTER LAMP 2026",
-  //   desc: "Sculpted from translucent alabaster, this lamp emits a soft and atmospheric glow, bringing warmth and quiet elegance to any interior.",
-  // },
-  // {
-  //   id: 6,
-  //   img: "/mm2.jpeg",
-  //   title: "WHITWAY CHANDELIER",
-  //   desc: "Adapted from an original 1940s design, casting a warm, enveloping glow throughout the room.",
-  // },
+  {
+    id: 5,
+    img: "/lampm.jpeg",
+    title: "ECLIPSE LAMP",
+    desc: "A sculptural expression of light and color, the Eclipse Lamp transforms illumination into atmosphere. Inspired by the quiet beauty of a solar eclipse, its handcrafted Murano glass radiates a warm, immersive glow that becomes the focal point of any space.",
+  },
+  {
+    id: 6,
+    img: "/mal0.jpeg",
+    title: "CASCADE SOFA",
+    desc: "CASCADE SOFA  Inspired by the graceful movement of flowing water, the Cascade Sofa is a sculptural statement of comfort and form. Its continuous silhouette embraces the body with soft, organic curves, creating a sense of effortless elegance. Designed to blur the line between furniture and art, it transforms any space into a refined sanctuary of contemporary luxury.",
+  },
   {
     id: 7,
     img: "/mm3.jpeg",
