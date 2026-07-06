@@ -106,7 +106,7 @@ Consent to Privacy Policy: Yes`;
         {/* Right Content Pane */}
         <div className="w-full lg:w-1/2 bg-[#d8d3cd] flex flex-col items-center justify-center py-8 px-8 text-center min-h-[400px] lg:min-h-[560px] gap-8">
           <div className="max-w-md mx-auto">
-            <h2 className="text-[18px] md:text-[32px] uppercase" style={textStyle}>
+            <h2 className="text-[32px] md:text-[48px] uppercase" style={textStyle}>
               A Dubai Villa of QUIET <br /> GRANDEUR and CRAFTED <br /> DETAIL
             </h2>
           </div>
