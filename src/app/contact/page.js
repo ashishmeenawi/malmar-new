@@ -61,16 +61,21 @@ Consent to Privacy Policy: Yes`;
           <div className="flex flex-col items-center gap-2 mb-10">
             <style>{`
               .contact-title {
-                font-size: 27.825px;
+                font-family: 'SageNav', sans-serif;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 0.95;
+                color: #000;
+                text-transform: uppercase;
               }
               @media (min-width: 768px) {
                 .contact-title {
-                  font-size: 60px;
+                  font-size: 45px;
+                  line-height: 0.9;
                 }
               }
             `}</style>
-            <h1 className="contact-title leading-tight tracking-tight relative text-black"
-              style={{ ...textStyle, color: "#000" }}>
+            <h1 className="contact-title relative">
               <span className="italic font-light"> THE WORLD</span> <br className="md:hidden" /> <span className="italic font-light">OF</span> <br /> MALMAR
             </h1>
           </div>
