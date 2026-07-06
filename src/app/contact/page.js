@@ -46,7 +46,7 @@ Consent to Privacy Policy: Yes`;
   };
 
   const subtextStyle = {
-    fontFamily: "'Elicyon', serif",
+    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
     fontWeight: 400,
     color: "rgb(0, 0, 0)"
   };
@@ -62,16 +62,16 @@ Consent to Privacy Policy: Yes`;
             <style>{`
               .contact-title {
                 font-family: 'SageNav', sans-serif;
-                font-size: 30px;
+                font-size: 32px;
                 font-weight: 400;
-                line-height: 0.95;
+                line-height: 1.1;
                 color: #000;
                 text-transform: uppercase;
               }
               @media (min-width: 768px) {
                 .contact-title {
-                  font-size: 45px;
-                  line-height: 0.9;
+                  font-size: 48px;
+                  line-height: 1.1;
                 }
               }
             `}</style>
@@ -83,8 +83,12 @@ Consent to Privacy Policy: Yes`;
           {/* Subtext Paragraphs */}
           <div className="max-w-xl mx-auto space-y-8">
             <p
-              className="text-[16px] md:text-[18px] leading-[1.8] text-stone-600 font-light"
-              style={subtextStyle}
+              className="font-light text-stone-800 text-center"
+              style={{
+                ...subtextStyle,
+                fontSize: "14px",
+                lineHeight: "22px",
+              }}
             >
               A collection of narratives, from our own reflections to those told by esteemed industry peers, capturing the essence of our work and the inspirations behind it.
             </p>
