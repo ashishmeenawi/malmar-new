@@ -18,12 +18,12 @@ const objects = [
     title: "VINTAGE ITALIAN CHAIR",
     desc: "A statement piece that combines Mid-Century Modern aesthetics with luxurious comfort, curated for the refined living space.",
   },
-  {
-    id: 2,
-    img: "/mm2.jpeg",
-    title: "RECLAIMED OAK SIDEBOARD",
-    desc: "Hand-finished to highlight the natural grain, grounding the room with warmth and a deep sense of heritage.",
-  },
+  // {
+  //   id: 2,
+  //   img: "/mm2.jpeg",
+  //   title: "RECLAIMED OAK SIDEBOARD",
+  //   desc: "Hand-finished to highlight the natural grain, grounding the room with warmth and a deep sense of heritage.",
+  // },
   // {
   //   id: 3,
   //   img: "/mm3.jpeg",
@@ -54,12 +54,12 @@ const objects = [
     title: "BRONZE FOLD WALL LIGHT",
     desc: "A sculptural wall light crafted from folded bronze, designed to cast a warm, ambient glow through its layered silhouette. Balancing architectural form with understated elegance, it brings depth, texture, and atmosphere to any interior.",
   },
-  {
-    id: 8,
-    img: "/mm4.jpeg",
-    title: "GILDED BRONZE SCONCE",
-    desc: "A subtle play of shadow and light, casting a sophisticated glow across the architectural details of the room.",
-  },
+  // {
+  //   id: 8,
+  //   img: "/mm4.jpeg",
+  //   title: "GILDED BRONZE SCONCE",
+  //   desc: "A subtle play of shadow and light, casting a sophisticated glow across the architectural details of the room.",
+  // },
 ];
 
 export default function ObjectsOfDesire() {
