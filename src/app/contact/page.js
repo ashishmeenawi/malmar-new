@@ -42,13 +42,26 @@ Consent to Privacy Policy: Yes`;
   const textStyle = {
     fontFamily: 'SageNav, sans-serif',
     fontWeight: 400,
-    color: "#111"
+    color: "#000"
   };
 
   const subtextStyle = {
     fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
     fontWeight: 400,
     color: "rgb(0, 0, 0)"
+  };
+
+  const labelStyle = {
+    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+    fontWeight: "400",
+    color: "rgb(0, 0, 0)",
+    textTransform: "uppercase",
+  };
+
+  const inputStyle = {
+    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+    color: "black",
+    caretColor: "black"
   };
 
   return (
@@ -90,8 +103,7 @@ Consent to Privacy Policy: Yes`;
                 lineHeight: "22px",
               }}
             >
-              A collection of narratives, from our own reflections to those told by esteemed industry peers, capturing the essence of our work and the inspirations behind it.
-            </p>
+              Whether you’re planning a private residence, a hospitality destination, or a commercial space, we are delighted to hear about your vision. Every project begins with a conversation, an opportunity to understand your ambitions, explore possibilities, and discuss how we can bring your ideas to life. </p>
           </div>
         </div>
       </section>
@@ -165,13 +177,14 @@ Consent to Privacy Policy: Yes`;
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
                 {/* First Name */}
                 <div className="relative group">
-                  <label className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
+                  <label style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
                     First Name *
                   </label>
                   <input
                     type="text"
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                    style={inputStyle}
                     className={`w-full bg-transparent border-b py-2 focus:outline-none transition-colors text-stone-900 font-light ${showErrors && !formData.firstName ? 'border-red-500' : 'border-stone-800'}`}
                   />
                   {showErrors && !formData.firstName && (
@@ -181,13 +194,14 @@ Consent to Privacy Policy: Yes`;
 
                 {/* Last Name */}
                 <div className="relative group">
-                  <label className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
+                  <label style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
                     Last Name *
                   </label>
                   <input
                     type="text"
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                    style={inputStyle}
                     className={`w-full bg-transparent border-b py-2 focus:outline-none transition-colors text-stone-900 font-light ${showErrors && !formData.lastName ? 'border-red-500' : 'border-stone-800'}`}
                   />
                   {showErrors && !formData.lastName && (
@@ -197,13 +211,14 @@ Consent to Privacy Policy: Yes`;
 
                 {/* Email */}
                 <div className="relative group">
-                  <label className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
+                  <label style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
                     Email *
                   </label>
                   <input
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    style={inputStyle}
                     className={`w-full bg-transparent border-b py-2 focus:outline-none transition-colors text-stone-900 font-light ${showErrors && !formData.email ? 'border-red-500' : 'border-stone-800'}`}
                   />
                   {showErrors && !formData.email && (
@@ -213,13 +228,14 @@ Consent to Privacy Policy: Yes`;
 
                 {/* Telephone */}
                 <div className="relative group">
-                  <label className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
+                  <label style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
                     Telephone
                   </label>
                   <input
                     type="tel"
                     value={formData.telephone}
                     onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
+                    style={inputStyle}
                     className="w-full bg-transparent border-b border-stone-800 py-2 focus:outline-none focus:border-stone-400 transition-colors text-stone-900 font-light"
                   />
                 </div>
@@ -227,13 +243,14 @@ Consent to Privacy Policy: Yes`;
 
               {/* dropdown */}
               <div className="relative group pt-4">
-                <label className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
+                <label style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
                   Nature of Enquiry (Please Select) *
                 </label>
                 <div className={`relative border-b ${showErrors && !formData.nature ? 'border-red-500' : 'border-stone-800'}`}>
                   <select
                     value={formData.nature}
                     onChange={(e) => setFormData({ ...formData, nature: e.target.value })}
+                    style={inputStyle}
                     className="w-full bg-transparent py-2 focus:outline-none appearance-none cursor-pointer text-stone-900 font-light"
                   >
                     <option value="">Select an option</option>
@@ -250,13 +267,14 @@ Consent to Privacy Policy: Yes`;
 
               {/* Message */}
               <div className="relative group pt-4">
-                <label className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
+                <label style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2 block">
                   Message *
                 </label>
                 <textarea
                   rows="1"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  style={inputStyle}
                   className={`w-full bg-transparent border-b py-2 focus:outline-none transition-colors resize-none text-stone-900 font-light ${showErrors && !formData.message ? 'border-red-500' : 'border-stone-800'}`}
                 ></textarea>
                 {showErrors && !formData.message && (
@@ -268,7 +286,7 @@ Consent to Privacy Policy: Yes`;
               <div className="space-y-4 pt-10">
                 <label className="flex items-start gap-4 cursor-pointer group">
                   <input type="checkbox" className="mt-1 accent-stone-800" />
-                  <span className="text-[11px] uppercase tracking-[0.1em] text-stone-600 font-medium">Join our community</span>
+                  <span style={labelStyle} className="text-[11px] uppercase tracking-[0.1em] text-stone-600 font-medium">Join our community</span>
                 </label>
                 <div className="relative">
                   <label className="flex items-start gap-4 cursor-pointer group">
@@ -278,7 +296,7 @@ Consent to Privacy Policy: Yes`;
                       checked={formData.consent}
                       onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
                     />
-                    <span className="text-[11px] uppercase tracking-[0.1em] text-stone-600 font-medium leading-relaxed">
+                    <span style={labelStyle} className="text-[11px] uppercase tracking-[0.1em] text-stone-600 font-medium leading-relaxed">
                       I consent to my information being collected <br className="hidden md:block" /> in accordance with the Malmar privacy policy
                     </span>
                   </label>
@@ -292,6 +310,7 @@ Consent to Privacy Policy: Yes`;
               <div className="pt-16 flex justify-center lg:justify-start">
                 <button
                   type="submit"
+                  style={labelStyle}
                   className="relative py-2 text-[#111] uppercase tracking-[0.3em] font-bold text-[13px] group inline-block"
                 >
                   <span className="relative z-10 transition-opacity hover:opacity-80">SUBMIT ENQUIRY</span>
@@ -313,25 +332,25 @@ Consent to Privacy Policy: Yes`;
 
           <div className="space-y-12">
             <div className="space-y-2">
-              <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">London Studio</p>
-              <a href="mailto:studio@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio@Malmar.com</a>
-              <p className="text-[14px] md:text-[16px]">+44 (0) 203 772 0011</p>
+              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">London Studio</p>
+              <a href="mailto:studio@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio@Malmar.com</a>
+              <p style={subtextStyle} className="text-[14px] md:text-[16px]">+44 (0) 203 772 0011</p>
             </div>
 
             <div className="space-y-2">
-              <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Singapore Studio</p>
-              <a href="mailto:studio.sg@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio.sg@Malmar.com</a>
+              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Singapore Studio</p>
+              <a href="mailto:studio.sg@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio.sg@Malmar.com</a>
             </div>
 
             <div className="space-y-2">
-              <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Library</p>
-              <a href="mailto:librarian@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">librarian@Malmar.com</a>
+              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Library</p>
+              <a href="mailto:librarian@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">librarian@Malmar.com</a>
             </div>
 
             <div className="space-y-4 pt-4">
-              <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Careers</p>
+              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Careers</p>
               <Link href="/careers" className="relative group inline-block py-1">
-                <span className="text-[14px] md:text-[16px]">View open positions</span>
+                <span style={subtextStyle} className="text-[14px] md:text-[16px]">View open positions</span>
                 <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#111] transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
               </Link>
             </div>
@@ -346,8 +365,8 @@ Consent to Privacy Policy: Yes`;
 
           <div className="space-y-12 flex flex-col items-center">
             <div className="space-y-2">
-              <p className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Press</p>
-              <a href="mailto:marketing@Malmar.com" className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@Malmar.com</a>
+              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Press</p>
+              <a href="mailto:marketing@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@Malmar.com</a>
             </div>
 
             <div className="max-w-[400px] aspect-[1/1.2] overflow-hidden shadow-2xl bg-stone-100">
