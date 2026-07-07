@@ -225,7 +225,7 @@ const Navbar = () => {
             : isScrolled || isLightPage
             ? isMenuOpen
               ? "text-black"
-              : isProjectsPage ? "text-black" : "text-[#78233e]"
+              : isProjectsPage || isContactPage ? "text-black" : "text-[#78233e]"
             : isMenuOpen
             ? "text-black"
             : "text-white"
