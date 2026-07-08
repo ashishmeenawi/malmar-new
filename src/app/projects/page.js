@@ -99,7 +99,7 @@ const PROJECTS = [
   {
     id: 26,
     title: "DEVELOPMENT\nBespoke health quarters\nIbiza",
-    category: "DEVELOPMENT",
+    category: "COMMERCIAL",
     image: "/commnew1.jpeg",
     year: "2025"
   }
