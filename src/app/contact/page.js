@@ -354,6 +354,12 @@ Consent to Privacy Policy: Yes`;
             </div>
 
             <div className="space-y-2">
+              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Paris Studio</p>
+              <a href="mailto:info@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">info@malmarstudio.com</a>
+              <p style={subtextStyle} className="text-[14px] md:text-[16px]">+336 5222 7780</p>
+            </div>
+
+            <div className="space-y-2">
               <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Library</p>
               <a href="mailto:librarian@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">librarian@malmarstudio.com</a>
             </div>
