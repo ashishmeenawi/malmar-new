@@ -100,7 +100,7 @@ export default function AboutPage() {
           <div className="mb-32 max-md:mb-10 md:pl-46">
             <h2
               className="font-light uppercase relative"
-              style={{ ...headingStyle, fontSize: "40px", lineHeight: "40.5px" }}
+              style={{ ...headingStyle, fontSize: "40px", lineHeight: "35.2px" }}
             >
               <span className="block">OUR</span>
               <span className="block mt-2 italic">PROCESS</span>
