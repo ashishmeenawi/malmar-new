@@ -22,13 +22,6 @@ const PROJECTS = [
     year: "2023"
   },
   {
-    id: 3,
-    title: "MODERN LOFT",
-    category: "INTERIOR DESIGN",
-    image: "/arc3.jpg",
-    year: "2024"
-  },
-  {
     id: 4,
     title: "RIVERSIDE APARTMENT",
     category: "COMMERCIAL",
@@ -43,25 +36,11 @@ const PROJECTS = [
     year: "2025"
   },
   {
-    id: 6,
-    title: "SILK ROAD STUDIO",
-    category: "INTERIOR DESIGN",
-    image: "/arc6.jpg",
-    year: "2024"
-  },
-  {
     id: 8,
     title: "TOWNHOUSE RENOVATION",
     category: "ARCHITECTURE",
     image: "/arc2.jpg",
     year: "2024"
-  },
-  {
-    id: 9,
-    title: "PENTHOUSE SUITE",
-    category: "INTERIOR DESIGN",
-    image: "/arc3.jpg",
-    year: "2025"
   },
   {
     id: 10,
@@ -71,31 +50,10 @@ const PROJECTS = [
     year: "2023"
   },
   {
-    id: 11,
-    title: "URBAN OASIS",
-    category: "INTERIOR DESIGN",
-    image: "/arc5.jpeg",
-    year: "2024"
-  },
-  {
     id: 14,
     title: "MODERN VILLA",
     category: "ARCHITECTURE",
     image: "/arc2.jpg",
-    year: "2024"
-  },
-  {
-    id: 15,
-    title: "STUDIO APARTMENT",
-    category: "INTERIOR DESIGN",
-    image: "/arc3.jpg",
-    year: "2025"
-  },
-  {
-    id: 16,
-    title: "LUXURY SUITE",
-    category: "INTERIOR DESIGN",
-    image: "/arc4.jpeg",
     year: "2024"
   },
   {
