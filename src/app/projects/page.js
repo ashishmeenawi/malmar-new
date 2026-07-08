@@ -227,10 +227,26 @@ export default function ProjectsPage() {
       {activeFilter === "DEVELOPMENT" && (
         <section className="px-6 md:px-12 max-w-[1600px] mx-auto mb-16 text-black">
           <div className="flex flex-col items-start text-left gap-6 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl uppercase tracking-wide text-black" style={{ fontFamily: "'SageNav', sans-serif" }}>
-
+            <h2
+              className="text-[32px] md:text-[40px] uppercase text-black"
+              style={{
+                fontFamily: "'SageNav', sans-serif",
+                fontWeight: 400,
+                letterSpacing: "4px",
+                lineHeight: "1.1",
+              }}
+            >
+              DEVELOPMENT
             </h2>
-            <div className="text-base md:text-lg leading-relaxed flex flex-col gap-4 text-black" style={{ fontFamily: '"__antiqueLegacy_623eb9", serif' }}>
+            <div
+              className="flex flex-col gap-4 text-black"
+              style={{
+                fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+                fontSize: "14px",
+                lineHeight: "22px",
+                fontWeight: 400
+              }}
+            >
               <p>At Malmar Studio, we do more than design exceptional spaces, we help shape exceptional developments.
                 Alongside our residential and commercial projects, we collaborate with private investors, developers, and private equity funds to unlock the full potential of real estate assets. Depending on the opportunity, our involvement ranges from strategic design consultancy and project execution to complete development partnerships.
               </p>
