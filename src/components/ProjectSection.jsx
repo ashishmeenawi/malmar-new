@@ -168,7 +168,7 @@ export default function ProjectSection() {
             lineHeight: "14px",
             fontWeight: 400,
             fontFamily:
-              "'__antiqueLegacy_623eb9', '__antiqueLegacy_Fallback_623eb9', sans-serif",
+              '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
           }}
         >Commercial and <br />Residential</p>
 
