@@ -23,7 +23,7 @@ const insights = [
   },
   {
     category: "EDITORIAL",
-    title: "Murano x BHQ",
+    title: "Murano \nx BHQ",
     description: "Handcrafted by master artisans in Murano, Italy, each piece is individually made, celebrating centuries of Venetian craftsmanship and timeless elegance.",
     image: "/BHQXM1.jpeg",
     overlayText: ""
@@ -169,7 +169,12 @@ export default function InsightsSection() {
                   color: "rgb(0, 0, 0)",
                 }}
               >
-                {item.title}
+                {item.title.split('\n').map((line, i) => (
+                  <React.Fragment key={i}>
+                    {line}
+                    {i < item.title.split('\n').length - 1 && <br />}
+                  </React.Fragment>
+                ))}
               </h3>
               {item.description && (
                 <p
