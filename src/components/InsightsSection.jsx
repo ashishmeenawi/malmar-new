@@ -16,7 +16,7 @@ const insights = [
   },
   {
     category: "EDITORIAL",
-    title: "Handcrafted Roman Travertine",
+    title: "Handcrafted Travertine",
     description: "Timeless natural stone celebrated for its subtle texture, warm tones, and enduring elegance, bringing depth and character to any space.",
     image: "/footer2.jpeg",
     overlayText: ""

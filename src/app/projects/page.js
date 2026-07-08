@@ -88,6 +88,14 @@ const PROJECTS = [
     image: "/glebe-place-kitchen.jpg",
     year: "2025"
   },
+
+  {
+    id: 25,
+    title: "Avenue Franklin D Roosevelt - Paris",
+    category: "RESIDENTIAL",
+    image: "/elylast.png",
+    year: "2025"
+  }
 ];
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = React.useState("ALL");
