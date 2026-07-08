@@ -166,6 +166,7 @@ export default function ProjectSection() {
             color: "rgb(0,0,0)",
             fontSize: "14px",
             lineHeight: "14px",
+            fontWeight: 400,
             fontFamily:
               "'__antiqueLegacy_623eb9', '__antiqueLegacy_Fallback_623eb9', sans-serif",
           }}

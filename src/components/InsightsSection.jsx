@@ -114,11 +114,11 @@ export default function InsightsSection() {
       </div>
 
       {/* Grid Section */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
         {insights.map((item, idx) => (
           <div
             key={idx}
-            className={`insight-card group cursor-pointer ${idx === 3 ? 'flex md:hidden' : 'flex'} flex-col`}
+            className="insight-card group cursor-pointer flex flex-col"
           >
             {/* Image Container */}
             <div className="relative aspect-[3/4] overflow-hidden mb-6 bg-gray-200">

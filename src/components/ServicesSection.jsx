@@ -26,7 +26,7 @@ export default function ServicesSection() {
               <div className="block leading 1.5px">OUR</div>
 
               <div
-                className="block pl-10 md:pl-20 leading 1.5px -mt-2 md:-mt-3"
+                className="block leading 1.5px -mt-2 md:-mt-3"
                 style={{ fontStyle: "italic" }}
               >
                 SERVICES
