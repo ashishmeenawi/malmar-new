@@ -70,7 +70,7 @@ export default function InsightsSection() {
               fontWeight: 400,
               fontStyle: "normal",
               color: "rgb(0, 0, 0)",
-              lineHeight: "40.5px",
+              lineHeight: "50.5px",
             }}
           >
             <span className="block">The WORLD</span>
