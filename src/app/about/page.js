@@ -14,18 +14,25 @@ export default function AboutPage() {
   const headingStyle = {
     fontFamily: 'SageNav, sans-serif',
     fontWeight: 400,
+    color: "rgb(0, 0, 0)",
+    letterSpacing: "4px",
+    lineHeight: "1.1",
   };
 
   const bodyStyle = {
     fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
     fontWeight: 400,
     color: "rgba(0, 0, 0, 0.7)",
+    fontSize: "14px",
+    lineHeight: "22px",
   };
 
   const bodyStyleWhite = {
     fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
     fontWeight: 400,
     color: "rgba(255, 255, 255, 0.7)",
+    fontSize: "14px",
+    lineHeight: "22px",
   };
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -80,8 +87,8 @@ export default function AboutPage() {
 
         <div className="relative z-10 text-center flex flex-col items-center">
           <h1
-            className="text-white text-[28px] leading-[28px] md:text-[80px] uppercase tracking-wide mb-4"
-            style={headingStyle}
+            className="text-white text-[30px] md:text-[45px] leading-tight md:leading-[0.9] uppercase mb-4"
+            style={{ ...headingStyle, color: "rgb(255, 255, 255)" }}
           >
             About Us
           </h1>
@@ -129,7 +136,7 @@ export default function AboutPage() {
             </div>
 
             <h2
-              className="text-[28px] leading-[28px] md:text-[60px] md:leading-tight uppercase tracking-tight text-[#111111]"
+              className="text-[32px] md:text-[40px] uppercase text-[#111111]"
               style={headingStyle}
             >
               We Provide You Best <br className="hidden md:block" /> Experience
@@ -199,8 +206,8 @@ export default function AboutPage() {
               </div>
 
               <h2
-                className="text-[28px] leading-[28px] md:text-[48px] text-white uppercase md:leading-tight tracking-tight"
-                style={headingStyle}
+                className="text-[32px] md:text-[40px] text-white uppercase"
+                style={{ ...headingStyle, color: "rgb(255, 255, 255)" }}
               >
                 See How We Work <br /> For You
               </h2>
@@ -213,8 +220,8 @@ export default function AboutPage() {
                   </div>
                   <div className="space-y-1">
                     <h3
-                      className="text-[20px] text-white uppercase tracking-wide"
-                      style={headingStyle}
+                      className="text-[20px] text-white uppercase"
+                      style={{ ...headingStyle, color: "rgb(255, 255, 255)" }}
                     >
                       Discovery
                     </h3>
@@ -234,8 +241,8 @@ export default function AboutPage() {
                   </div>
                   <div className="space-y-1">
                     <h3
-                      className="text-[20px] text-white uppercase tracking-wide"
-                      style={headingStyle}
+                      className="text-[20px] text-white uppercase"
+                      style={{ ...headingStyle, color: "rgb(255, 255, 255)" }}
                     >
                       Development
                     </h3>
@@ -255,8 +262,8 @@ export default function AboutPage() {
                   </div>
                   <div className="space-y-1">
                     <h3
-                      className="text-[20px] text-white uppercase tracking-wide"
-                      style={headingStyle}
+                      className="text-[20px] text-white uppercase"
+                      style={{ ...headingStyle, color: "rgb(255, 255, 255)" }}
                     >
                       Detailing
                     </h3>
@@ -276,8 +283,8 @@ export default function AboutPage() {
                   </div>
                   <div className="space-y-1">
                     <h3
-                      className="text-[20px] text-white uppercase tracking-wide"
-                      style={headingStyle}
+                      className="text-[20px] text-white uppercase"
+                      style={{ ...headingStyle, color: "rgb(255, 255, 255)" }}
                     >
                       Delivery
                     </h3>
