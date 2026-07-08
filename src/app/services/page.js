@@ -134,8 +134,6 @@ export default function ServicesPage() {
     fontFamily: 'SageNav, sans-serif',
     fontWeight: 400,
     color: "rgb(0, 0, 0)",
-    fontSize: "48px",
-    lineHeight: "58px",
     textTransform: "uppercase",
   };
 
@@ -144,7 +142,7 @@ export default function ServicesPage() {
     fontWeight: 400,
     color: "rgb(0, 0, 0)",
     fontSize: "14px",
-    lineHeight: "17px",
+    lineHeight: "22px",
   };
 
   const bodyStyle = {
@@ -301,7 +299,7 @@ export default function ServicesPage() {
           style={{ y }}
         >
           <h1
-            className="services-hero-title md:text-[64px] md:leading-[77px] max-md:leading-none drop-shadow-lg"
+            className="services-hero-title text-[30px] md:text-[45px] leading-tight md:leading-[0.9] drop-shadow-lg"
             style={heroHeadingStyle}
           >
             SERVICES
@@ -316,7 +314,7 @@ export default function ServicesPage() {
         <div className="mb-48 max-md:mb-8">
           <h2
             style={narrativeHeadingStyle}
-            className="services-narrative-heading max-w-[1000px] max-md:w-full"
+            className="services-narrative-heading text-[32px] md:text-[48px] leading-[1.2] md:leading-[58px] max-w-[1000px] max-md:w-full"
           >
             <span className="block">Meticulous detail.</span>
             <span className="pl-16 md:pl-18 max-md:pl-6 inline-block">Unmatched materiality.</span>
@@ -425,7 +423,7 @@ export default function ServicesPage() {
             {/* Right Side: Content */}
             <div className="flex w-1/2 flex-col items-center justify-between py-24 px-20 text-center">
               <h2
-                className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight uppercase"
+                className="text-[32px] md:text-[48px] leading-[1.2] md:leading-[58px] uppercase"
                 style={narrativeHeadingStyle}
               >
                 {project.title}
@@ -569,7 +567,7 @@ export default function ServicesPage() {
         <div className="mb-32 max-md:mb-10">
           <div className="flex flex-col items-center text-center">
             <h2
-              className="text-5xl md:text-7xl max-md:!text-[32px] max-md:!leading-[37px] refined-heading-fix font-light tracking-widest text-[#1a1a1a] uppercase leading-tight relative"
+              className="text-[32px] md:text-[48px] leading-tight md:leading-[58px] font-light tracking-widest text-[#1a1a1a] uppercase relative"
               style={headingStyle}
             >
               <span className="block max-md:-ml-5">A REFINED</span>
@@ -605,8 +603,8 @@ export default function ServicesPage() {
                   className="font-light text-black max-w-[320px]"
                   style={{
                     ...narrativeBodyStyle,
-                    fontSize: "16px",
-                    lineHeight: "19px"
+                    fontSize: "14px",
+                    lineHeight: "22px"
                   }}
                 >
                   {item.text}
@@ -624,7 +622,7 @@ export default function ServicesPage() {
           {/* Left Column: Heading */}
           <div className="lg:col-span-4">
             <h2
-              className="sticky top-24 text-6xl md:text-7xl max-md:!text-[32px] max-md:!leading-[37px] leaders-heading-fix font-light uppercase tracking-[-0.04em] text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
+              className="sticky top-24 text-[32px] md:text-[48px] leading-tight md:leading-[58px] font-light uppercase text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
               style={headingStyle}
             >
               Crafted <br />
@@ -724,7 +722,7 @@ export default function ServicesPage() {
           {/* Left Column: Heading */}
           <div className="lg:col-span-6 lg:pt-12">
             <h2
-              className="text-[60px] md:text-[80px] lg:text-[100px] max-md:!text-[32px] max-md:!leading-[37px] intention-heading-fix font-light uppercase leading-[0.85] tracking-tight text-black"
+              className="text-[32px] md:text-[48px] leading-tight md:leading-[58px] font-light uppercase text-black"
               style={headingStyle}
             >
               Designed with <br />
@@ -758,7 +756,7 @@ export default function ServicesPage() {
                   style={{
                     ...bodyStyle,
                     fontSize: "14px",
-                    lineHeight: "16px",
+                    lineHeight: "22px",
                     color: "rgb(0, 0, 0)"
                   }}
                 >
