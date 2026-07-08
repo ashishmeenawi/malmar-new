@@ -337,7 +337,7 @@ Consent to Privacy Policy: Yes`;
       <section className="relative w-full flex flex-col lg:flex-row items-stretch">
         {/* Left: General Enquiries */}
         <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-16 lg:py-24 px-6 md:px-12 flex flex-col items-center text-center text-[#111] lg:min-h-[800px] gap-12 lg:gap-0 lg:justify-between">
-          <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight leading-tight" style={textStyle}>
+          <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight" style={{ ...textStyle, lineHeight: "40.5px" }}>
             GENERAL <br /> ENQUIRIES
           </h2>
 
@@ -370,7 +370,7 @@ Consent to Privacy Policy: Yes`;
 
         {/* Right: Press Enquiries */}
         <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-16 lg:py-24 px-6 md:px-12 flex flex-col items-center text-center text-[#111] lg:min-h-[800px] gap-12 lg:gap-0 lg:justify-between">
-          <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight leading-tight" style={textStyle}>
+          <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight" style={{ ...textStyle, lineHeight: "40.5px" }}>
             PRESS <br /> ENQUIRIES
           </h2>
 
