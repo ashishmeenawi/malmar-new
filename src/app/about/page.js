@@ -6,42 +6,10 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 
 export default function AboutPage() {
-  const testimonials = [
-    {
-      quote: "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "/te.png",
-    },
-    {
-      quote: "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "/IMG_6840.jpg",
-    },
-    {
-      quote: "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "/001a-scaled-e1710414354880.jpg",
-    },
-    {
-      quote: "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "/test.jpg",
-    },
-    {
-      quote: "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "/WhatsApp-Image-2024-01-25-at-22.41.21-1.jpeg",
-    },
-  ];
+
 
   const headingStyle = {
     fontFamily: 'SageNav, sans-serif',
@@ -201,26 +169,7 @@ export default function AboutPage() {
         </div>
       </section>
       {/* Video & Stats Section removed as requested */}
-      {/* Happy Client Testimonials Section */}
-      <section className="bg-[#ede8df] py-24 px-6 md:px-12 overflow-hidden">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="flex flex-col items-center text-center space-y-4 mb-16">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-[2px] bg-[#c5a059]"></div>
-              <span className="text-[#c5a059] uppercase tracking-[0.3em] font-bold text-sm">
-              </span>
-            </div>
-            <h2
-              className="text-[28px] leading-[28px] md:text-[60px] md:leading-tight uppercase tracking-tight text-[#111111]"
-              style={headingStyle}
-            >
-              Our Happy Client
-            </h2>
-          </div>
 
-          <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
-        </div>
-      </section>
 
       {/* Our Process Section */}
       <section className="relative w-full overflow-hidden bg-[#111111] min-h-[500px] flex items-stretch">
