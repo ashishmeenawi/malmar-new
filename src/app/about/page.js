@@ -76,14 +76,14 @@ export default function AboutPage() {
       {/* Asymmetric Image Section */}
       <section className="bg-[#ede8df] py-32 px-6 md:px-12 overflow-hidden">
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
-          <div className="overflow-hidden shadow-xl aspect-[4/5] w-[60%] mr-auto max-md:mx-auto">
+          <div className="overflow-hidden shadow-xl aspect-[4/5] w-[60%] mx-auto">
             <img
               src="/elylast.png"
               alt="Architecture Interior 1"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
-          <div className="overflow-hidden shadow-xl aspect-[4/5] w-[60%] ml-auto max-md:mx-auto md:mt-24">
+          <div className="overflow-hidden shadow-xl aspect-[4/5] w-[60%] mx-auto md:mt-24">
             <img
               src="/tic.jpeg"
               alt="Architecture Interior 2"
