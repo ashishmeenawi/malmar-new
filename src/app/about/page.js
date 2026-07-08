@@ -95,8 +95,8 @@ export default function AboutPage() {
 
       {/* Refined Process Section */}
       <section className="relative w-full bg-[#fcefd4] px-10 md:px-20 py-32 max-md:py-16 max-md:px-6">
-        <div className="mb-32 max-md:mb-10">
-          <div className="flex flex-col items-start text-left max-md:pl-4 pl-10 md:pl-20">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-32 max-md:mb-10 md:pl-46">
             <h2
               className="text-[32px] md:text-[40px] font-light uppercase relative"
               style={{ ...headingStyle, lineHeight: "40.5px" }}
@@ -105,9 +105,8 @@ export default function AboutPage() {
               <span className="block mt-2 italic">PROCESS</span>
             </h2>
           </div>
-        </div>
 
-        <div className="mx-auto max-w-5xl relative md:pl-46">
+          <div className="relative md:pl-46">
           {[
             {
               title: "DISCOVERY",
@@ -157,6 +156,7 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+      </div>
       </section>
 
       {/* Selected Work Gallery */}
