@@ -396,7 +396,7 @@ export default function ServicesPage() {
 
           {/* Service list */}
           <div className="flex flex-col items-center gap-1">
-            {["INTERIOR DESIGN", "ARCHITECTURE", "PROJECT MANAGEMENT", "PROCUREMENT"].map((s) => (
+            {["INTERIOR DESIGN", "ARCHITECTURE", "PROCUREMENT", "PROJECT MANAGEMENT"].map((s) => (
               <span
                 key={s}
                 className="text-[5vw] max-[400px]:text-[4.5vw] uppercase leading-tight text-center"
