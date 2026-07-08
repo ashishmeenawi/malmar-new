@@ -136,7 +136,7 @@ export default function AboutPage() {
             </div>
 
             <h2
-              className="text-[32px] md:text-[40px] uppercase text-[#111111]"
+              className="text-[32px] md:text-[48px] uppercase text-[#111111]"
               style={headingStyle}
             >
               We Provide You Best <br className="hidden md:block" /> Experience
