@@ -637,7 +637,7 @@ export default function ServicesPage() {
           <div className="lg:col-span-4">
             <h2
               className="sticky top-24 text-[32px] md:text-[40px] font-light uppercase text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
-              style={{ ...headingStyle, lineHeight: "40.5px" }}
+              style={{ ...headingStyle, lineHeight: "50.5px" }}
             >
               Crafted <br />
 
