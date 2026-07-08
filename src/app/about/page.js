@@ -96,13 +96,13 @@ export default function AboutPage() {
       {/* Refined Process Section */}
       <section className="relative w-full bg-[#fcefd4] px-10 md:px-20 py-32 max-md:py-16 max-md:px-6">
         <div className="mb-32 max-md:mb-10">
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-start text-left max-md:pl-4 pl-10 md:pl-20">
             <h2
               className="text-[32px] md:text-[40px] font-light uppercase relative"
               style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
-              <span className="block max-md:-ml-5">OUR</span>
-              <span className="relative left-10 md:left-20 max-md:left-10 block">PROCESS</span>
+              <span className="relative left-[-15px] md:left-[-35px] block">OUR</span>
+              <span className="relative left-[15px] md:left-[35px] block mt-2">PROCESS</span>
             </h2>
           </div>
         </div>
