@@ -168,16 +168,16 @@ export default function ProjectsPage() {
       <section className="pt-40 pb-20 flex items-center justify-center px-6 md:px-12 max-w-[1600px] mx-auto overflow-hidden">
         {/* Mobile View */}
         <h1
-          className="md:hidden leading-none text-center tracking-tight flex flex-col items-center justify-center text-[#111111]"
-          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "32px" }}
+          className="md:hidden text-center tracking-tight flex flex-col items-center justify-center text-[#111111]"
+          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "32px", lineHeight: "40.5px" }}
         >
           <span className="italic lowercase" style={{ textTransform: "none" }}>MALMAR</span>
           <span className="uppercase -mt-1">PROJECTS</span>
         </h1>
         {/* Desktop View */}
         <h1
-          className="hidden md:block leading-tight uppercase text-center tracking-tight text-[#111111]"
-          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "52px" }}
+          className="hidden md:block uppercase text-center tracking-tight text-[#111111]"
+          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "52px", lineHeight: "40.5px" }}
         >
           MALMAR  PROJECTS
         </h1>

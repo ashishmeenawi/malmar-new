@@ -92,7 +92,7 @@ Consent to Privacy Policy: Yes`;
                 }
               }
             `}</style>
-            <h1 className="contact-title relative">
+            <h1 className="contact-title relative" style={{ ...textStyle, lineHeight: "40.5px" }}>
               <span className="italic font-light">THE WORLD OF</span> <br /> MALMAR
             </h1>
           </div>
@@ -178,7 +178,7 @@ Consent to Privacy Policy: Yes`;
               }
             `}</style>
             <h2 className="story-title uppercase tracking-tight text-black"
-              style={textStyle}>
+              style={{ ...textStyle, lineHeight: "40.5px" }}>
               EVERY SPACE STARTS <br /> with a STORY. LET&apos;S <br /> START YOURS
             </h2>
           </div>

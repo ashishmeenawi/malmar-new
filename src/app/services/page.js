@@ -138,7 +138,7 @@ export default function ServicesPage() {
     color: "rgb(0, 0, 0)",
     textTransform: "uppercase",
     letterSpacing: "0.18em",
-    lineHeight: "61px",
+    lineHeight: "40.5px",
   };
 
   const sliderTitleStyle = {
@@ -582,7 +582,7 @@ export default function ServicesPage() {
           <div className="flex flex-col items-center text-center">
             <h2
               className="text-[32px] md:text-[40px] font-light uppercase relative"
-              style={headingStyle}
+              style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
               <span className="block max-md:-ml-5">A REFINED</span>
               <span className="relative left-10 md:left-20 max-md:left-10 block">PROCESS</span>
@@ -637,12 +637,12 @@ export default function ServicesPage() {
           <div className="lg:col-span-4">
             <h2
               className="sticky top-24 text-[32px] md:text-[40px] font-light uppercase text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
-              style={headingStyle}
+              style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
               Crafted <br />
 
-              <span className="inline-block -mt-3 ml-10 max-md:ml-16 leading-none">
-                Through <span className="italic leading-none">Design</span>
+              <span className="inline-block -mt-3 ml-10 max-md:ml-16">
+                Through <span className="italic">Design</span>
               </span>
             </h2>
           </div>
@@ -737,7 +737,7 @@ export default function ServicesPage() {
           <div className="lg:col-span-6 lg:pt-12">
             <h2
               className="text-[32px] md:text-[40px] font-light uppercase text-black"
-              style={headingStyle}
+              style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
               Designed with <br />
               <span className="ml-[15%] md:ml-[25%] max-md:ml-[30px] block">Intention</span>
