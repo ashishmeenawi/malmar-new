@@ -382,7 +382,7 @@ function ArcMarquee() {
           <div className="max-w-4xl text-start">
             <p
               ref={textRef}
-              className="text-[#603522] text-[24px] md:text-[48px] leading-[1.2] md:leading-[53px]"
+              className="text-[#603522] text-[21.6px] md:text-[43.2px] leading-[1.2] md:leading-[47.7px]"
               style={{
                 fontFamily: "'Elicyon', serif",
                 fontWeight: 400,
