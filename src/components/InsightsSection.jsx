@@ -8,30 +8,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 const insights = [
   {
-    category: "RESIDENTIAL",
-    title: "IDENTITY MAGAZINE",
-    description: "In Balance - This home by Elicyon creates a sense of sanctuary at every turn.",
-    image: "/insite1.jpeg",
+    category: "EDITORIAL",
+    title: "THE ART OF ALABASTER",
+    description: "Handcrafted from natural alabaster, each piece is unique, revealing delicate veining and a warm, diffused glow that creates a calm and timeless atmosphere.",
+    image: "/footer1.jpeg",
     overlayText: ""
   },
   {
-    category: "INSIGHT",
-    title: "A DUBAI VILLA OF QUIET GRANDEUR AND CRAFTED DETAIL",
-    description: "",
-    image: "/insite22.jpeg",
+    category: "EDITORIAL",
+    title: "Handcrafted Roman Travertine",
+    description: "Timeless natural stone celebrated for its subtle texture, warm tones, and enduring elegance, bringing depth and character to any space.",
+    image: "/footer2.jpeg",
     overlayText: ""
   },
   {
-    category: "COMMERCIAL",
+    category: "EDITORIAL",
     title: "Murano x BHQ",
-    description: "Commercial Design Reimagined",
+    description: "Handcrafted by master artisans in Murano, Italy, each piece is individually made, celebrating centuries of Venetian craftsmanship and timeless elegance.",
     image: "/BHQXM1.jpeg",
     overlayText: ""
   },
   {
     category: "EDITORIAL",
     title: "ARCHITECTURAL DIGEST",
-    description: "Refined Luxury in the heart of the city.",
+    description: "Featured in leading international design publications, celebrating our commitment to timeless interiors and exceptional craftsmanship.",
     image: "/AD-MALMAR.png",
     overlayText: "",
     objectPosition: "object-top"
