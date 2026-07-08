@@ -775,13 +775,12 @@ export default function ServicesPage() {
                   }}
                 >
                   <p>
-                    At Malmar Studio, sustainability is approached as an integral part of the design process rather than an afterthought. We believe in creating spaces with longevity, purpose and a conscious connection to their environment. Through responsible sourcing, timeless materials and collaboration with skilled artisans and suppliers, we aim to deliver projects that are both refined and enduring.
+                    Malmar is a multidisciplinary design studio. From private residences and hospitality destinations to commercial environments and bespoke developments, we design interiors and architecture that seamlessly unite aesthetics, functionality, and a strong sense of place.
                   </p>
                   <p>
-                    Our practice is guided by a commitment to thoughtful innovation, environmental responsibility and lasting impact. We align ourselves with initiatives such as the PRIME Principles and the B Corp Movement Europe, supporting a more responsible and forward-thinking approach to business and design.
+                    Our work encompasses every stage of the design journey, from concept development and spatial planning to architectural detailing, interior design, procurement, and final realization. By integrating creative vision with technical expertise, we ensure each project is thoughtfully considered, expertly coordinated, and executed to the highest standard.
 
-                    Every project is considered holistically balancing aesthetics, functionality and sustainability to create spaces that not only elevate everyday living, but also contribute positively to the future.
-                  </p>
+                    Working closely with a trusted international network of artisans, makers, and specialist suppliers, we curate exceptional materials, bespoke furnishings, and carefully crafted finishes that bring each vision to life. Every project is approached with precision, purpose, and a commitment to longevity, resulting in spaces that feel timeless, authentic, and deeply personal.                  </p>
                 </div>
 
                 {/* Right-side Branding Signature */}
