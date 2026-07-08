@@ -64,6 +64,10 @@ Consent to Privacy Policy: Yes`;
     caretColor: "black"
   };
 
+  const elicyonStyle = {
+    fontFamily: '"__elicyon_df1f4c", "__elicyon_Fallback_df1f4c", "Elicyon", serif',
+  };
+
   return (
     <main className="min-h-screen bg-[#f4f1ea] selection:bg-stone-200">
       <Navbar />
@@ -145,8 +149,9 @@ Consent to Privacy Policy: Yes`;
                 href="/projects"
                 className="border-b border-black pb-0.5 hover:opacity-50 transition-opacity text-[9px] md:text-[10px] uppercase block tracking-wider"
                 style={{
-                  ...labelStyle,
-                  fontWeight: 600
+                  ...elicyonStyle,
+                  fontWeight: 600,
+                  color: "rgb(0, 0, 0)"
                 }}
               >
                 READ INSIGHT
