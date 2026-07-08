@@ -141,7 +141,7 @@ Consent to Privacy Policy: Yes`;
             <img src="/contactimgnew.jpeg" alt="Architectural Detail" className="w-full h-full object-cover" />
           </div>
           <div className="space-y-8 mb-8">
-            <p className="text-[14px] uppercase tracking-widest text-stone-800" style={subtextStyle}>
+            <p className="uppercase tracking-widest text-stone-800" style={{ ...subtextStyle, fontSize: "14px" }}>
               Where BESPOKE FORM meets desert STILLNESS
             </p>
             <div className="flex justify-center">
