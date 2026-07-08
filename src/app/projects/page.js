@@ -95,6 +95,13 @@ const PROJECTS = [
     category: "RESIDENTIAL",
     image: "/elylast.png",
     year: "2025"
+  },
+  {
+    id: 26,
+    title: "DEVELOPMENT\nBespoke health quarters\nIbiza",
+    category: "DEVELOPMENT",
+    image: "/commnew1.jpeg",
+    year: "2025"
   }
 ];
 export default function ProjectsPage() {
