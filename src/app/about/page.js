@@ -98,7 +98,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mb-32 max-md:mb-10 md:pl-46">
             <h2
-              className="text-[32px] md:text-[40px] font-light uppercase relative"
+              className="text-[40px] font-light uppercase relative"
               style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
               <span className="block">OUR</span>
