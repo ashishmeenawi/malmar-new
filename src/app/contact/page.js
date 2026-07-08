@@ -145,8 +145,8 @@ Consent to Privacy Policy: Yes`;
               Where BESPOKE FORM meets desert STILLNESS
             </p>
             <div className="flex justify-center">
-              <Link
-                href="/projects"
+              <a
+                href="mailto:marieke@malmarstudio.com"
                 className="border-b border-black pb-0.5 hover:opacity-50 transition-opacity text-[9px] md:text-[10px] uppercase block tracking-wider"
                 style={{
                   ...elicyonStyle,
@@ -154,8 +154,8 @@ Consent to Privacy Policy: Yes`;
                   color: "rgb(0, 0, 0)"
                 }}
               >
-                READ INSIGHT
-              </Link>
+                EMAIL ME
+              </a>
             </div>
           </div>
         </div>
