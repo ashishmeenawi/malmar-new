@@ -120,6 +120,8 @@ export default function ServicesPage() {
     fontFamily: 'SageNav, sans-serif',
     fontWeight: 400,
     color: "rgb(0, 0, 0)",
+    letterSpacing: "4px",
+    lineHeight: "1.1",
   };
 
   const heroHeadingStyle = {
@@ -135,6 +137,8 @@ export default function ServicesPage() {
     fontWeight: 400,
     color: "rgb(0, 0, 0)",
     textTransform: "uppercase",
+    letterSpacing: "0.18em",
+    lineHeight: "61px",
   };
 
   const narrativeBodyStyle = {
@@ -314,7 +318,7 @@ export default function ServicesPage() {
         <div className="mb-48 max-md:mb-8">
           <h2
             style={narrativeHeadingStyle}
-            className="services-narrative-heading text-[32px] md:text-[48px] leading-[1.2] md:leading-[58px] max-w-[1000px] max-md:w-full"
+            className="services-narrative-heading text-[32px] md:text-[48px] max-w-[1000px] max-md:w-full"
           >
             <span className="block">Meticulous detail.</span>
             <span className="pl-16 md:pl-18 max-md:pl-6 inline-block">Unmatched materiality.</span>
@@ -423,7 +427,7 @@ export default function ServicesPage() {
             {/* Right Side: Content */}
             <div className="flex w-1/2 flex-col items-center justify-between py-24 px-20 text-center">
               <h2
-                className="text-[32px] md:text-[48px] leading-[1.2] md:leading-[58px] uppercase"
+                className="text-[32px] md:text-[48px] uppercase"
                 style={narrativeHeadingStyle}
               >
                 {project.title}
@@ -567,7 +571,7 @@ export default function ServicesPage() {
         <div className="mb-32 max-md:mb-10">
           <div className="flex flex-col items-center text-center">
             <h2
-              className="text-[32px] md:text-[48px] leading-tight md:leading-[58px] font-light tracking-widest text-[#1a1a1a] uppercase relative"
+              className="text-[32px] md:text-[40px] font-light uppercase relative"
               style={headingStyle}
             >
               <span className="block max-md:-ml-5">A REFINED</span>
@@ -622,7 +626,7 @@ export default function ServicesPage() {
           {/* Left Column: Heading */}
           <div className="lg:col-span-4">
             <h2
-              className="sticky top-24 text-[32px] md:text-[48px] leading-tight md:leading-[58px] font-light uppercase text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
+              className="sticky top-24 text-[32px] md:text-[40px] font-light uppercase text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
               style={headingStyle}
             >
               Crafted <br />
@@ -722,7 +726,7 @@ export default function ServicesPage() {
           {/* Left Column: Heading */}
           <div className="lg:col-span-6 lg:pt-12">
             <h2
-              className="text-[32px] md:text-[48px] leading-tight md:leading-[58px] font-light uppercase text-black"
+              className="text-[32px] md:text-[40px] font-light uppercase text-black"
               style={headingStyle}
             >
               Designed with <br />
