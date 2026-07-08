@@ -133,7 +133,7 @@ Consent to Privacy Policy: Yes`;
                 }
               }
             `}</style>
-            <h2 className="dubai-villa-title uppercase" style={{ ...textStyle, lineHeight: "40px" }}>
+            <h2 className="dubai-villa-title uppercase" style={{ ...textStyle, lineHeight: "40.5px" }}>
               CRAFTED <br /> <span className="italic">DETAIL</span>
             </h2>
           </div>
