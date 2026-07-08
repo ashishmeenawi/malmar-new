@@ -99,7 +99,7 @@ export default function AboutPage() {
           <div className="flex flex-col items-center text-center">
             <h2
               className="text-[32px] md:text-[40px] font-light uppercase relative"
-              style={headingStyle}
+              style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
               <span className="block max-md:-ml-5">OUR</span>
               <span className="relative left-10 md:left-20 max-md:left-10 block">PROCESS</span>
