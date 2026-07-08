@@ -130,18 +130,22 @@ Consent to Privacy Policy: Yes`;
               }
             `}</style>
             <h2 className="dubai-villa-title uppercase" style={textStyle}>
-              A Dubai Villa of QUIET <br /> GRANDEUR and CRAFTED <br /> DETAIL
+              CRAFTED <br /> DETAIL
             </h2>
           </div>
           <div className="w-full max-w-[280px] aspect-[4/5] overflow-hidden shadow-2xl">
-            <img src="/new4.jpeg" alt="Architectural Detail" className="w-full h-full object-cover" />
+            <img src="/contactimgnew.jpeg" alt="Architectural Detail" className="w-full h-full object-cover" />
           </div>
           <div className="space-y-8 mb-8">
             <p className="text-[14px] uppercase tracking-widest text-stone-800" style={subtextStyle}>
               Where BESPOKE FORM meets desert STILLNESS
             </p>
             <div className="flex justify-center">
-              <Link href="/projects" className="relative py-2 text-[#111] uppercase tracking-widest font-bold text-[11px] group">
+              <Link
+                href="/projects"
+                style={labelStyle}
+                className="relative py-2 text-[#111] uppercase tracking-[0.3em] font-bold text-[13px] group"
+              >
                 <span className="relative z-10 transition-opacity hover:opacity-80">READ INSIGHT</span>
                 <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-black transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
               </Link>
