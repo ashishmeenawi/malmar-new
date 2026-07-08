@@ -245,7 +245,7 @@ export default function ProjectsPage() {
 
       {/* Project Grid Section */}
       <section className="pt-2 pb-16 px-6 md:px-12 max-w-[1600px] mx-auto">
-        <div className={`grid gap-12 md:gap-x-12 md:gap-y-24 transition-all duration-700 ${viewMode === "grid-3"
+        <div className={`grid gap-12 md:gap-x-12 md:gap-y-24 ${viewMode === "grid-3"
           ? "grid-cols-1 md:grid-cols-12"
           : "grid-cols-1 max-w-5xl mx-auto"
           }`}>
@@ -306,7 +306,7 @@ export default function ProjectsPage() {
                   // Small Right (Right Aligned)
                   colSpanClass = "md:col-start-8 lg:col-start-8 md:col-span-5 lg:col-span-4";
                   aspectClass = "aspect-[3/4]";
-                  wrapperClass = "w-full -ml-4 md:-ml-14 lg:-ml-58";
+                  wrapperClass = "w-full";
                 }
               }
             }
@@ -317,7 +317,7 @@ export default function ProjectsPage() {
             return (
               <div
                 key={project.id}
-                className={`group cursor-pointer transition-all duration-700 flex flex-col justify-center ${colSpanClass} ${viewMode === "full" ? 'md:flex-row gap-12 items-center mb-12' : ''} ${viewMode === "grid-3" ? mobileLayoutClass : ''}`}
+                className={`group cursor-pointer flex flex-col justify-center ${colSpanClass} ${viewMode === "full" ? 'md:flex-row gap-12 items-center mb-12' : ''} ${viewMode === "grid-3" ? mobileLayoutClass : ''}`}
               >
                 <div className={`relative overflow-hidden mb-6 shadow-xl transition-all duration-700 ${viewMode === "full" ? "md:w-2/3 w-full" : (viewMode === "grid-3" ? `max-md:w-[85%] ${wrapperClass}` : wrapperClass)} ${aspectClass}`}>
                   <img
