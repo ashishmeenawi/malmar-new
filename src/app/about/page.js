@@ -95,11 +95,11 @@ export default function AboutPage() {
 
           {/* Breadcrumbs */}
           <div className="flex items-center space-x-4 text-[16px] md:text-[18px] font-medium">
-            <Link href="/" className="text-white hover:text-[#c5a059] transition-colors cursor-pointer">
+            <Link href="/" className="text-white hover:opacity-75 transition-opacity cursor-pointer">
               Home
             </Link>
             <span className="text-white opacity-60">|</span>
-            <span className="text-[#c5a059]">About</span>
+            <span className="text-white/80">About</span>
           </div>
         </div>
       </section>
@@ -129,8 +129,8 @@ export default function AboutPage() {
           {/* Right: Content */}
           <div className="flex flex-col space-y-8 text-[#222222]">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-[2px] bg-[#c5a059]"></div>
-              <span className="text-[#c5a059] uppercase tracking-[0.3em] font-bold text-sm">
+              <div className="w-12 h-[2px] bg-black"></div>
+              <span className="text-black uppercase tracking-[0.3em] font-bold text-sm">
                 About Us
               </span>
             </div>
@@ -142,7 +142,7 @@ export default function AboutPage() {
               We Provide You Best <br className="hidden md:block" /> Experience
             </h2>
 
-            <div className="flex items-start gap-6 border-l-2 border-[#c5a059] pl-6 py-2">
+            <div className="flex items-start gap-6 border-l-2 border-black pl-6 py-2">
               <p
                 className="text-[#444444] italic text-[18px] md:text-[20px] leading-relaxed"
                 style={bodyStyle}
@@ -199,8 +199,8 @@ export default function AboutPage() {
 
             <div className="relative z-10 space-y-8">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-[2px] bg-[#c5a059]"></div>
-                <span className="text-[#c5a059] uppercase tracking-[0.3em] font-bold text-sm">
+                <div className="w-12 h-[2px] bg-white"></div>
+                <span className="text-white uppercase tracking-[0.3em] font-bold text-sm">
                   Our Process
                 </span>
               </div>
@@ -215,7 +215,7 @@ export default function AboutPage() {
               <div className="space-y-6 pt-4">
                 {/* Step 1 */}
                 <div className="flex gap-6 group">
-                  <div className="flex-shrink-0 w-16 h-16 border border-[#c5a059]/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-[#c5a059] transition-all duration-500">
+                  <div className="flex-shrink-0 w-16 h-16 border border-white/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
                     1.
                   </div>
                   <div className="space-y-1">
@@ -236,7 +236,7 @@ export default function AboutPage() {
 
                 {/* Step 2 */}
                 <div className="flex gap-6 group">
-                  <div className="flex-shrink-0 w-16 h-16 border border-[#c5a059]/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-[#c5a059] transition-all duration-500">
+                  <div className="flex-shrink-0 w-16 h-16 border border-white/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
                     2.
                   </div>
                   <div className="space-y-1">
@@ -257,7 +257,7 @@ export default function AboutPage() {
 
                 {/* Step 3 */}
                 <div className="flex gap-6 group">
-                  <div className="flex-shrink-0 w-16 h-16 border border-[#c5a059]/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-[#c5a059] transition-all duration-500">
+                  <div className="flex-shrink-0 w-16 h-16 border border-white/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
                     3.
                   </div>
                   <div className="space-y-1">
@@ -278,7 +278,7 @@ export default function AboutPage() {
 
                 {/* Step 4 */}
                 <div className="flex gap-6 group">
-                  <div className="flex-shrink-0 w-16 h-16 border border-[#c5a059]/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-[#c5a059] transition-all duration-500">
+                  <div className="flex-shrink-0 w-16 h-16 border border-white/30 flex items-center justify-center text-[20px] font-bold text-white group-hover:bg-white group-hover:text-black transition-all duration-500">
                     4.
                   </div>
                   <div className="space-y-1">
