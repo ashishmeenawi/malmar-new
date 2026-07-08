@@ -102,7 +102,7 @@ export default function AboutPage() {
               style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
               <span className="relative left-[-15px] md:left-[-35px] block">OUR</span>
-              <span className="relative left-[15px] md:left-[35px] block mt-2">PROCESS</span>
+              <span className="relative left-[15px] md:left-[35px] block mt-2 italic">PROCESS</span>
             </h2>
           </div>
         </div>
