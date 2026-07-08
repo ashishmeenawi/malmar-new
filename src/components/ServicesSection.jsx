@@ -49,7 +49,7 @@ export default function ServicesSection() {
               className="relative w-[48%] md:w-[280px] h-[300px] md:h-[400px] self-start md:self-auto cursor-pointer overflow-hidden"
               style={{ marginTop: "0px" }}>
               <img
-                src="/design-home.jpeg"
+                src="/designmm123.jpeg"
                 alt="Interior Design"
                 className="w-full h-full object-cover"
               />
@@ -156,8 +156,8 @@ export default function ServicesSection() {
 }
 
 const IMAGES = [
-  "mal2.jpeg",
-  "mal3.jpeg",
+  // "mal2.jpeg",
+  // "mal3.jpeg",
   "mal4.jpeg",
   "mal5.jpeg",
   "mal6.jpeg",
