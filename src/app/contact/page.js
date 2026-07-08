@@ -111,7 +111,7 @@ Consent to Privacy Policy: Yes`;
       {/* Editorial Section Detail */}
       <section className="relative w-full overflow-hidden bg-[#f4f1ea] flex flex-col lg:flex-row items-stretch border-t border-stone-200">
         {/* Left Image Pane */}
-        <div className="relative w-full lg:w-1/2 min-h-[400px] lg:min-h-[560px]">
+        <div className="relative w-full lg:w-1/2 h-[300px] md:h-[450px] lg:h-auto min-h-[400px] lg:min-h-[560px]">
           <img src="/insite22.jpeg" alt="Dubai Villa" className="absolute inset-0 w-full h-full object-cover" />
         </div>
 
@@ -143,7 +143,7 @@ Consent to Privacy Policy: Yes`;
             <div className="flex justify-center">
               <Link href="/projects" className="relative py-2 text-[#111] uppercase tracking-widest font-bold text-[11px] group">
                 <span className="relative z-10 transition-opacity hover:opacity-80">READ INSIGHT</span>
-                <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-[#c5a059] transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
+                <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-black transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
               </Link>
             </div>
           </div>
@@ -314,7 +314,7 @@ Consent to Privacy Policy: Yes`;
                   className="relative py-2 text-[#111] uppercase tracking-[0.3em] font-bold text-[13px] group inline-block"
                 >
                   <span className="relative z-10 transition-opacity hover:opacity-80">SUBMIT ENQUIRY</span>
-                  <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-[#c5a059] transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
+                  <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-black transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
                 </button>
               </div>
             </form>
@@ -325,7 +325,7 @@ Consent to Privacy Policy: Yes`;
       {/* Professional Enquiries Section */}
       <section className="relative w-full flex flex-col lg:flex-row items-stretch">
         {/* Left: General Enquiries */}
-        <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-24 px-8 md:px-12 flex flex-col items-center text-center text-[#111] min-h-[600px] lg:min-h-[800px] justify-between">
+        <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-16 lg:py-24 px-6 md:px-12 flex flex-col items-center text-center text-[#111] lg:min-h-[800px] gap-12 lg:gap-0 lg:justify-between">
           <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight leading-tight" style={textStyle}>
             GENERAL <br /> ENQUIRIES
           </h2>
@@ -358,7 +358,7 @@ Consent to Privacy Policy: Yes`;
         </div>
 
         {/* Right: Press Enquiries */}
-        <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-24 px-8 md:px-12 flex flex-col items-center text-center text-[#111] min-h-[600px] lg:min-h-[800px] justify-between">
+        <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-16 lg:py-24 px-6 md:px-12 flex flex-col items-center text-center text-[#111] lg:min-h-[800px] gap-12 lg:gap-0 lg:justify-between">
           <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight leading-tight" style={textStyle}>
             PRESS <br /> ENQUIRIES
           </h2>
@@ -369,7 +369,7 @@ Consent to Privacy Policy: Yes`;
               <a href="mailto:marketing@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@Malmar.com</a>
             </div>
 
-            <div className="max-w-[400px] aspect-[1/1.2] overflow-hidden shadow-2xl bg-stone-100">
+            <div className="w-full max-w-[280px] sm:max-w-[400px] aspect-[1/1.2] overflow-hidden shadow-2xl bg-stone-100">
               <img
                 src="/elylast.png"
                 alt="Forbes Malmar Feature"
