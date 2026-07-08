@@ -28,7 +28,7 @@ export default function AboutPage() {
       <section className="relative h-screen max-md:h-[62vh] w-full flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/project33.png')" }}
+          style={{ backgroundImage: "url('/about.jpeg')" }}
         />
         <div className="relative z-10 text-center px-6 w-full">
           <h1
