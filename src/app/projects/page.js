@@ -30,7 +30,7 @@ const PROJECTS = [
   // },
   {
     id: 17,
-    title: "DEVELOPMENT\nCasa del Maré\nIbiza",
+    title: "Casa del Maré - Ibiza",
     category: "DEVELOPMENT",
     image: "/resnew.jpeg",
     year: "2024"
@@ -78,7 +78,7 @@ const PROJECTS = [
     id: 23,
     title: "Upper Cheyne Row - London",
     category: "RESIDENTIAL",
-    image: "/upper-cheyne-row.jpg",
+    image: "/door.jpeg",
     year: "2025"
   },
   {

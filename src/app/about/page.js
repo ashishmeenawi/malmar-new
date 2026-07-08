@@ -44,8 +44,13 @@ export default function AboutPage() {
       <section className="py-32 max-md:py-16 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto overflow-x-hidden">
         <div className="mb-24 max-md:mb-10">
           <h2
-            style={headingStyle}
-            className="text-[32px] md:text-[48px] leading-[1.2] md:leading-[58px] max-w-[1000px] max-md:w-full text-black uppercase"
+            style={{
+              fontFamily: "'SageNav', sans-serif",
+              fontWeight: 400,
+              color: "rgb(0, 0, 0)",
+              letterSpacing: "0px",
+            }}
+            className="text-[30px] md:text-[45px] leading-[0.95] md:leading-[0.9] max-w-[1000px] max-md:w-full text-black uppercase"
           >
             <span className="block">A singular vision.</span>
             <span className="pl-16 md:pl-18 max-md:pl-6 inline-block">Exceptional spaces.</span>
