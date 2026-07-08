@@ -50,10 +50,10 @@ export default function AboutPage() {
               color: "rgb(0, 0, 0)",
               letterSpacing: "0px",
             }}
-            className="text-[30px] md:text-[45px] leading-[0.95] md:leading-[0.9] max-w-[1000px] max-md:w-full text-black uppercase"
+            className="text-[30px] md:text-[45px] leading-[0.95] md:leading-[0.9] max-w-[1000px] max-md:w-full text-black"
           >
-            <span className="block">A singular vision.</span>
-            <span className="pl-16 md:pl-18 max-md:pl-6 inline-block">Exceptional spaces.</span>
+            <span className="block">a singular vision</span>
+            <span className="pl-16 md:pl-18 max-md:pl-6 inline-block italic">exceptional spaces</span>
           </h2>
         </div>
 
