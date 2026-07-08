@@ -89,7 +89,7 @@ Consent to Privacy Policy: Yes`;
               }
             `}</style>
             <h1 className="contact-title relative">
-              <span className="italic font-light"> THE WORLD</span> <br className="md:hidden" /> <span className="italic font-light">OF</span> <br /> MALMAR
+              <span className="italic font-light">THE WORLD OF</span> <br /> MALMAR
             </h1>
           </div>
 
