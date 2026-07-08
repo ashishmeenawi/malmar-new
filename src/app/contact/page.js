@@ -350,12 +350,12 @@ Consent to Privacy Policy: Yes`;
 
             <div className="space-y-2">
               <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Singapore Studio</p>
-              <a href="mailto:studio.sg@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio.sg@Malmar.com</a>
+              <a href="mailto:studio.sg@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio.sg@malmarstudio.com</a>
             </div>
 
             <div className="space-y-2">
               <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Library</p>
-              <a href="mailto:librarian@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">librarian@Malmar.com</a>
+              <a href="mailto:librarian@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">librarian@malmarstudio.com</a>
             </div>
 
             <div className="space-y-4 pt-4">
@@ -377,7 +377,7 @@ Consent to Privacy Policy: Yes`;
           <div className="space-y-12 flex flex-col items-center">
             <div className="space-y-2">
               <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Press</p>
-              <a href="mailto:marketing@Malmar.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@Malmar.com</a>
+              <a href="mailto:marketing@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@malmarstudio.com</a>
             </div>
 
             <div className="w-full max-w-[280px] sm:max-w-[400px] aspect-[1/1.2] overflow-hidden shadow-2xl bg-stone-100">
