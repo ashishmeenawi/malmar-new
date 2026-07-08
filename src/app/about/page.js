@@ -78,14 +78,14 @@ export default function AboutPage() {
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
           <div className="overflow-hidden shadow-xl aspect-[4/5] w-[60%] mx-auto">
             <img
-              src="/col.jpeg"
+              src="/b:w.jpeg"
               alt="Architecture Interior 1"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
           <div className="overflow-hidden shadow-xl aspect-[4/5] w-[60%] mx-auto md:mt-24">
             <img
-              src="/b:w.jpeg"
+              src="/col.jpeg"
               alt="Architecture Interior 2"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             />
