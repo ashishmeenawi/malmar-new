@@ -85,7 +85,7 @@ export default function AboutPage() {
           </div>
           <div className="overflow-hidden shadow-xl aspect-[4/5] w-[60%] mx-auto md:mt-24">
             <img
-              src="/col.jpeg"
+              src="/WhatsApp Image 2026-07-09 at 01.58.37.jpeg"
               alt="Architecture Interior 2"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             />
