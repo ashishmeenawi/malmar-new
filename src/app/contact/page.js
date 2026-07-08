@@ -348,10 +348,6 @@ Consent to Privacy Policy: Yes`;
               <p style={subtextStyle} className="text-[14px] md:text-[16px]">+44 (0) 203 772 0011</p>
             </div>
 
-            <div className="space-y-2">
-              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Singapore Studio</p>
-              <a href="mailto:studio.sg@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">studio.sg@malmarstudio.com</a>
-            </div>
 
             <div className="space-y-2">
               <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Paris Studio</p>
