@@ -21,13 +21,13 @@ const PROJECTS = [
     image: "/dunder.png",
     year: "2023"
   },
-  {
-    id: 4,
-    title: "RIVERSIDE APARTMENT",
-    category: "COMMERCIAL",
-    image: "/arc4.jpeg",
-    year: "2023"
-  },
+  // {
+  //   id: 4,
+  //   title: "RIVERSIDE APARTMENT",
+  //   category: "COMMERCIAL",
+  //   image: "/arc4.jpeg",
+  //   year: "2023"
+  // },
   {
     id: 17,
     title: "DEVELOPMENT\nCasa del Maré\nIbiza",
@@ -98,7 +98,7 @@ const PROJECTS = [
   },
   {
     id: 26,
-    title: "DEVELOPMENT\nBespoke health quarters\nIbiza",
+    title: "Bespoke health quarters - Ibiza",
     category: "COMMERCIAL",
     image: "/commnew1.jpeg",
     year: "2025"
@@ -251,7 +251,7 @@ export default function ProjectsPage() {
                 lineHeight: "1.1",
               }}
             >
-              DEVELOPMENT
+
             </h2>
             <div
               className="flex flex-col gap-4 text-black"
