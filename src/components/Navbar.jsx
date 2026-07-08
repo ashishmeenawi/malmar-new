@@ -370,8 +370,6 @@ const Navbar = () => {
               {[
                 "INSTAGRAM",
                 "PINTEREST",
-                "LINKEDIN",
-                "FACEBOOK",
               ].map((social) => (
                 <a
                   key={social}
