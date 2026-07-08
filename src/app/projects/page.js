@@ -29,34 +29,6 @@ const PROJECTS = [
     year: "2023"
   },
   {
-    id: 5,
-    title: "THE LANDMARK",
-    category: "ARCHITECTURE",
-    image: "/arc5.jpeg",
-    year: "2025"
-  },
-  {
-    id: 8,
-    title: "TOWNHOUSE RENOVATION",
-    category: "ARCHITECTURE",
-    image: "/arc2.jpg",
-    year: "2024"
-  },
-  {
-    id: 10,
-    title: "COUNTRY ESTATE",
-    category: "ARCHITECTURE",
-    image: "/arc4.jpeg",
-    year: "2023"
-  },
-  {
-    id: 14,
-    title: "MODERN VILLA",
-    category: "ARCHITECTURE",
-    image: "/arc2.jpg",
-    year: "2024"
-  },
-  {
     id: 17,
     title: "DEVELOPMENT\nCasa del Maré\nIbiza",
     category: "DEVELOPMENT",
