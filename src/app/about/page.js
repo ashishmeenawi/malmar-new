@@ -143,11 +143,11 @@ export default function AboutPage() {
               </div>
               <div className="w-full md:w-2/3">
                 <p
-                  className="font-light text-black max-w-[320px]"
+                  className="font-light text-black max-w-[320px] text-[14px] md:text-[16px] leading-[22px]"
                   style={{
-                    ...bodyStyle,
-                    fontSize: "16px",
-                    lineHeight: "22px",
+                    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+                    fontWeight: 400,
+                    color: "rgba(0, 0, 0, 0.7)",
                   }}
                 >
                   {item.text}
