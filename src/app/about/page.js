@@ -2,6 +2,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import InsightsSection from "@/components/InsightsSection";
 
 export default function AboutPage() {
   const headingStyle = {
@@ -159,48 +160,7 @@ export default function AboutPage() {
       </div>
       </section>
 
-      {/* Selected Work Gallery */}
-      <section className="bg-[#ede8df] py-32 px-6 md:px-12 lg:px-20 overflow-hidden">
-        <div className="max-w-[1600px] mx-auto">
-          <div className="mb-24 text-center">
-            <h2
-              className="text-[32px] md:text-[40px] uppercase text-black"
-              style={headingStyle}
-            >
-              SELECTED WORK
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
-            {[
-              { title: "The Penthouse - London", image: "/arc1.jpg" },
-              { title: "Coastal Retreat - Ibiza", image: "/arc2.jpg" },
-              { title: "Modern Sanctuary", image: "/arc3.jpg" },
-              { title: "Imperial Suite", image: "/arc4.jpeg" },
-            ].map((product, idx) => (
-              <div key={idx} className="flex flex-col">
-                <div className="relative aspect-[3/4] overflow-hidden mb-6 bg-gray-200 shadow-lg">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-                <h3
-                  className="uppercase tracking-wider text-center text-[14px]"
-                  style={{
-                    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
-                    fontWeight: 400,
-                    lineHeight: "1.2",
-                    color: "rgb(0, 0, 0)",
-                  }}
-                >
-                  {product.title}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <InsightsSection />
 
       <Footer />
     </main>
