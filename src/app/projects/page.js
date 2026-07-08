@@ -231,8 +231,8 @@ export default function ProjectsPage() {
         </h1>
         {/* Desktop View */}
         <h1
-          className="hidden md:block text-[52px] leading-tight uppercase text-center tracking-tight text-[#111111]"
-          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif" }}
+          className="hidden md:block leading-tight uppercase text-center tracking-tight text-[#111111]"
+          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "52px" }}
         >
           MALMAR  PROJECTS
         </h1>
