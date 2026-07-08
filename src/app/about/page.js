@@ -59,14 +59,14 @@ export default function AboutPage() {
         </div>
 
         {/* 2-Column Description */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-x-16 max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-16 max-w-4xl">
           <div style={bodyStyle}>
-            <p className="mb-6">
+            <p className="mb-0 md:mb-6">
               Malmar is a multidisciplinary design studio founded with a singular vision: to create exceptional spaces through the seamless integration of architecture, interior design, and project execution. By bringing every discipline together under one studio, we ensure a cohesive process from concept to completion.
             </p>
           </div>
           <div style={bodyStyle}>
-            <p className="mb-6">
+            <p className="mb-0 md:mb-6">
               Our signature design process comes standard. We believe in creating spaces with longevity, purpose and a conscious connection to their environment. Through responsible sourcing, timeless materials and collaboration with skilled artisans, we aim to deliver projects that are both refined and enduring.
             </p>
           </div>
