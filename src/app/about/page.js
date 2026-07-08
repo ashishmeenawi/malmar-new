@@ -54,7 +54,7 @@ export default function AboutPage() {
             className="text-[30px] md:text-[45px] max-w-[1000px] max-md:w-full text-black uppercase"
           >
             <span className="block">A singular vision.</span>
-            <span className="pl-16 md:pl-18 max-md:pl-6 inline-block">Exceptional spaces.</span>
+            <span className="pl-16 md:pl-18 max-md:pl-6 inline-block italic">Exceptional spaces.</span>
           </h2>
         </div>
 
