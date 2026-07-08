@@ -143,11 +143,13 @@ Consent to Privacy Policy: Yes`;
             <div className="flex justify-center">
               <Link
                 href="/projects"
-                style={labelStyle}
-                className="relative py-2 text-[#111] uppercase tracking-[0.3em] font-bold text-[13px] group"
+                className="border-b border-black pb-0.5 hover:opacity-50 transition-opacity text-[9px] md:text-[10px] uppercase block tracking-wider"
+                style={{
+                  ...labelStyle,
+                  fontWeight: 600
+                }}
               >
-                <span className="relative z-10 transition-opacity hover:opacity-80">READ INSIGHT</span>
-                <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-black transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
+                READ INSIGHT
               </Link>
             </div>
           </div>
