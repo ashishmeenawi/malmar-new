@@ -141,6 +141,16 @@ export default function ServicesPage() {
     lineHeight: "61px",
   };
 
+  const sliderTitleStyle = {
+    fontFamily: 'SageNav, sans-serif',
+    fontWeight: 400,
+    color: "rgb(0, 0, 0)",
+    textTransform: "uppercase",
+    fontSize: "48px",
+    lineHeight: "40.5px",
+    letterSpacing: "0px",
+  };
+
   const narrativeBodyStyle = {
     fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
     fontWeight: 400,
@@ -428,7 +438,7 @@ export default function ServicesPage() {
             <div className="flex w-1/2 flex-col items-center justify-between py-24 px-20 text-center">
               <h2
                 className="text-[32px] md:text-[48px] uppercase"
-                style={narrativeHeadingStyle}
+                style={sliderTitleStyle}
               >
                 {project.title}
               </h2>
@@ -473,7 +483,7 @@ export default function ServicesPage() {
             {/* Title at top */}
             <h2
               className="mobile-service-title uppercase tracking-wide text-center mb-8 w-full px-2"
-              style={narrativeHeadingStyle}
+              style={sliderTitleStyle}
             >
               {project.title}
             </h2>
