@@ -387,18 +387,18 @@ const Navbar = () => {
             <div className="flex flex-col space-y-2 text-right">
 
               {[
-                "TERMS OF SERVICE",
-                "PRIVACY POLICY",
-                "FAQs",
+                { name: "TERMS OF SERVICE", path: "/terms" },
+                { name: "PRIVACY POLICY", path: "/privacy" },
+                { name: "FAQs", path: "#" },
               ].map((link) => (
-                <a
-                  key={link}
-                  href="#"
+                <Link
+                  key={link.name}
+                  href={link.path}
                   className="uppercase hover:opacity-90 transition-all duration-300"
                   style={footerFontStyle}
                 >
-                  {link}
-                </a>
+                  {link.name}
+                </Link>
               ))}
 
             </div>
