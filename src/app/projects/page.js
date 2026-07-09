@@ -102,6 +102,13 @@ const PROJECTS = [
     category: "COMMERCIAL",
     image: "/commnew1.jpeg",
     year: "2025"
+  },
+  {
+    id: 27,
+    title: "Guesthouse Can Crimar - Ibiza",
+    category: "COMMERCIAL",
+    image: "/guesthouse-can-crimar.jpeg",
+    year: "2025"
   }
 ];
 export default function ProjectsPage() {
