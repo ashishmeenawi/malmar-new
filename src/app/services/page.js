@@ -303,7 +303,7 @@ export default function ServicesPage() {
         {/* Background Image Layer */}
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/se.jpeg')" }}
+          style={{ backgroundImage: "url('/servicesimg.jpeg')" }}
         />
         {/* No Dark Overlay */}
 
