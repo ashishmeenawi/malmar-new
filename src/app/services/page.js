@@ -779,24 +779,10 @@ export default function ServicesPage() {
                   </p>
                   <p>
                     Our work encompasses every stage of the design journey, from concept development and spatial planning to architectural detailing, interior design, procurement, and final realization. By integrating creative vision with technical expertise, we ensure each project is thoughtfully considered, expertly coordinated, and executed to the highest standard.
-
-                    Working closely with a trusted international network of artisans, makers, and specialist suppliers, we curate exceptional materials, bespoke furnishings, and carefully crafted finishes that bring each vision to life. Every project is approached with precision, purpose, and a commitment to longevity, resulting in spaces that feel timeless, authentic, and deeply personal.                  </p>
-                </div>
-
-                {/* Right-side Branding Signature */}
-                <div className="text-right pb-1">
-                  <span
-                    className="text-6xl md:text-8xl font-serif leading-none block mb-2 text-black"
-                    style={{ fontFamily: '"__elicyon_df1f4c", serif' }}
-                  >
-                    II
-                  </span>
-                  <span
-                    className="text-[11px] uppercase tracking-[0.22em] font-semibold text-black whitespace-nowrap"
-                    style={bodyStyle}
-                  >
-                    Prime Score
-                  </span>
+                  </p>
+                  <p>
+                    Working closely with a trusted international network of artisans, makers, and specialist suppliers, we curate exceptional materials, bespoke furnishings, and carefully crafted finishes that bring each vision to life. Every project is approached with precision, purpose, and a commitment to longevity, resulting in spaces that feel timeless, authentic, and deeply personal.
+                  </p>
                 </div>
               </div>
 
