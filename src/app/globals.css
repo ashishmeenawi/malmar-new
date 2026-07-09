@@ -175,7 +175,7 @@ h2 {
 
 @layer base {
   ::selection {
-    background: #e7e5e4;
+    background: #decbb7;
     color: #1c1917;
   }
 }
@@ -328,19 +328,4 @@ h2 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-weight: 300!important;
-}
-
-/* Prevent text selection across the site */
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Blank page when printing or attempting screen-print PDF saves */
-@media print {
-  html, body {
-    display: none !important;
-  }
 }

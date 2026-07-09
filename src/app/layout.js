@@ -2,7 +2,6 @@ import { Geist, Geist_Mono, Cormorant_Garamond, EB_Garamond } from "next/font/go
 import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import SecurityProvider from "@/components/SecurityProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,7 +52,6 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.variable} ${elicyonFont.variable} ${antiqueFont.variable} ${antiqueCustom.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <SecurityProvider />
         {children}
         <Analytics />
       </body>

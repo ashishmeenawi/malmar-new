@@ -129,7 +129,7 @@ const ElicyonTextSection = () => {
 
     <div
       ref={textWrapper}
-      className="flex flex-col items-center leading-[53px]"
+      className="flex flex-col items-center leading-[53px] pointer-events-auto"
     >
 
       {/* Line 1 */}

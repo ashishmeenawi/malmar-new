@@ -95,7 +95,7 @@ const HeroSection = ({ isLoading }) => {
   );
 
   return (
-    <div ref={container} className="relative bg-[#f4f1ea] selection:bg-stone-200">
+    <div ref={container} className="relative bg-[#f4f1ea]">
       <Navbar />
 
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
@@ -120,7 +120,7 @@ const HeroSection = ({ isLoading }) => {
         {/* ✨ Text */}
         <div
           ref={heroText}
-          className="relative z-10 w-full max-w-[1600px] px-6 md:px-12 select-none will-change-transform"
+          className="relative z-10 w-full max-w-[1600px] px-6 md:px-12 will-change-transform"
         >
           <h1
             className="w-full font-serif font-normal uppercase"

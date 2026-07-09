@@ -22,7 +22,7 @@ export default function AboutPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#f0ede6] selection:bg-stone-200">
+    <main className="min-h-screen bg-[#f0ede6]">
       <Navbar />
 
       {/* Hero Section */}

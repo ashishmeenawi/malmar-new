@@ -161,7 +161,7 @@ export default function ProjectsPage() {
   const categories = ["RESIDENTIAL", "COMMERCIAL", "DEVELOPMENT"];
 
   return (
-    <main className="min-h-screen bg-[#f5f3f0] selection:bg-stone-200">
+    <main className="min-h-screen bg-[#f5f3f0]">
       <Navbar />
 
       {/* Header Section */}

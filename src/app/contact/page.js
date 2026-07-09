@@ -69,7 +69,7 @@ Consent to Privacy Policy: Yes`;
   };
 
   return (
-    <main className="min-h-screen bg-[#f4f1ea] selection:bg-stone-200">
+    <main className="min-h-screen bg-[#f4f1ea]">
       <Navbar />
 
       {/* Hero Section */}
