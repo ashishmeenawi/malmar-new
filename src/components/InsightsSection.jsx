@@ -64,13 +64,12 @@ export default function InsightsSection() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pt-16">
         <div className="max-w-2xl">
           <h2
-            className="text-[32px] md:text-[48px] leading-tight md:leading-tight"
+            className="text-[32px] md:text-[48px] leading-[55.5px] md:leading-[50.5px]"
             style={{
               fontFamily: "'SageNav', sans-serif",
               fontWeight: 400,
               fontStyle: "normal",
               color: "rgb(0, 0, 0)",
-              lineHeight: "50.5px",
             }}
           >
             <span className="block">The WORLD</span>
