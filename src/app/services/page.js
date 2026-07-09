@@ -114,6 +114,7 @@ export default function ServicesPage() {
     "Casa Angulo - Ibiza",
     "Crimar Guest House - Ibiza",
     "Rue la Boetie - Paris ",
+    "Avenue Franklin D Roosevelt - Paris",
   ];
 
   const headingStyle = {
