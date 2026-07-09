@@ -277,7 +277,7 @@ export default function ServicesPage() {
           }
           .services-hero-title {
             font-size: 64px !important;
-            letter-spacing: 0.25em !important;
+            letter-spacing: 6.4px !important;
             line-height: 1 !important;
           }
           .services-narrative-heading {
