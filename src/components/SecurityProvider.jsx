@@ -57,13 +57,48 @@ export default function SecurityProvider() {
       }
     };
 
-    // 3. Prevent screen recording / screenshot tools from capturing by blurring content on blur
+    // Helper to toggle full screen black cover
+    const showBlackScreen = () => {
+      let overlay = document.getElementById("security-blackout");
+      if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.id = "security-blackout";
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100vw";
+        overlay.style.height = "100vh";
+        overlay.style.backgroundColor = "black";
+        overlay.style.zIndex = "999999999";
+        overlay.style.display = "block";
+        document.body.appendChild(overlay);
+      } else {
+        overlay.style.display = "block";
+      }
+    };
+
+    const hideBlackScreen = () => {
+      const overlay = document.getElementById("security-blackout");
+      if (overlay) {
+        overlay.style.display = "none";
+      }
+    };
+
+    // 3. Blur / Hide page when screen capture/focus shifts
     const handleBlur = () => {
-      document.body.style.filter = "blur(50px) grayscale(1) brightness(0)";
+      showBlackScreen();
     };
 
     const handleFocus = () => {
-      document.body.style.filter = "none";
+      hideBlackScreen();
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "hidden") {
+        showBlackScreen();
+      } else {
+        hideBlackScreen();
+      }
     };
 
     // 4. Try to clear clipboard if copying is attempted
@@ -71,10 +106,18 @@ export default function SecurityProvider() {
       e.preventDefault();
     };
 
+    // 5. Block Screen Capture / WebRTC screen sharing APIs
+    if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+      navigator.mediaDevices.getDisplayMedia = function() {
+        return Promise.reject(new DOMException("Screen capture is disabled."));
+      };
+    }
+
     document.addEventListener("contextmenu", handleContextMenu);
     document.addEventListener("keydown", handleKeyDown);
     window.addEventListener("blur", handleBlur);
     window.addEventListener("focus", handleFocus);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
     document.addEventListener("copy", handleCopy);
 
     return () => {
@@ -82,6 +125,7 @@ export default function SecurityProvider() {
       document.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("blur", handleBlur);
       window.removeEventListener("focus", handleFocus);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
       document.removeEventListener("copy", handleCopy);
     };
   }, []);
