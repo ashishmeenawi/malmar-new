@@ -159,7 +159,7 @@ const IMAGES = [
   // "mal2.jpeg",
   // "mal3.jpeg",
   "mal4.jpeg",
-  "mal5.jpeg",
+  "designmm123.jpeg",
   "mal6.jpeg",
   "mal7.jpeg",
   "mal8.jpeg",

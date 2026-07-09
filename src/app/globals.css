@@ -329,3 +329,18 @@ h2 {
   text-rendering: optimizeLegibility;
   font-weight: 300!important;
 }
+
+/* Prevent text selection across the site */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Blank page when printing or attempting screen-print PDF saves */
+@media print {
+  html, body {
+    display: none !important;
+  }
+}
