@@ -62,7 +62,7 @@ const objects = [
   // },
 ];
 
-export default function ObjectsOfDesire() {
+export default function ObjectsOfDesire({ ptClass = "pt-[30px]" }) {
   const scrollRef = useRef(null);
   const cursorRef = useRef(null);
 
@@ -292,7 +292,7 @@ export default function ObjectsOfDesire() {
   return (
     <section
       id="objects-section"
-      className="relative bg-[#F3F0E9] pt-12 pb-24 overflow-hidden"
+      className={`relative bg-[#F3F0E9] pb-24 overflow-hidden ${ptClass}`}
       style={{ cursor: "none" }}
     >
       {/* Custom Cursor */}

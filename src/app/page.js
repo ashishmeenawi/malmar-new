@@ -48,7 +48,7 @@ export default function Home() {
         <ServicesSection />
         <VisionSection />
         <InsightsSection />
-        <ObjectsOfDesire />
+        <ObjectsOfDesire ptClass="pt-[50px]" />
         <ContactSection />
         <Footer />
       </div>
