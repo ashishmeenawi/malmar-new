@@ -63,22 +63,30 @@ export default function InsightsSection() {
       {/* Header Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pt-16">
         <div className="max-w-2xl">
-          <h2
-            className="text-[32px] md:text-[48px] leading-[55.5px] md:leading-[50.5px]"
-            style={{
-              fontFamily: "'SageNav', sans-serif",
-              fontWeight: 400,
-              fontStyle: "normal",
-              color: "rgb(0, 0, 0)",
-            }}
-          >
-            <span className="block">The WORLD</span>
-            <span className="block ml-14 md:ml-36 -mt-4 md:-mt-3">
-              of
-              <span className="inline md:hidden ml-2">MALMAR</span>
-              <span className="hidden md:inline md:ml-3">MALMAR</span>
-            </span>
-          </h2>
+            <style>{`
+              .insights-world-title {
+                font-family: 'SageNav', sans-serif;
+                font-size: 32px;
+                font-weight: 400;
+                font-style: normal;
+                color: rgb(0, 0, 0);
+                line-height: 40.5px;
+              }
+              @media (min-width: 768px) {
+                .insights-world-title {
+                  font-size: 48px;
+                  line-height: 48.5px;
+                }
+              }
+            `}</style>
+            <h2 className="insights-world-title">
+              <span className="block">The WORLD</span>
+              <span className="block ml-14 md:ml-36 -mt-4 md:-mt-3">
+                of
+                <span className="inline md:hidden ml-2">MALMAR</span>
+                <span className="hidden md:inline md:ml-3">MALMAR</span>
+              </span>
+            </h2>
           <p
             className="mt-8 w-full max-w-lg text-left"
             style={{

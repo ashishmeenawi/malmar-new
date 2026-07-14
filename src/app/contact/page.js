@@ -42,7 +42,8 @@ Consent to Privacy Policy: Yes`;
   const textStyle = {
     fontFamily: 'SageNav, sans-serif',
     fontWeight: 400,
-    color: "#000"
+    color: "#000",
+    lineHeight: "35.2px"
   };
 
   const subtextStyle = {
@@ -52,14 +53,14 @@ Consent to Privacy Policy: Yes`;
   };
 
   const labelStyle = {
-    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+    fontFamily: '"__elicyon_df1f4c", "__elicyon_Fallback_df1f4c", "Elicyon", serif',
     fontWeight: "400",
     color: "rgb(0, 0, 0)",
     textTransform: "uppercase",
   };
 
   const inputStyle = {
-    fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif',
+    fontFamily: '"__elicyon_df1f4c", "__elicyon_Fallback_df1f4c", "Elicyon", serif',
     color: "black",
     caretColor: "black"
   };
@@ -81,19 +82,23 @@ Consent to Privacy Policy: Yes`;
                 font-family: 'SageNav', sans-serif;
                 font-size: 32px;
                 font-weight: 400;
-                line-height: 1.1;
+                line-height: 48.5px;
                 color: #000;
-                text-transform: uppercase;
               }
               @media (min-width: 768px) {
                 .contact-title {
                   font-size: 48px;
-                  line-height: 1.1;
+                  line-height: 48.5px;
                 }
               }
             `}</style>
-            <h1 className="contact-title relative" style={{ ...textStyle, lineHeight: "40.5px" }}>
-              <span className="italic font-light">THE WORLD OF</span> <br /> MALMAR
+            <h1 className="contact-title relative text-left" style={{ ...textStyle, lineHeight: "48.5px" }}>
+              <span className="block">The WORLD</span>
+              <span className="block ml-14 md:ml-36 -mt-4 md:-mt-3">
+                of
+                <span className="inline md:hidden ml-2">MALMAR</span>
+                <span className="hidden md:inline md:ml-3">MALMAR</span>
+              </span>
             </h1>
           </div>
 
@@ -125,15 +130,16 @@ Consent to Privacy Policy: Yes`;
             <style>{`
               .dubai-villa-title {
                 font-size: 32px;
-                line-height: 1.2;
+                line-height: 35.2px;
               }
               @media (min-width: 768px) {
                 .dubai-villa-title {
                   font-size: 48px;
+                  line-height: 37.2px;
                 }
               }
             `}</style>
-            <h2 className="dubai-villa-title uppercase" style={{ ...textStyle, lineHeight: "35.2px" }}>
+            <h2 className="dubai-villa-title uppercase" style={{ fontFamily: textStyle.fontFamily, fontWeight: textStyle.fontWeight, color: textStyle.color }}>
               CRAFTED <br /> <span className="italic">DETAIL</span>
             </h2>
           </div>
@@ -142,7 +148,7 @@ Consent to Privacy Policy: Yes`;
           </div>
           <div className="space-y-8 mb-8">
             <p className="uppercase tracking-widest text-stone-800" style={{ fontFamily: '"__antiqueLegacy_623eb9", "__antiqueLegacy_Fallback_623eb9", "AntiqueLegacy", serif', fontSize: "14px", color: "rgb(0, 0, 0)" }}>
-              Where BESPOKE FORM meets desert STILLNESS
+
             </p>
             <div className="flex justify-center">
               <a
@@ -169,16 +175,17 @@ Consent to Privacy Policy: Yes`;
             <style>{`
               .story-title {
                 font-size: 32px;
-                line-height: 1.1;
+                line-height: 35.2px;
               }
               @media (min-width: 768px) {
                 .story-title {
                   font-size: 48px;
+                  line-height: 37.2px;
                 }
               }
             `}</style>
             <h2 className="story-title uppercase tracking-tight text-black"
-              style={{ ...textStyle, lineHeight: "40.5px" }}>
+              style={{ fontFamily: textStyle.fontFamily, fontWeight: textStyle.fontWeight, color: textStyle.color }}>
               EVERY SPACE STARTS <br /> with a STORY. LET&apos;S <br /> START YOURS
             </h2>
           </div>
@@ -335,31 +342,43 @@ Consent to Privacy Policy: Yes`;
 
       {/* Professional Enquiries Section */}
       <section className="relative w-full flex flex-col lg:flex-row items-stretch">
+        <style>{`
+          .enquiries-title {
+            font-size: 32px;
+            line-height: 35.2px;
+          }
+          @media (min-width: 768px) {
+            .enquiries-title {
+              font-size: 48px;
+              line-height: 37.2px;
+            }
+          }
+        `}</style>
         {/* Left: General Enquiries */}
         <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-16 lg:py-24 px-6 md:px-12 flex flex-col items-center text-center text-[#111] lg:min-h-[800px] gap-12 lg:gap-0 lg:justify-between">
-          <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight" style={{ ...textStyle, lineHeight: "40.5px" }}>
-            GENERAL <br /> ENQUIRIES
+          <h2 className="enquiries-title uppercase tracking-tight" style={{ fontFamily: textStyle.fontFamily, fontWeight: textStyle.fontWeight, color: textStyle.color }}>
+            GENERAL <br /> <span className="italic">ENQUIRIES</span>
           </h2>
 
-          <div className="space-y-12">
+          <div className="space-y-12 lg:-translate-y-24">
             <div className="space-y-2">
-              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">London Studio</p>
-              <a href="mailto:info@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">info@malmarstudio.com</a>
-              <p style={subtextStyle} className="text-[14px] md:text-[16px]">+44 (0) 203 772 0011</p>
+              <p style={{ ...labelStyle, ...elicyonStyle }} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">London Studio</p>
+              <a href="mailto:info@malmarstudio.com" style={{ ...subtextStyle, ...elicyonStyle }} className="text-[16px] block hover:opacity-70 transition-opacity">info@malmarstudio.com</a>
+              <p style={{ ...subtextStyle, ...elicyonStyle }} className="text-[14px]">+44 (0) 203 772 0011</p>
             </div>
 
 
             <div className="space-y-2">
-              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Paris Studio</p>
-              <a href="mailto:info@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">info@malmarstudio.com</a>
-              <p style={subtextStyle} className="text-[14px] md:text-[16px]">+336 5222 7780</p>
+              <p style={{ ...labelStyle, ...elicyonStyle }} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Paris Studio</p>
+              <a href="mailto:info@malmarstudio.com" style={{ ...subtextStyle, ...elicyonStyle }} className="text-[16px] block hover:opacity-70 transition-opacity">info@malmarstudio.com</a>
+              <p style={{ ...subtextStyle, ...elicyonStyle }} className="text-[14px]">+336 5222 7780</p>
             </div>
 
 
             <div className="space-y-4 pt-4">
-              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Careers</p>
+              <p style={{ ...labelStyle, ...elicyonStyle }} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Careers</p>
               <Link href="/careers" className="relative group inline-block py-1">
-                <span style={subtextStyle} className="text-[14px] md:text-[16px]">View open positions</span>
+                <span style={{ ...subtextStyle, ...elicyonStyle }} className="text-[16px]">View open positions</span>
                 <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#111] transition-transform duration-500 ease-in-out origin-left group-hover:origin-right scale-x-100 group-hover:scale-x-0"></span>
               </Link>
             </div>
@@ -368,14 +387,14 @@ Consent to Privacy Policy: Yes`;
 
         {/* Right: Press Enquiries */}
         <div className="w-full lg:w-1/2 bg-[#d4cdc5] py-16 lg:py-24 px-6 md:px-12 flex flex-col items-center text-center text-[#111] lg:min-h-[800px] gap-12 lg:gap-0 lg:justify-between">
-          <h2 className="text-[32px] md:text-[48px] uppercase tracking-tight" style={{ ...textStyle, lineHeight: "40.5px" }}>
-            PRESS <br /> ENQUIRIES
+          <h2 className="enquiries-title uppercase tracking-tight" style={{ fontFamily: textStyle.fontFamily, fontWeight: textStyle.fontWeight, color: textStyle.color }}>
+            PRESS <br /> <span className="italic">ENQUIRIES</span>
           </h2>
 
           <div className="space-y-12 flex flex-col items-center">
             <div className="space-y-2">
-              <p style={labelStyle} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Press</p>
-              <a href="mailto:marketing@malmarstudio.com" style={subtextStyle} className="text-[14px] md:text-[16px] block hover:opacity-70 transition-opacity">marketing@malmarstudio.com</a>
+              <p style={{ ...labelStyle, ...elicyonStyle }} className="text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Press</p>
+              <a href="mailto:marketing@malmarstudio.com" style={{ ...subtextStyle, ...elicyonStyle }} className="text-[14px] block hover:opacity-70 transition-opacity">marketing@malmarstudio.com</a>
             </div>
 
             <div className="w-full max-w-[280px] sm:max-w-[400px] aspect-[1/1.2] overflow-hidden shadow-2xl bg-stone-100">

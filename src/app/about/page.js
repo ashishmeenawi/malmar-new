@@ -44,19 +44,27 @@ export default function AboutPage() {
       {/* Intro Narrative Section */}
       <section className="py-32 max-md:py-16 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto overflow-x-hidden">
         <div className="mb-24 max-md:mb-10">
-          <h2
-            style={{
-              fontFamily: "'SageNav', sans-serif",
-              fontWeight: 400,
-              color: "rgb(0, 0, 0)",
-              letterSpacing: "0px",
-              lineHeight: "40.5px",
-            }}
-            className="text-[30px] md:text-[45px] max-w-[1000px] max-md:w-full text-black uppercase"
-          >
-            <span className="block">A singular vision.</span>
-            <span className="pl-16 md:pl-18 max-md:pl-6 inline-block italic">Exceptional spaces.</span>
-          </h2>
+            <style>{`
+              .about-narrative-title {
+                font-family: 'SageNav', sans-serif;
+                font-size: 29.925px;
+                font-weight: 400;
+                line-height: 28.5px;
+                color: rgb(0, 0, 0);
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+              }
+              @media (min-width: 768px) {
+                .about-narrative-title {
+                  font-size: 45px;
+                  line-height: 36.5px;
+                }
+              }
+            `}</style>
+            <h2 className="about-narrative-title max-w-[1000px] max-md:w-full text-black">
+              <span className="block">A singular vision.</span>
+              <span className="pl-16 md:pl-18 max-md:pl-6 inline-block italic">Exceptional spaces.</span>
+            </h2>
         </div>
 
         {/* 2-Column Description */}
@@ -98,9 +106,24 @@ export default function AboutPage() {
       <section className="relative w-full bg-[#fcefd4] px-10 md:px-20 py-32 max-md:py-16 max-md:px-6">
         <div className="mx-auto max-w-5xl">
           <div className="mb-32 max-md:mb-10 md:pl-46">
+            <style>{`
+              .about-process-title {
+                font-family: 'SageNav', sans-serif;
+                font-weight: 400;
+                color: rgb(0, 0, 0);
+                letter-spacing: 4px;
+                line-height: 20px;
+                font-size: 32px;
+              }
+              @media (min-width: 768px) {
+                .about-process-title {
+                  font-size: 40px;
+                  line-height: 25.2px;
+                }
+              }
+            `}</style>
             <h2
-              className="font-light uppercase relative"
-              style={{ ...headingStyle, fontSize: "40px", lineHeight: "28px" }}
+              className="about-process-title font-light uppercase relative"
             >
               <span className="block">OUR</span>
               <span className="block mt-2 italic">PROCESS</span>

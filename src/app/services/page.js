@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -198,6 +199,13 @@ export default function ServicesPage() {
       image: "/arc9.jpg",
       rightImage: "/chnage-mr.jpeg",
       label: "PRIVATE HOME"
+    },
+    {
+      title: "PROJECT MANAGEMENT",
+      description: "Malmar is a multidisciplinary design studio. From private residences and hospitality destinations to commercial environments and bespoke developments, we design interiors and architecture that seamlessly unite aesthetics, functionality, and a strong sense of place.\n\nOur work encompasses every stage of the design journey, from concept development and spatial planning to architectural detailing, interior design, procurement, and final realization. By integrating creative vision with technical expertise, we ensure each project is thoughtfully considered, expertly coordinated, and executed to the highest standard.\n\nWorking closely with a trusted international network of artisans, makers, and specialist suppliers, we curate exceptional materials, bespoke furnishings, and carefully crafted finishes that bring each vision to life. Every project is approached with precision, purpose, and a commitment to longevity, resulting in spaces that feel timeless, authentic, and deeply personal.",
+      image: "/services-studio-1.jpg",
+      rightImage: "/services-studio-2.jpg",
+      label: "STUDIO WORKSPACE"
     }
   ];
 
@@ -283,7 +291,7 @@ export default function ServicesPage() {
           }
           .services-narrative-heading {
             font-size: 7.5vw !important;
-            line-height: 1.2 !important;
+            line-height: 28.5px !important;
           }
           .mobile-service-title {
             font-size: 5.5vw !important;
@@ -436,7 +444,7 @@ export default function ServicesPage() {
             </div>
 
             {/* Right Side: Content */}
-            <div className="flex w-1/2 flex-col items-center justify-between py-24 px-20 text-center">
+            <div className={`flex w-1/2 flex-col items-center justify-between ${project.description.length > 200 ? "py-12 md:py-16 px-12 md:px-16" : "py-24 px-20"} text-center`}>
               <h2
                 className="text-[32px] md:text-[48px] uppercase"
                 style={sliderTitleStyle}
@@ -444,7 +452,7 @@ export default function ServicesPage() {
                 {project.title}
               </h2>
 
-              <div className="w-full max-w-[320px] md:max-w-[400px] aspect-[4/5] overflow-hidden my-12 shadow-sm">
+              <div className={`w-full ${project.description.length > 200 ? "max-w-[200px] md:max-w-[240px] my-4 md:my-6" : "max-w-[320px] md:max-w-[400px] my-12"} aspect-[4/5] overflow-hidden shadow-sm`}>
                 <img
                   src={project.rightImage}
                   alt={project.title}
@@ -453,21 +461,24 @@ export default function ServicesPage() {
               </div>
 
               <div className="max-w-sm">
-                <p
-                  className="text-sm md:text-base leading-relaxed opacity-70 mb-12"
-                  style={narrativeBodyStyle}
-                >
-                  {project.description}
-                </p>
+                {project.description.split("\n\n").map((paragraph, pIdx) => (
+                  <p
+                    key={pIdx}
+                    className={`text-sm md:text-base leading-relaxed opacity-70 ${project.description.length > 200 ? "mb-4 last:mb-6" : "mb-12"}`}
+                    style={narrativeBodyStyle}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
 
-                <div className="inline-block relative group cursor-pointer pb-1 overflow-hidden">
+                <Link href="/projects" className="inline-block relative group cursor-pointer pb-1 overflow-hidden">
                   <span
                     className="text-[10px] tracking-[0.3em] uppercase font-semibold relative"
                     style={{ ...bodyStyle, ...projectLinkStyle }}
                   >
                     VIEW PROJECTS
                   </span>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -499,22 +510,27 @@ export default function ServicesPage() {
             </div>
 
             {/* Description text */}
-            <p
-              className="text-[13px] leading-[1.7] text-center opacity-80 mb-8 max-w-[320px]"
-              style={narrativeBodyStyle}
-            >
-              {project.description}
-            </p>
+            <div className="mb-8 max-w-[320px]">
+              {project.description.split("\n\n").map((paragraph, pIdx) => (
+                <p
+                  key={pIdx}
+                  className="text-[13px] leading-[1.7] text-center opacity-80 mb-4 last:mb-0"
+                  style={narrativeBodyStyle}
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
 
             {/* VIEW PROJECTS underline link */}
-            <div className="inline-block relative group cursor-pointer pb-1 overflow-hidden">
+            <Link href="/projects" className="inline-block relative group cursor-pointer pb-1 overflow-hidden">
               <span
                 className="text-[10px] tracking-[0.3em] uppercase font-semibold relative"
                 style={{ ...bodyStyle, ...projectLinkStyle }}
               >
                 VIEW PROJECTS
               </span>
-            </div>
+            </Link>
           </div>
         ))}
       </div>
@@ -637,7 +653,7 @@ export default function ServicesPage() {
           {/* Left Column: Heading */}
           <div className="lg:col-span-4">
             <h2
-              className="sticky top-24 text-[32px] md:text-[40px] font-light uppercase text-black max-md:relative max-md:top-0 max-md:pt-4 max-md:mb-16"
+              className="sticky top-24 text-[32px] md:text-[40px] font-light uppercase text-black max-md:relative max-md:top-0 max-md:pt-16 max-md:mb-16"
               style={{ ...headingStyle, lineHeight: "40.5px" }}
             >
               <span className="block">Crafted</span>
@@ -795,7 +811,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <ObjectsOfDesire />
+      <ObjectsOfDesire ptClass="pt-16 md:pt-24" />
       <ContactForm />
       <Footer />
     </main>

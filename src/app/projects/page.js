@@ -106,7 +106,7 @@ const PROJECTS = [
   {
     id: 27,
     title: "Guesthouse Can Crimar - Ibiza",
-    category: "COMMERCIAL",
+    category: "RESIDENTIAL",
     image: "/guesthouse-can-crimar.jpeg",
     year: "2025"
   }
@@ -176,7 +176,7 @@ export default function ProjectsPage() {
         {/* Mobile View */}
         <h1
           className="md:hidden text-center tracking-tight flex flex-col items-center justify-center text-[#111111]"
-          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "32px", lineHeight: "40.5px" }}
+          style={{ ...headingStyle, fontFamily: "'SageNav', sans-serif", fontSize: "32px", lineHeight: "32.5px" }}
         >
           <span className="italic lowercase" style={{ textTransform: "none" }}>MALMAR</span>
           <span className="uppercase -mt-1">PROJECTS</span>

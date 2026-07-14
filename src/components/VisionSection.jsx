@@ -146,7 +146,7 @@ export default function VisionSection() {
               fontSize: "48px",
               fontWeight: 400,
               fontStyle: "normal",
-              lineHeight: "61px",
+              lineHeight: "50px",
               color: "rgb(244, 242, 238)",
               letterSpacing: "0.18em",
               textTransform: "uppercase",

@@ -29,12 +29,6 @@ const projects = [
     subtitle: "Bespoke health quarters - Ibiza",
     image: "/commnew1.jpeg",
   },
-  {
-    id: 4,
-    title: "COMMERCIAL",
-    subtitle: "Guesthouse Can Crimar - Ibiza",
-    image: "/guesthouse-can-crimar.jpeg",
-  },
 ];
 
 export default function ProjectSection() {
