@@ -28,13 +28,13 @@ const PROJECTS = [
   //   image: "/arc4.jpeg",
   //   year: "2023"
   // },
-  {
-    id: 17,
-    title: "Casa del Maré - Ibiza",
-    category: "DEVELOPMENT",
-    image: "/resnew.jpeg",
-    year: "2024"
-  },
+  // {
+  //   id: 17,
+  //   title: "Casa del Maré - Ibiza",
+  //   category: "DEVELOPMENT",
+  //   image: "/resnew.jpeg",
+  //   year: "2024"
+  // },
   {
     id: 18,
     title: "GLEBE PLACE - LONDON",
@@ -100,14 +100,14 @@ const PROJECTS = [
     id: 26,
     title: "Bespoke health quarters - Ibiza",
     category: "COMMERCIAL",
-    image: "/commnew1.jpeg",
+    image: "/123123.jpeg",
     year: "2025"
   },
   {
     id: 27,
     title: "Guesthouse Can Crimar - Ibiza",
     category: "RESIDENTIAL",
-    image: "/guesthouse-can-crimar.jpeg",
+    image: "/Bespoke health quarters - Ibiza.jpeg",
     year: "2025"
   }
 ];
@@ -165,7 +165,7 @@ export default function ProjectsPage() {
       return true;
     })).slice(0, visibleCount);
 
-  const categories = ["RESIDENTIAL", "COMMERCIAL", "DEVELOPMENT"];
+  const categories = ["ALL", "RESIDENTIAL", "COMMERCIAL", "DEVELOPMENT"];
 
   return (
     <main className="min-h-screen bg-[#f5f3f0]">
@@ -201,16 +201,14 @@ export default function ProjectsPage() {
               <button
                 key={cat}
                 onClick={() => setActiveFilter(activeFilter === cat ? "ALL" : cat)}
-                className={`uppercase transition-all duration-300 text-left text-[20px] md:text-[18px] leading-[1.2] ${activeFilter === "ALL"
+                className={`uppercase transition-all duration-300 text-left text-[20px] md:text-[18px] leading-[1.2] ${activeFilter === cat
                   ? "opacity-100"
-                  : activeFilter === cat
-                    ? "opacity-100"
-                    : "opacity-20 hover:opacity-100"
+                  : "opacity-20 hover:opacity-100"
                   }`}
                 style={filterButtonStyle}
               >
                 {cat}
-                {activeFilter === cat && (
+                {activeFilter === cat && cat !== "ALL" && (
                   <span className="ml-2">×</span>
                 )}
               </button>
@@ -374,7 +372,7 @@ export default function ProjectsPage() {
                     <p className="text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-60 mb-2" style={bodyStyle}>
                       {project.category}
                     </p>
-                    <h3 className="text-[20px] md:text-[26px] tracking-wide uppercase leading-tight" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
+                    <h3 className="text-[24px] tracking-wide uppercase leading-tight" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
                       {project.title}
                     </h3>
                   </div>
