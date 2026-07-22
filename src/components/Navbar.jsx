@@ -28,7 +28,7 @@ const mobileTopStyle = {
 const Navbar = () => {
   const pathname = usePathname();
 
-  const isProjectsPage = pathname === "/projects";
+  const isProjectsPage = pathname?.startsWith("/projects");
   const isContactPage = pathname === "/contact";
   const isAboutPage = pathname === "/about";
 

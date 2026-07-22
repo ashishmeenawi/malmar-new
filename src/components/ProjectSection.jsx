@@ -262,7 +262,12 @@ export default function ProjectSection() {
               </h4>
 
               <Link
-                href={`/projects?filter=${project.title}`}
+                href={
+                  project.id === 1 ? "/projects/casa-angulo" :
+                  project.id === 2 ? "/projects/belgravia-house" :
+                  project.id === 3 ? "/projects/bespoke-health-quarters-ibiza" :
+                  `/projects`
+                }
                 className="uppercase tracking-[0.2em] text-[10px] md:text-[11px] hover:opacity-50 transition-opacity"
                 style={{
                   fontFamily: "'Elicyon-Regular', serif",

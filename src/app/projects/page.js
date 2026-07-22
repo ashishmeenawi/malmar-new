@@ -5,112 +5,8 @@ import Footer from "@/components/Footer";
 import InsightsSection from "@/components/InsightsSection";
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
+import { PROJECTS } from "@/data/projectsData";
 
-const PROJECTS = [
-  {
-    id: 1,
-    title: "CASA ANGULO",
-    category: "RESIDENTIAL",
-    image: "/new4.jpeg",
-    year: "2024"
-  },
-  {
-    id: 2,
-    title: "BELGRAVIA HOUSE",
-    category: "DEVELOPMENT",
-    image: "/dunder.png",
-    year: "2023"
-  },
-  // {
-  //   id: 4,
-  //   title: "RIVERSIDE APARTMENT",
-  //   category: "COMMERCIAL",
-  //   image: "/arc4.jpeg",
-  //   year: "2023"
-  // },
-  // {
-  //   id: 17,
-  //   title: "Casa del Maré - Ibiza",
-  //   category: "DEVELOPMENT",
-  //   image: "/resnew.jpeg",
-  //   year: "2024"
-  // },
-  {
-    id: 18,
-    title: "GLEBE PLACE - LONDON",
-    category: "RESIDENTIAL",
-    image: "/rs5.jpeg", // To be updated later by user
-    year: "2025"
-  },
-
-  {
-    id: 19,
-    title: "Drayton gardens - London",
-    category: "RESIDENTIAL",
-    image: "/rs4.jpeg", // To be updated later by user
-    year: "2025"
-  },
-
-  {
-    id: 20,
-    title: "Las Boas - Ibiza",
-    category: "RESIDENTIAL",
-    image: "/rs3.jpeg", // To be updated later by user
-    year: "2025"
-  },
-
-  {
-    id: 21,
-    title: "Es Cuco - Ibiza",
-    category: "RESIDENTIAL",
-    image: "/rs2.jpeg", // To be updated later by user
-    year: "2025"
-  },
-
-  {
-    id: 22,
-    title: "Rocca Llisa - Ibiza",
-    category: "RESIDENTIAL",
-    image: "/rs1.jpeg", // To be updated later by user
-    year: "2025"
-  },
-  {
-    id: 23,
-    title: "Upper Cheyne Row - London",
-    category: "RESIDENTIAL",
-    image: "/door.jpeg",
-    year: "2025"
-  },
-  {
-    id: 24,
-    title: "Glebe place kitchen - London",
-    category: "RESIDENTIAL",
-    image: "/glebe-place-kitchen.jpg",
-    year: "2025"
-  },
-
-  {
-    id: 25,
-    title: "Avenue Franklin D Roosevelt - Paris",
-    category: "RESIDENTIAL",
-    image: "/elylast.png",
-    year: "2025"
-  },
-  {
-    id: 26,
-    title: "Bespoke health quarters - Ibiza",
-    category: "COMMERCIAL",
-    image: "/123123.jpeg",
-    year: "2025"
-  },
-  {
-    id: 27,
-    title: "Guesthouse Can Crimar - Ibiza",
-    category: "RESIDENTIAL",
-    image: "/Bespoke health quarters - Ibiza.jpeg",
-    year: "2025"
-  }
-];
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = React.useState("ALL");
   const [viewMode, setViewMode] = React.useState("grid-3"); // grid-3, grid-2, or full
@@ -351,8 +247,9 @@ export default function ProjectsPage() {
             const mobileLayoutClass = isEven ? "max-md:items-start max-md:text-left max-md:pr-12" : "max-md:items-end max-md:text-right max-md:pl-12";
 
             return (
-              <div
+              <Link
                 key={project.id}
+                href={`/projects/${project.slug || project.id}`}
                 className={`group cursor-pointer flex flex-col justify-center ${colSpanClass} ${viewMode === "full" ? 'md:flex-row gap-12 items-center mb-12' : ''} ${viewMode === "grid-3" ? mobileLayoutClass : ''}`}
               >
                 <div className={`relative overflow-hidden mb-6 shadow-xl transition-all duration-700 ${viewMode === "full" ? "md:w-2/3 w-full" : (viewMode === "grid-3" ? `max-md:w-[85%] ${wrapperClass}` : wrapperClass)} ${aspectClass}`}>
@@ -372,7 +269,7 @@ export default function ProjectsPage() {
                     <p className="text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-60 mb-2" style={bodyStyle}>
                       {project.category}
                     </p>
-                    <h3 className="text-[24px] tracking-wide uppercase leading-tight" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
+                    <h3 className="text-[24px] tracking-wide uppercase leading-tight group-hover:text-[#8a685b] transition-colors" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
                       {project.title}
                     </h3>
                   </div>
@@ -382,7 +279,7 @@ export default function ProjectsPage() {
                     </span>
                   )}
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
