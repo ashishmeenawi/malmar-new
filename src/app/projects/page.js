@@ -61,7 +61,7 @@ export default function ProjectsPage() {
       return true;
     })).slice(0, visibleCount);
 
-  const categories = ["ALL", "RESIDENTIAL", "COMMERCIAL", "DEVELOPMENT"];
+  const categories = ["RESIDENTIAL", "COMMERCIAL", "DEVELOPMENT"];
 
   return (
     <main className="min-h-screen bg-[#f5f3f0]">
@@ -269,7 +269,7 @@ export default function ProjectsPage() {
                     <p className="text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-60 mb-2" style={bodyStyle}>
                       {project.category}
                     </p>
-                    <h3 className="text-[24px] tracking-wide uppercase leading-tight group-hover:text-[#8a685b] transition-colors" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
+                    <h3 className="text-[18px] tracking-wide uppercase leading-tight group-hover:text-[#8a685b] transition-colors" style={{ ...headingStyle, whiteSpace: "pre-line" }}>
                       {project.title}
                     </h3>
                   </div>

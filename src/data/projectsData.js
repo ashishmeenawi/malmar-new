@@ -67,8 +67,8 @@ export const PROJECTS = [
     title: "BELGRAVIA HOUSE",
     subtitle: "Grade II Listed Heritage Residence",
     category: "DEVELOPMENT",
-    image: "/dunder.png",
-    heroImage: "/dunder.png",
+    image: "/duner1.jpeg",
+    heroImage: "/duner1.jpeg",
     year: "2023",
     location: "London, UK",
     tagline: "Bridging 19th-century Regency grandeur with contemporary sculptural elegance.",
@@ -726,9 +726,9 @@ export const PROJECTS = [
 export function getProjectByIdOrSlug(idOrSlug) {
   if (!idOrSlug) return PROJECTS[0];
   const decoded = decodeURIComponent(idOrSlug).toLowerCase();
-  
-  return PROJECTS.find(p => 
-    p.id.toString() === decoded || 
+
+  return PROJECTS.find(p =>
+    p.id.toString() === decoded ||
     p.slug.toLowerCase() === decoded ||
     p.title.toLowerCase().replace(/[^a-z0-9]/g, "-") === decoded
   ) || PROJECTS[0];
@@ -737,10 +737,10 @@ export function getProjectByIdOrSlug(idOrSlug) {
 export function getAdjacentProjects(currentId) {
   const currentIndex = PROJECTS.findIndex(p => p.id === currentId || p.slug === currentId);
   const safeIndex = currentIndex >= 0 ? currentIndex : 0;
-  
+
   const prevIndex = (safeIndex - 1 + PROJECTS.length) % PROJECTS.length;
   const nextIndex = (safeIndex + 1) % PROJECTS.length;
-  
+
   return {
     prevProject: PROJECTS[prevIndex],
     nextProject: PROJECTS[nextIndex]
